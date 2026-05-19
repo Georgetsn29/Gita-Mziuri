@@ -12,12 +12,30 @@
         }
 
         th, td {
-            padding-inline  : 20px;
+            padding  : 5px 30px;
             /* border: 3px dotted#c76162; */
+            color: #248052;
+        }
+
+        .dotted {
+            border: 3px dotted #c76162;
+            
         }
 
         .mint {
             color: #1fd194;
+        }
+
+        .det {
+            color: #65816d;
+        }
+
+        .nameRed{
+          color: #875453;
+        }
+
+        .langU {
+            color: #e2536d;
         }
     </style>
 
@@ -28,31 +46,32 @@
     <tr>
         <th rowspan="2" class="mint">heading</th>
         <th class="mint">students</th>
-        <th colspan="6">details</th>
+        <th colspan="6" class="det">details</th>
     </tr>
     <tr>
-        <td><u>ID</u></td>
-        <td><u>Name</u></td>
-        <td><u>Country</u></td>
-        <td><u>Department</u></td>
-        <td><u>Gender</u></td>
-        <td><u>Lengauges</u></td>
-        <td><u>Hobbies</u></td>
+        <th><u>ID</u></th>
+        <th><u>Name</u></th>
+        <th><u>Country</u></th>
+        <th><u>Department</u></th>
+        <th><u>Gender</u></th>
+        <th><u>Lengauges</u></th>
+        <th><u>Hobbies</u></th>
     </tr>
 
     <tr>
-        <td rowspan="5">Student lists</td> <td>1</td>
-        <td><u>Ethyl Sibley</u></td>
-        <td>Bulgaria</td>
-        <td rowspan="3">Product <br> Management</td>
-        <td>Female</td>
-        <td rowspan="2">
+        <td rowspan="5" class="det dotted">Student lists</td>
+        <td class="dotted">1</td>
+        <td class="nameRed dotted"><u>Ethyl Sibley</u></td>
+        <td class="dotted">Bulgaria</td>
+        <td rowspan="3" class="dotted">Product <br> Management</td>
+        <td class="dotted">Female</td>
+        <td rowspan="2" class="dotted">
             <ul>
-                <li><u>J</u>apanese</li>
-                <li><u>C</u>hinese</li>
+                <li><u class="langU">J</u>apanese</li>
+                <li><u class="langU">C</u>hinese</li>
             </ul>
         </td>
-        <td>
+        <td class="dotted">
             <ul>
                 <li>Dance</li>
                 <li>Hiking</li>
@@ -61,22 +80,22 @@
     </tr>
 
     <tr>
-        <td>2</td>
-        <td><u>Estele Tooth</u></td>
-        <td rowspan="2">Australia</td>
-        <td>male</td>
-        <td>Football</td> </tr>
+        <td class="dotted">2</td>
+        <td class="nameRed dotted"><u>Estele Tooth</u></td>
+        <td rowspan="2" class="dotted">Australia</td>
+        <td class="dotted">male</td>
+        <td class="dotted">Football</td> </tr>
 
     <tr>
-        <td>3</td>
-        <td><u>Claudio Uebel</u></td>
-        <td rowspan="2">Female</td>
-        <td>
+        <td class="dotted">3</td>
+        <td class="nameRed dotted"><u>Claudio Uebel</u></td>
+        <td rowspan="2" class="dotted">Female</td>
+        <td class="dotted">
             <ul>
-                <li><u>S</u>wedish</li>
+                <li><u class="langU">S</u>wedish</li>
             </ul>
         </td>
-        <td>
+        <td class="dotted">
             <ul>
                 <li>Sing</li>
                 <li>Dance</li>
@@ -86,29 +105,29 @@
     </tr>
 
     <tr>
-        <td>4</td>
-        <td><u>Moria <br> Davidovitch</u></td>
-        <td>Bulgaria</td>
-        <td>sale accounter</td>
-        <td>
+        <td class="dotted">4</td>
+        <td class="nameRed dotted"><u>Moria <br> Davidovitch</u></td>
+        <td class="dotted">Bulgaria</td>
+        <td class="dotted">sale accounter</td>
+        <td class="dotted">
             <ul>
-                <li><u>S</u>wedish</li>
-                <li><u>F</u>ilipino</li>
+                <li><u class="langU">S</u>wedish</li>
+                <li><u class="langU">F</u>ilipino</li>
             </ul>
         </td>
-        <td rowspan="2">walking</td> </tr>
+        <td rowspan="2" class="dotted">walking</td> </tr>
 
     <tr>
-        <td>5</td>
-        <td><u>Felita Juniper</u></td>
-        <td>Danish</td>
-        <td>Services</td>
-        <td>Male</td>
-        <td>
+        <td class="dotted">5</td>
+        <td class="nameRed dotted"><u>Felita Juniper</u></td>
+        <td class="dotted">Danish</td>
+        <td class="dotted">Services</td>
+        <td class="dotted">Male</td>
+        <td class="dotted">
             <ul>
-                <li><u>I</u>celadic</li>
-                <li><u>E</u>stonian</li>
-                <li><u>L</u>atvian</li>
+                <li><u class="langU">I</u>celadic</li>
+                <li><u class="langU">E</u>stonian</li>
+                <li><u class="langU">L</u>atvian</li>
             </ul>
         </td>
     </tr>
