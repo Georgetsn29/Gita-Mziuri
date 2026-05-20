@@ -1,0 +1,22 @@
+h1 {
+    color: chocolate;
+    background-color: bisque;
+}
+
+#title {
+    background-color: beige !important;
+}
+
+.third-title {
+    color: hotpink;
+}
+
+/* !important - წინ იწევა */
+
+
+.first-box {
+    width: 50%;
+    /* height: 200px; */
+    height: 50vh;
+    border: 2px solid cadetblue;
+}
