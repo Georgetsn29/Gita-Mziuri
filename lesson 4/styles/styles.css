@@ -1,0 +1,27 @@
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+.home {
+    background-color: beige;
+}
+
+.about {
+    background-color: blanchedalmond;
+}
+
+.services {
+    background-color: burlywood;
+}
+
+.contact {
+    background-color: brown;
+}
+
+.goBack {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+}
