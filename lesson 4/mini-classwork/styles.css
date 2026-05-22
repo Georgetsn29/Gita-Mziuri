@@ -1,0 +1,16 @@
+.box {
+    width: 20%;
+    border: 3px solid rgb(47, 95, 255);
+}
+
+.box1 {
+    background-color: rgb(13, 255, 0);
+    height: 20vh;
+
+}
+
+.box2 {
+    background-color: palevioletred;
+    height: 40vh;
+
+}
