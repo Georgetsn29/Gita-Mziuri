@@ -1,0 +1,43 @@
+/* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"); */
+
+.bi-github {
+    color: red;
+    font-size: 50px;
+}
+
+.img-box {
+    width: 35%;
+    height: 35vh;
+    border: 2px solid brown;
+    margin-bottom: 40px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.same-box {
+    width: 350px;
+    height: 350px;
+    border: 2px solid rgb(140, 41, 19);
+    /* background-image: url(../images/img1.jpeg); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.first-box {
+    background-image: url(../images/img1.jpeg);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: rgba(96, 96, 156, 0.4);
+}
+
+.second-box {
+    background-image: linear-gradient(to top left, rgb(147, 76, 76) 5%, rgb(96, 96, 156),  rgb(0, 128, 0));
+}
