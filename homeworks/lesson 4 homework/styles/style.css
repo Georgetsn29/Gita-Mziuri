@@ -5,3 +5,122 @@
     list-style-type: none;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #e6e6e6;
+}
+
+nav {
+    width: 100%;
+    background-color: #dee7f9;
+    padding: 2px;
+    position: fixed;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.link {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 3px dashed #000000;
+    transition: 0.3s ease;
+}
+
+.link:hover {
+    color: #424242;
+    border-bottom: 3px dashed #4a9e6d;
+    transition: 0.1s ease;
+}
+
+.section {
+    height: 100vh;
+}
+
+#home {
+    color: #474747;
+    padding-inline: 140px;
+    background-color: #05954167;
+}
+
+#home h1 {
+    color: #000000;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.home-p {
+    padding-top: 20px;
+    font-size: 18px;
+    text-indent: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about-div {
+    width: 20%;
+    height: 40vh;
+    background-color: #746a6a;
+    margin-top: 200px;
+}
+
+.main-txt {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.desc {
+    text-align: center;
+    padding: 20px;
+}
+
+#services {
+    background-color: #a0a97dbd;
+}
+
+#portfolio {
+    background-color: #7d95a9;
+}
+
+#process {
+    background-color: #a99d7dbd;
+}
+
+#testimonials {
+    background-color: #a97da4bd;
+}
+
+#blog {
+    background-color: #7da996bd;
+}
+
+#contact {
+    background-color: #a9967dbd;
+}
+
+
+
+body:has(#home:target) a[href="#home"],
+body:has(#about:target) a[href="#about"],
+body:has(#services:target) a[href="#services"],
+body:has(#portfolio:target) a[href="#portfolio"],
+body:has(#process:target) a[href="#process"],
+body:has(#testimonials:target) a[href="#testimonials"],
+body:has(#blog:target) a[href="#blog"],
+body:has(#contact:target) a[href="#contact"] {
+    color: #777777; /* Your active color */
+    font-weight: bold;
+    border-bottom: 3px dashed #059541;
+}
+
