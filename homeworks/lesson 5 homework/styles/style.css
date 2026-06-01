@@ -30,16 +30,27 @@ nav {
     align-items: center;
 }
 
+.nav-link li:hover {
+    list-style: disc;
+    color: #8a8adc;
+    font-size: 18px;
+}
+
 .nav-link a {
     font-size: 16px;
     color: #ffffff;
     transition: 0.2s ease;
-
+    font-weight: 600;
+    
 }
 
 .nav-link a:hover {
     color: #8a8adc;
     transition: 0.2s ease;
+}
+
+.nav-link .action {
+    color: #8a8adc;
 }
 
 .logo {
@@ -62,11 +73,16 @@ main {
 
 .socials a {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.socials a:hover {
+    color: #8a8adc;
 }
 
 .first-p {
-    color: burlywood;
+    color: #8a8adc;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -76,7 +92,7 @@ main {
 
 .main-div h1 {
     color: #ffffff;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 900;
     margin-bottom: 20px;
 }
