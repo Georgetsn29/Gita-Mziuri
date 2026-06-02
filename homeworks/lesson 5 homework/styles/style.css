@@ -57,7 +57,6 @@ nav {
 
 .nav-link .action:hover {
     color: #ffffff;
-    list-style: none;
 }
 
 .logo {
@@ -104,6 +103,7 @@ main {
 
 .main-div h1 span {
     color: #8a8adc;
+    text-shadow: 5px 5px 5px rgba(83, 83, 201, 0.608);
     text-decoration-line: underline;
     text-decoration-style: wavy;
 }
@@ -131,7 +131,7 @@ main {
     border-bottom-left-radius: 16px;
     border-top-right-radius: 16px;
     padding: 0.75rem 2.25rem;
-    box-shadow: 0px 3px 10px -5px rgba(6, 9, 34, 0.15);
+    box-shadow: 10px 10px 5px -2px rgba(83, 83, 201, 0.608);
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     color: #8a8adc;
@@ -143,6 +143,7 @@ main {
     background-color: #8a8adc;
     color: #ffffff;
     border: 2px solid transparent;
+    box-shadow: 10px 10px 5px 4px rgba(83, 83, 201, 0.608);
 }
 
 .btn-on {
