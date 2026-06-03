@@ -96,7 +96,7 @@ main {
 
 .main-div h1 {
     color: #ffffff;
-    font-size: 4rem;
+    font-size: 64px;
     font-weight: 900;
     margin-bottom: 40px;
 }
@@ -109,7 +109,7 @@ main {
 }
 
 .second-p {
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 400;
     color: #ffffff;
     line-height: 30px;
@@ -123,14 +123,13 @@ main {
 }
 
 .btn {
-    font-size: 1.15rem;
+    font-size: 18.4px;
     max-width: 180px;
-    padding: 0.75rem 2.25rem;
+    padding: 12px 36px;
     font-weight: 500;
     border-radius: 4px;
     border-bottom-left-radius: 16px;
     border-top-right-radius: 16px;
-    padding: 0.75rem 2.25rem;
     box-shadow: 10px 10px 5px -2px rgba(83, 83, 201, 0.608);
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
@@ -156,4 +155,4 @@ main {
     color: #8a8adc;
     background-color: transparent;
     border: 2px solid #8a8adc;
-}
+} 
