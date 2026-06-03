@@ -1,0 +1,104 @@
+.parent-box {
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* for container :
+
+ !   justify-content: center, start, end, space-between, space-around, space-evenly
+
+*   align-item:
+*  center, start, end
+
+
+
+*/
+
+.same-box {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border: 4px solid black;
+}
+
+.parent-box2 {
+    width: 80%;
+    height: 500px;
+    background-color: blanchedalmond;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.same-box2 {
+    width: 300px;
+    height: 300px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.same-box3 {
+    width: 90px;
+    height: 90px;
+}
+
+.child-box1 {
+    background-color: grey;
+}
+
+.child-box2 {
+    background-image: url(https://images.pexels.com/photos/216668/pexels-photo-216668.jpeg?_gl=1*1vt4410*_ga*MTQ4NTA5MDY2OC4xNzc5OTAyNDgz*_ga_8JE65Q40S6*czE3ODA1MTA1MDckbzMkZzEkdDE3ODA1MTA1MzckajMwJGwwJGgw);
+    background-size: contain;
+}
+
+.child-box3 {
+    background-image: url(https://images.pexels.com/photos/9637957/pexels-photo-9637957.jpeg?_gl=1*1qk7qhd*_ga*MTQ4NTA5MDY2OC4xNzc5OTAyNDgz*_ga_8JE65Q40S6*czE3ODA1MTA1MDckbzMkZzEkdDE3ODA1MTA1OTkkajU5JGwwJGgw);
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.same-box4 {
+    height: 90px;
+    width: 90px;
+    background-color: beige;
+}
+
+.child-box-a {
+    background-color: gray;
+}
+
+.child-box-b {
+    background-color: orange;
+}
+
+.child-box-c {
+    background-color: palevioletred;
+}
+
+.child-box0 {
+    background-image: linear-gradient(to top left, rgb(76, 134, 147) 5%, rgb(96, 96, 156),  rgb(105, 128, 0));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.same-box5 {
+    width: 90px;
+    height: 90px;
+}
+
+.child-box6 {
+    background-color: gainsboro;
+}
+
+.child-box7 {
+    background-color: blueviolet;
+}
