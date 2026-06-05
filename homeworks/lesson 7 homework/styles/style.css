@@ -81,11 +81,13 @@ nav {
 
 .socials a {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 24px;
+    transition: 0.2s;
 }
 
 .socials a:hover {
     color: #8a8adc;
+    margin-top: -5px;
 }
 
 .first-p {
@@ -202,7 +204,7 @@ nav {
 
 
 .card-parent {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -254,7 +256,7 @@ nav {
 }
 
 .card-desc {
-    font-size: 22px;
+    font-size: 18px;
     color: #666666;
     line-height: 28.8px;
     margin-bottom: 24px;
