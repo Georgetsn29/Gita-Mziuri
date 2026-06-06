@@ -1,0 +1,79 @@
+.same-box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(27, 111, 122);
+    border: 5px solid black;
+    margin: 20px;
+}
+
+.first-box {
+    transform: translate(50px, 70px);
+
+}
+
+.second-box {
+    transform: scale(1.2);
+}
+
+.third-box {
+    transform: skew(10deg);
+}
+
+.fourth-box {
+    transform: rotate(0);
+    transition: all 1s;
+
+}
+
+/*! timing-function: ease, ease-out, ...  */
+
+.fourth-box:hover {
+    transform: rotate(360deg);
+}
+
+
+
+
+/* * animate.css * */
+
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(42, 87, 165);
+    /* animation-name: animate;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate; */
+
+    animation: animate 2s 1s 2 alternate;
+}
+
+@keyframes animate {
+    /* from {
+        transform: translate(30px, 40px);
+        background-color: aquamarine;
+    }
+    to {
+        background-color:  cadetblue;
+    } */
+
+    0% {
+        /* transform: translate(30px, 40px); */
+        background-color: aquamarine;
+    }
+    30% {
+        background-color:  cadetblue;
+    }
+    50% {
+        background-color: chocolate;
+    }
+    70% {
+        background-color: brown;
+    }
+    100% {
+        transform: translate(30px, 40px);
+        background-color: rgb(255, 212, 127);
+    }
+}
