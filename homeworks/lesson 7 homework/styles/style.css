@@ -164,7 +164,6 @@ nav {
 } 
 
 #blog {
-    /* height: 100vh; */
     margin-top: 100px;
     display: flex;
     flex-direction: column;
