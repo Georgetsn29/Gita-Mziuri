@@ -213,6 +213,11 @@ nav {
     margin-bottom: 16px;
 }
 
+.sub-animation:hover {
+    animation: swing;
+    animation-duration: 1.5s;
+}
+
 .blog-second-title {
     font-size: 32px;
     font-weight: 600;
@@ -383,6 +388,11 @@ nav {
     margin-bottom: 8px;
 }
 
+.stat-item h3:hover {
+  animation: jello;
+  animation-duration: 1.5s;
+}
+
 .stat-item p {
     color: #666666;
 }
@@ -495,4 +505,13 @@ nav {
 .service-card a:hover {
     color: #000000;
     border-bottom: 2px solid #000000;
+}
+
+:root {
+  --animate-delay: 0.2s;
+  --animate-duration: 1s;
+}
+
+.my-element {
+  --animate-duration: 1.5s;
 }
