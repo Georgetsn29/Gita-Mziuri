@@ -46,13 +46,12 @@ nav {
 .nav-link a {
     font-size: 16px;
     color: #ffffff;
-    transition: 0.2s ease;
+    transition: all 0.2s ease;
     font-weight: 600;
 }
 
 .nav-link a:hover {
     color: #8a8adc;
-    transition: 0.2s ease;
 }
 
 .nav-link .action {
@@ -251,7 +250,7 @@ nav {
 }
 
 .sub-animation:hover {
-    animation: swing;
+    animation: jello;
     animation-duration: 1.5s;
 }
 
@@ -399,6 +398,8 @@ nav {
     text-transform: uppercase;
     letter-spacing: 3.2px;
     margin-bottom: 25px;
+    display: block;
+    width: 20%;
 }
 
 .about-text-wrapper h2 {
@@ -472,7 +473,8 @@ nav {
     text-transform: uppercase;
     letter-spacing: 3.2px;
     display: block;
-    margin-bottom: 16px;
+    width: 20%;
+    margin: 16px auto;
 }
 
 .services-title {
@@ -509,7 +511,7 @@ nav {
     height: 100%;
     width: 27%;
     transition: 0.3s;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -519,6 +521,7 @@ nav {
 .service-card:hover {
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2);
     margin-block: -20px 20px;
+    border-radius: 20px;
 }
 
 .service-icon {
