@@ -1,0 +1,5 @@
+@import url('config.css');
+
+.about-text__h1 {
+    color: var(--gold-color);
+}
