@@ -47,29 +47,29 @@ body {
 
 .nav ul li:hover {
     list-style: disc;
-    color: #8a8adc;
+    color: var(--purple-color);
     font-size: 18px;
 }
 
 .nav ul li a {
     font-size: 16px;
-    color: #ffffff;
+    color: var(--white);
     transition: all 0.2s ease;
     font-weight: 600;
 }
 
 .nav a:hover {
-    color: #8a8adc;
+    color: var(--purple-color);
 }
 
 .nav .action {
-    color: #8a8adc;
+    color: var(--purple-color);
     list-style: disc;
     font-size: 18px;
 }
 
 .nav .action:hover {
-    color: #ffffff;
+    color: var(--white);
 }
 
 .nav-logo__img {
@@ -80,12 +80,11 @@ body {
 
 /*! Home !*/
 
-#home {
+#hero {
     padding-top: 100px;
-    /* padding-left: 60px; */
 }
 
-.home-socials {
+.hero-socials {
     width: 10%;
     display: flex;
     justify-content: space-between;
@@ -93,37 +92,37 @@ body {
     margin-left: 60px;
 }
 
-.home-socials__a {
-    color: #ffffff;
+.hero-socials__a {
+    color: var(--white);
     font-size: 24px;
     transition: 0.2s;
 }
 
-.home-socials__a:hover {
-    color: #8a8adc;
+.hero-socials__a:hover {
+    color: var(--purple-color);
     margin-top: -5px;
 }
 
-.home-main-div__first-p {
-    color: #8a8adc;
+.hero-main-div__first-p {
+    color: var(--purple-color);
     font-size: 18px;
     font-weight: 600;
 }
 
-.home-main-div {
+.hero-main-div {
     width: 60%;
     margin-left: 60px;
 }
 
-.home-main-div__h1 {
-    color: #ffffff;
+.hero-main-div__h1 {
+    color: var(--white);
     font-size: 64px;
     font-weight: 900;
     margin-bottom: 40px;
 }
 
-.home-main-div__h1 span {
-    color: #8a8adc;
+.hero-main-div__h1 span {
+    color: var(--purple-color);
     text-shadow: 5px 5px 5px rgba(83, 83, 201, 0.608);
     text-decoration-line: underline;
     text-decoration-style: wavy;
@@ -131,22 +130,22 @@ body {
     text-decoration-thickness: 7px;
 }
 
-.home-main-div__second-p {
+.hero-main-div__second-p {
     font-size: 20px;
     font-weight: 400;
-    color: #ffffff;
+    color: var(--white);
     line-height: 30px;
     width: 90%;
 }
 
-.home-btn-wrap {
+.hero-btn-wrap {
     display: flex;
     justify-content: space-between;
     width: 23%;
     margin-left: 60px;
 }
 
-.home__btn {
+.hero__btn {
     font-size: 18.4px;
     max-width: 180px;
     padding: 12px 36px;
@@ -156,12 +155,12 @@ body {
     border-top-right-radius: 16px;
     box-shadow: 10px 10px 5px -2px rgba(83, 83, 201, 0.608);
     cursor: pointer;
-    color: #8a8adc;
-    border: 2px solid #8a8adc;
+    color: var(--purple-color);
+    border: 2px solid var(--purple-color);
     margin-top: 60px;
     background-image: linear-gradient(
         to bottom,
-        #8a8adc 50%,
+        var(--purple-color) 50%,
         transparent 50%
     );
     background-size: 100% 200%;
@@ -171,21 +170,20 @@ body {
                 box-shadow 0.3s ease-in-out;
 }
 
-.home__btn:hover {
-    color: #ffffff;
-    border: 2px solid #8a8adc;
+.hero__btn:hover {
+    color: var(--white);
+    border: 2px solid var(--purple-color);
     box-shadow: 10px 10px 5px 4px rgba(83, 83, 201, 0.608);
     background-position: top;
-
 }
 
-.home__btn-on {
-    color: #ffffff;
-    border: 2px solid #8a8adc;
+.hero__btn-on {
+    color: var(--white);
+    border: 2px solid var(--purple-color);
     background-image: linear-gradient(
         to top,
         transparent 50%,
-        #8a8adc 50%
+        var(--purple-color) 50%
     );
     background-size: 100% 200%;
     background-position: top;
@@ -194,28 +192,28 @@ body {
                 box-shadow 0.3s ease-in-out;
 }
 
-.home__btn-on:hover {
-    color: #8a8adc;
+.hero__btn-on:hover {
+    color: var(--purple-color);
     background-position: bottom;
-    border: 2px solid #8a8adc;
+    border: 2px solid var(--purple-color);
     background-color: transparent;
 }
 
-.home-scroll-indicator {
+.hero-scroll-indicator {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
 }
 
-.home-scroll-indicator a {
-    color: #8a8adc;
+.hero-scroll-indicator a {
+    color: var(--purple-color);
     font-size: 80px;
 
     background: linear-gradient(
         to bottom,
-        #ffffff 50%,
-        #8a8adc 50%
+        var(--white) 50%,
+        var(--purple-color) 50%
     );
     background-size: 100% 200%;
     background-position: bottom;
@@ -226,10 +224,9 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.home-scroll-indicator a:hover {
+.hero-scroll-indicator a:hover {
     background-position: top;
 }
-
 
 
 
@@ -292,7 +289,7 @@ body {
     font-family: "Playfair Display", serif;
     font-size: 32px;
     font-weight: 600;
-    color: #8a8adc;
+    color: var(--purple-color);
     margin-bottom: 24px;
     letter-spacing: 0.5px;
 }
@@ -385,7 +382,6 @@ body {
     gap: 30px;
     padding-bottom: 120px;
     margin-top: 80px;
-
 }
 
 .service-card {
@@ -465,6 +461,7 @@ body {
 .my-element {
   --animate-duration: 1.5s;
 }
+
 
 
 
@@ -652,7 +649,6 @@ body {
     gap: 20px;
     font-weight: 500;
 }
-
 
 .card-title {
     font-size: 30px;
