@@ -39,7 +39,6 @@ body {
     border: 2px solid #ffffff67;
     border-radius: 20px;
     box-shadow: 0px 0px 20px #ffffff67;
-    
 }
 
 .form label {
@@ -76,7 +75,7 @@ body {
 
 .form-name-flex label {
     font-size: 14px;
-    color: #6b6b6baf;
+    color: #d8d8d87e;
     margin-top: 4px;
 }
 
