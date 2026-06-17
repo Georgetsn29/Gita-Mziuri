@@ -96,11 +96,14 @@ body {
     color: var(--white);
     font-size: 24px;
     transition: 0.2s;
+    text-shadow: 3px 3px 2px var(--gold-color);
+
 }
 
 .hero-socials__a:hover {
     color: var(--purple-color);
     margin-top: -5px;
+
 }
 
 .hero-main-div__first-p {
