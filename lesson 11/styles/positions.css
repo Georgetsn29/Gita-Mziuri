@@ -1,0 +1,50 @@
+.same-box {
+    width: 250px;
+    height: 250px;
+    border: 2px solid brown;
+    margin-top: 2rem;
+}
+
+.first-box {
+    position: relative;
+    left: 20%;
+}
+
+.child-box {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 10%;
+    left: -15px;
+    background-color: bisque;
+    z-index: -1;
+}
+
+/** position: fixed, sticky **/
+
+button {
+    border: none;
+    background-color: cadetblue;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    left: 20px;
+    position: fixed;
+    /* position: sticky; */
+}
+
+.second-box {
+    position: absolute;
+    left: 20%;
+    background-color: burlywood;
+}
+
+.second-child-box {
+    width: 50px;
+    height: 50px;
+    top: 30%;
+    border-radius: 50%;
+    border: 5px solid red;
+    position: absolute;
+}
