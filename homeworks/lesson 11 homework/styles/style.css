@@ -13,7 +13,7 @@
 .sky {
   width: 100%;
   height: 250px;
-  background-color: #06e7f3;
+  background: linear-gradient(135deg, rgba(182, 191, 7, 0.6352941176), rgba(6, 231, 243, 0.8352941176));
   position: relative;
   z-index: 1;
 }
