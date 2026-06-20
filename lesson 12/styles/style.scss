@@ -1,0 +1,42 @@
+@import './globals';
+
+h1 {
+    color: burlywood;
+    background-color: bisque;
+
+    &:active {
+        font-size: 45px;
+        color: brown;
+    }
+}
+
+.cont {
+    margin-block: 20px;
+}
+
+.card__btn {
+    @include button(#9c9696, 15px);
+}
+
+.btn {
+    @include button(#000000, 30px);
+}
+
+.container {
+    width: 80%;
+    background-color: #d1c1c1;
+    display: flex;
+    justify-content: space-around;
+
+    .card {
+        @include card(30px, #d4dcbe);
+
+        .card__h3 {
+            @include card__h3(#386412, 24px, cursive);
+        }
+
+        .card__p {
+            @include card__p()
+        }
+    }
+}

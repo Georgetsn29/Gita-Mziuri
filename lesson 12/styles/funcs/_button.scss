@@ -1,0 +1,21 @@
+@mixin button($color, $btn_size) {
+    color: $color;
+    padding: $btn_size;
+    background-color: rgb(96, 68, 68);
+    border: none;
+    border-radius: 8px;
+    transition: all 0.4s;
+    
+    &:hover {
+        box-shadow: 10px 10px 15px #621010;
+        background-color: transparent;
+        color: #621010;
+    }
+}
+
+
+
+
+// function button(x) {
+//     return x + 100
+// }

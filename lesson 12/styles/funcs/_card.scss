@@ -1,0 +1,18 @@
+@mixin card($padding, $background_color) {
+    background-color: $background_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $padding;
+}
+
+@mixin card__h3($color, $h3_size, $font_family) {
+    color: $color;
+    font-size: $h3_size;
+    font-family: $font_family;
+    letter-spacing: 0.8px;
+}
+
+@mixin card__p() {
+    
+}
