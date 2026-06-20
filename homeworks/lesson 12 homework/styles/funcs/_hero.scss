@@ -1,0 +1,87 @@
+@mixin hero($background-color, $display, $flex_direction, $just-cont, $gap, $color) {
+    background-color: $background-color;
+    display: $display;
+    flex-direction: $flex_direction;
+    justify-content: $just-cont;
+    gap: $gap;
+    color: $color;
+}
+
+
+
+
+@mixin text-wrapper($display, $flex_direction, $hero_font_family, $padding_top, $text-align) {
+    display: $display;
+    flex-direction: $flex_direction;
+    font-family: $hero_font_family;
+    padding-top: $padding_top;
+    text-align: $text-align;
+}
+
+@mixin text-wrapper__h($font_size, $line_height, $font_family, $font_weight, $margin_bottom) {
+    font-size: $font_size;
+    line-height: $line_height;
+    font-family: $font_family;
+    font-weight: $font_weight;
+    margin-bottom: $margin_bottom;
+}
+
+@mixin text-wrapper__p($margin_block, $line_height, $font_size, $font_weight, $margin_top){
+    margin-block: $margin_block;
+    line-height: $line_height;
+    letter-spacing: 1px;
+    font-size: $font_size;
+    font-weight: $font_weight;
+
+    span {
+        margin-top: $margin_top;
+    }
+}
+
+@mixin text-wrapper__a($color, $text_dec, $text_underline_offset, $transition) {
+    color: $color;
+    text-decoration: $text_dec;
+    text-underline-offset: $text_underline_offset;
+    text-decoration-thickness: 1px;
+    transition: $transition;
+    
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin text-wrapper__btn($width, $background_color, $padding, $border, $border_radius, $color, $font_size, $font_weight, $text_transform, $letter_spacing, $margin_top, $transition, $box_shadow, $btn_color, $margin) {
+
+    width: $width;
+    background-color: $background_color;
+    padding: $padding;
+    border: $border;
+    border-radius: $border_radius;
+    color: $color;
+    font-size: $font_size;
+    font-weight: $font_weight;
+    text-transform: $text_transform;
+    letter-spacing: $letter_spacing;
+    margin-top: $margin_top;
+    transition: $transition;
+    margin: $margin;
+
+    &:hover {
+        background-color: transparent;
+        box-shadow: $box_shadow;
+        color: $btn_color;
+    }
+}
+
+
+
+
+
+@mixin hero-right($width, $img_width) {
+    width: $width;
+
+    img {
+        width: $img_width;
+    }
+}

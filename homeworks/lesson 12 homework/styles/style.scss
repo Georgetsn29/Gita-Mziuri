@@ -1,0 +1,216 @@
+@import './globals';
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.nav-header {
+
+
+    @include nav-header($nav_background, flex, row, space-between, 10px 200px, sticky, 0, 100%, $z-header);
+
+    
+
+    .header-logo{
+
+        @include nav-logo($nav_color, cursive, 600, 30px);
+
+    }
+
+    .nav__burger {
+
+        @include nav__burger(40px, $nav_color, $transition, $orange_color);
+
+    }
+}
+
+#hero {
+
+    @include hero($hero_background, flex, row, end, 40px, $white_color);
+    
+
+    .hero-left {
+
+        @include text-wrapper(flex, column, $font_family, 180px);
+
+        .hero-left__h2 {
+
+            @include text-wrapper__h(3rem, 1, $font_family, 500, 0);
+
+        }
+
+        .hero-left__p {
+
+            @include text-wrapper__p(30px, 2, 1rem, 500, 30px);
+
+        }
+
+        .hero-left__a {
+
+            @include text-wrapper__a($white_color, underline, 6px, $transition);
+
+        }
+
+        .hero-left__btn {
+
+            @include text-wrapper__btn(45%, $orange_color, 15px, none, 50px, $white_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px #ea480d, $white_color, 0);
+
+        }
+    }
+
+    .hero-right {
+
+        @include hero-right(50.3%, 100%);
+        
+    }
+}
+
+#sectionClass {
+
+
+    @include sectionClass(relative, 250vh, $z-normal);
+
+    .online-class {
+
+        @include online-class(200px, relative, 90%, $z-normal);
+
+
+        .class-card-wrpper {
+
+            @include class-card-wrpper(flex, space-around, 20px, absolute, -50px, $z-normal);
+
+
+            .card {
+
+                @include card(#f14a0e, flex, column, center, center, $white_color, $font_family, 50px 20px, 50px, #f57e54, $z-normal);
+
+
+                .card-img {
+
+                    @include card-img($white_color, 50%, 100px, 100px, 20px);
+                }
+
+                .card__h4 {
+
+                    @include card__h4(1.5rem, 30px, capitalize, 500);
+
+                }
+
+                .card__p {
+                    
+                    @include card__p(0.888889rem, 20px, 20px, 0.2px);
+
+                }
+            }
+        }
+    }
+
+    .circle-class {
+
+        .cirle1 {
+
+            @include cirle1(250px, 250px, 50px solid #f57e54, 50%, absolute, 80px, 440px);
+
+        }
+        
+        .circle-img {
+
+            @include circle-img(854px, 854px, 50%, hidden, 20px solid #f14a0e, absolute, 500px);
+
+        }
+
+        .circle2 {
+
+            @include circle2(200px, 200px, 50%, #f14a0e, absolute, 1100px);
+
+        }
+
+        .circle3 {
+
+            @include circle3(200px, 200px, 40px solid #f57e54, 50%, absolute, 350px, 1400px);
+
+        }
+
+        .circle-card {
+
+            @include circle-card(relative, 1, 100%, inherit, 400px, 1000px,50%, #f14a0e, 50px, 750px, 750px, center, flex, column, center, center, $white_color);
+
+            .circle-card__h1 {
+
+                    @include text-wrapper__h(3.75rem, 1, $font_family, 400, 32px);
+            }
+
+            .circle-card__p {
+                @include text-wrapper__p(30px, 2, 1rem, 500, 30px);
+            }
+
+            .circle-card__a {
+                @include text-wrapper__a($white_color, underline, 6px, $transition);
+            }
+
+            .circle-card__btn {
+                @include text-wrapper__btn(45%, $white_color, 15px, none, 50px, $orange_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px $white_color, $white_color, 0);
+            }
+
+
+
+        }
+    }
+}
+
+#section3 {
+    background-color: #000000;
+
+    .section3-images {
+
+        padding: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        img{
+            width: 384px;
+            height: 384px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .section__img-big {
+                width: 524px;
+                height: 524px;
+        }
+        
+    }
+
+    .section3-content {
+
+        color: $white_color;
+        text-align: center;
+        padding-bottom: 60px;
+
+
+            @include text-wrapper(flex, column, $font_family, 20px);
+
+            .section3-content__h2 {
+
+                    @include text-wrapper__h(3rem, 1.1, $font_family, 400, 3px);
+            }
+
+            .section3-content__p {
+                @include text-wrapper__p(30px, 2, 1.125rem, 700, 30px);
+            }
+
+            .section3-content__a {
+                @include text-wrapper__a($white_color, underline, 6px, $transition);
+            }
+
+            .section3-content__btn {
+                @include text-wrapper__btn(20%, $orange_color, 15px, none, 50px, $white_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px #ea480d, $white_color, 0 auto);
+            }
+        }
+
+}

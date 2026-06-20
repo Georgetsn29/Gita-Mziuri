@@ -1,0 +1,28 @@
+@mixin nav-header($background, $display, $flex_direction, $justify_content, $padding, $position, $top, $width, $z-index) {
+    background-color: $background;
+    display: $display;
+    flex-direction: $flex_direction;
+    justify-content: $justify_content;
+    padding: $padding;
+    position: $position;
+    top: $top;
+    width: $width;
+    z-index: $z-index;
+}
+
+@mixin nav-logo($color, $font_family, $font_weight, $font_size) {
+    color: $color;
+    font-family: $font_family;
+    font-weight:  $font_weight;
+    font-size: $font_size;
+}
+
+@mixin nav__burger($font_size, $color, $transition, $hover_color) {
+    font-size: $font_size;
+    color: $color;
+    transition: $transition;
+
+    &:hover {
+        color: $hover_color;
+    }
+}

@@ -1,0 +1,134 @@
+@mixin sectionClass($position, $height, $z-index) {
+
+     position: $position;
+     height: $height;
+     z-index: $z-index;
+}
+
+    @mixin online-class($padding_inline, $position, $width, $z-index) {
+        padding-inline: $padding_inline;
+        position: $position;
+        width: $width;
+     z-index: $z-index;
+
+    }
+
+
+       @mixin class-card-wrpper($display, $justify_content, $gap, $position, $top, $z-index) {
+            display: $display;
+            justify-content: $justify_content;
+            gap: $gap;
+            position: $position;
+            top: $top;
+     z-index: $z-index;
+
+       }
+
+            @mixin card($background, $display, $flex_dir, $align_item, $text_align, $color, $font_family, $padding, $border_radius, $nth_background, $z-index) {
+                background-color: $background;
+                display: $display;
+                flex-direction: $flex_dir;
+                align-items: $align_item;
+                text-align: $text_align;
+                color: $color;
+                font-family: $font_family;
+                padding: $padding;
+                border-radius: $border_radius;
+                z-index: $z-index;
+
+
+                &:nth-child(even) {
+                    background-color: $nth_background;
+                }
+            }
+
+
+                @mixin card-img($background, $border_radius, $height, $width, $padding) {
+                    background-color: $background;
+                    border-radius: $border_radius;
+                    height: $height;
+                    width: $width;
+                    padding: $padding;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                @mixin card__h4($font_size, $margin_block, $text_transform, $font_weight) {
+                    font-size: $font_size;
+                    margin-block: $margin_block;
+                    text-transform: $text_transform;
+                    font-weight: $font_weight;
+                }
+
+                @mixin card__p($font_size, $margin_bottom, $line_height, $letter_spaceing) {
+                    font-size: $font_size;
+                    margin-bottom: $margin_bottom;
+                    line-height: $line_height;
+                    letter-spacing: $letter_spaceing;
+                }
+
+        @mixin cirle1($width, $height, $border, $border_radius, $position, $right, $top) {
+            width: $width;
+            height: $height;
+            border: $border;
+            border-radius: $border_radius;
+            position: $position;
+            right: $right;
+            top: $top;
+        }
+        
+        @mixin circle-img($width, $height, $border_radius, $overflow, $border, $position, $top) {
+            width: $width;
+            height: $height;
+            border-radius: $border_radius;
+            overflow: $overflow;
+            border: $border;
+            position: $position;
+            top: $top;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        @mixin circle2($width, $height, $border_radius, $background, $position, $top) {
+            width: $width;
+            height: $height;
+            border-radius: $border_radius;
+            background-color: $background;
+            position: $position;
+            top: $top;
+        }
+
+        @mixin circle3($width, $height, $border, $border_radius, $position, $left, $top) {
+            width: $width;
+            height: $height;
+            border: $border;
+            border-radius: $border_radius;
+            position: $position;
+            left: $left;
+            top: $top;
+        }
+
+        @mixin circle-card($position, $flex, $max_width, $transition_duration, $left, $top, $border_radius, $background, $padding, $width, $height, $text_align, $display, $flex_dir, $justify_content, $align_item, $color) {
+            position: $position;
+            flex: $flex;
+            max-width: $max_width;
+            transition-duration: $transition_duration;
+            left: $left;
+            top: $top;
+            border-radius: $border_radius;
+            background-color: $background;
+            padding: $padding;
+            width: $width;
+            height: $height;
+            text-align: $text_align;
+            display: $display;
+            flex-direction: $flex_dir;
+            justify-content: $justify_content;
+            align-items: $align_item;
+            color: $color;
+        }

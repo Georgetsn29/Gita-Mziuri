@@ -1,0 +1,33 @@
+section3 {
+    background-color: #000000;
+}
+
+    .section3-images {
+
+        padding: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        img{
+            width: 384px;
+            height: 384px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .section__img-big {
+                width: 524px;
+                height: 524px;
+        }
+        
+    
+
+    .section3-content {
+
+        color: $white_color;
+        text-align: center;
+        padding-bottom: 60px;
+
+    }
