@@ -1,9 +1,27 @@
+.card-img {
+  animation-name: comeIn;
+  animation-duration: 1.5s;
+  transform: scale(0);
+  animation-timeline: view();
+  animation-range: entry 0% cover 100%;
+}
+@keyframes comeIn {
+  to {
+    transform: scale(1);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  color: #ffffff;
 }
 
 .nav-header {
@@ -17,7 +35,7 @@
   width: 100%;
   z-index: 100;
 }
-.nav-header .header-logo {
+.nav-header .header-logo a {
   color: #848484;
   font-family: cursive;
   font-weight: 600;
@@ -45,10 +63,14 @@
   flex-direction: column;
   font-family: Raleway, sans-serif;
   padding-top: 180px;
+  text-align: left;
 }
 #hero .hero-left .hero-left__h2 {
   font-size: 3rem;
+  line-height: 1;
+  font-family: Raleway, sans-serif;
   font-weight: 500;
+  margin-bottom: 0;
 }
 #hero .hero-left .hero-left__p {
   margin-block: 30px;
@@ -217,7 +239,6 @@
   font-family: Raleway, sans-serif;
   font-weight: 400;
   margin-bottom: 32px;
-  color: #ffffff;
 }
 #sectionClass .circle-class .circle-card .circle-card__p {
   margin-block: 30px;
@@ -282,11 +303,12 @@
 #section3 .section3-content {
   color: #ffffff;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   font-family: Raleway, sans-serif;
   padding-top: 20px;
+  text-align: center;
 }
 #section3 .section3-content .section3-content__h2 {
   font-size: 3rem;
@@ -294,7 +316,6 @@
   font-family: Raleway, sans-serif;
   font-weight: 400;
   margin-bottom: 3px;
-  color: #ffffff;
 }
 #section3 .section3-content .section3-content__p {
   margin-block: 30px;
@@ -317,7 +338,7 @@
   text-decoration: none;
 }
 #section3 .section3-content .section3-content__btn {
-  width: 20%;
+  width: 15%;
   background-color: #ea480d;
   padding: 15px;
   border: none;
@@ -334,5 +355,185 @@
 #section3 .section3-content .section3-content__btn:hover {
   background-color: transparent;
   box-shadow: 0px 0px 20px #ea480d;
+  color: #ffffff;
+}
+
+#about {
+  position: relative;
+  background-color: #ea480d;
+}
+#about .about-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: -200px;
+}
+#about .about-img .about__img {
+  width: 273px;
+  height: 273px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#about .about-img .about__img-big {
+  width: 416px;
+  height: 416px;
+}
+#about .about-content .about-container-title {
+  padding-top: 400px;
+}
+#about .about-content .about-container-title h3 {
+  color: #ffffff;
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+#about .about-content .about-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  width: 70%;
+}
+#about .about-content .about-container .about-container-item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex: 1 500px;
+  margin-top: 60px;
+}
+#about .about-content .about-container .about-container-item .about-item-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+#about .about-content .about-container .about-container-item .about-item-text {
+  flex-grow: 1;
+}
+#about .about-content .about-container .about-container-item .about-item-text h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+#about .about-content .about-container .about-container-item .about-item-text p {
+  font-style: italic;
+  margin: 21px 0;
+  line-height: 2;
+}
+
+#traditional_cooking {
+  height: 250vh;
+  padding-top: 40px;
+  position: relative;
+}
+#traditional_cooking .traditional-circle {
+  overflow: hidden;
+  border-radius: 100%;
+  border: 20px solid #ea480d;
+  position: absolute;
+}
+#traditional_cooking .traditional-circle img {
+  width: 100%;
+}
+#traditional_cooking .tCircle1 {
+  width: 320px;
+  height: 320px;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#traditional_cooking .tCircle2 {
+  width: 500px;
+  height: 500px;
+  top: 400px;
+  left: 15%;
+}
+#traditional_cooking .tCircle3 {
+  width: 218px;
+  height: 218px;
+  border: none;
+  background-color: #f57e54;
+  left: 65%;
+  top: 300px;
+}
+#traditional_cooking .tCircle4 {
+  width: 134px;
+  height: 134px;
+  border-width: 25px;
+  left: 50%;
+  top: 500px;
+}
+#traditional_cooking .tCircle5 {
+  width: 752px;
+  height: 752px;
+  top: 700px;
+  left: 45%;
+}
+#traditional_cooking .traditional_content {
+  background-color: #ea480d;
+  width: 39.4%;
+  padding: 40px;
+  border-radius: 60px;
+  box-shadow: 5px 5px 20px #ea480d;
+  position: absolute;
+  top: 1200px;
+  left: 25%;
+  display: flex;
+  flex-direction: column;
+  font-family: Raleway, sans-serif;
+  padding-top: 40px;
+  text-align: left;
+}
+#traditional_cooking .traditional_content .traditional_content__h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+#traditional_cooking .traditional_content .traditional_content__p {
+  margin-block: 30px;
+  line-height: 2;
+  letter-spacing: 1px;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+#traditional_cooking .traditional_content .traditional_content__p span {
+  margin-top: 30px;
+}
+#traditional_cooking .traditional_content .traditional_content__a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+  transition: all 0.3s;
+}
+#traditional_cooking .traditional_content .traditional_content__a:hover {
+  text-decoration: none;
+}
+#traditional_cooking .traditional_content .traditional_content__btn {
+  width: 45%;
+  background-color: #ffffff;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  color: #ea480d;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 20px;
+  transition: all 0.3s;
+  margin: 0;
+}
+#traditional_cooking .traditional_content .traditional_content__btn:hover {
+  background-color: transparent;
+  box-shadow: 0px 0px 20px #ffffff;
   color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

@@ -8,6 +8,12 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: $font_family_raleway;
+    color: $white_color;
+
+}
+
 .nav-header {
 
 
@@ -15,7 +21,7 @@
 
     
 
-    .header-logo{
+    .header-logo a{
 
         @include nav-logo($nav_color, cursive, 600, 30px);
 
@@ -35,11 +41,11 @@
 
     .hero-left {
 
-        @include text-wrapper(flex, column, $font_family, 180px);
+        @include text-wrapper(flex, column, $font_family_raleway, 180px, left);
 
         .hero-left__h2 {
 
-            @include text-wrapper__h(3rem, 1, $font_family, 500, 0);
+            @include text-wrapper__h(3rem, 1, $font_family_raleway, 500, 0);
 
         }
 
@@ -86,12 +92,13 @@
 
             .card {
 
-                @include card(#f14a0e, flex, column, center, center, $white_color, $font_family, 50px 20px, 50px, #f57e54, $z-normal);
+                @include card(#f14a0e, flex, column, center, center, $white_color, $font_family_raleway, 50px 20px, 50px, #f57e54, $z-normal);
 
 
                 .card-img {
 
                     @include card-img($white_color, 50%, 100px, 100px, 20px);
+
                 }
 
                 .card__h4 {
@@ -141,7 +148,7 @@
 
             .circle-card__h1 {
 
-                    @include text-wrapper__h(3.75rem, 1, $font_family, 400, 32px);
+                    @include text-wrapper__h(3.75rem, 1, $font_family_raleway, 400, 32px);
             }
 
             .circle-card__p {
@@ -163,41 +170,37 @@
 }
 
 #section3 {
-    background-color: #000000;
+
+    @include section($black_color);
 
     .section3-images {
 
-        padding: 40px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include section3-images(40px, flex, space-around, center);
 
         img{
-            width: 384px;
-            height: 384px;
-            border-radius: 50%;
-            overflow: hidden;
+
+            @include section3-img(384px, 384px, 50%, hidden);
+
         }
 
         .section__img-big {
-                width: 524px;
-                height: 524px;
+
+                @include section3__img-big(524px, 524px);
+
         }
         
     }
 
     .section3-content {
 
-        color: $white_color;
-        text-align: center;
-        padding-bottom: 60px;
+        @include section3-content($white_color, center, 80px);
 
 
-            @include text-wrapper(flex, column, $font_family, 20px);
+            @include text-wrapper(flex, column, $font_family_raleway, 20px, center);
 
             .section3-content__h2 {
 
-                    @include text-wrapper__h(3rem, 1.1, $font_family, 400, 3px);
+                    @include text-wrapper__h(3rem, 1.1, $font_family_raleway, 400, 3px);
             }
 
             .section3-content__p {
@@ -209,8 +212,169 @@
             }
 
             .section3-content__btn {
-                @include text-wrapper__btn(20%, $orange_color, 15px, none, 50px, $white_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px #ea480d, $white_color, 0 auto);
+                @include text-wrapper__btn(15%, $orange_color, 15px, none, 50px, $white_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px #ea480d, $white_color, 0 auto);
             }
         }
 
+}
+
+
+
+#about {
+
+    @include about(relative);
+    @include section($orange_color);
+
+    .about-img {
+        @include about-img(flex, space-around, center, absolute);
+
+        .about__img {
+            @include about__img(273px, 273px, 50%, hidden);
+        }
+
+        .about__img-big {
+            @include about__img-big(416px, 416px);
+        }
+    }
+
+    .about-content {
+
+        .about-container-title {
+
+            @include about-container-title(400px);
+
+            h3{
+                @include about-container__h3($white_color, 2.25rem, 700, $font_family_montserrat, center);
+            }
+        }
+
+        .about-container {
+
+            @include about-container(flex, wrap, row, 40px, 40px, 0 auto, 70%);
+
+
+            .about-container-item {
+
+                @include about-container-item(flex, row, 20px, 1 500px, 60px);
+
+
+                .about-item-circle {
+
+                    @include about-item-circle(50px, 50px, $white_color, 50%, 0);
+
+                }
+
+                .about-item-text {
+
+                    @include about-item-text(1);
+
+                    h4 {
+
+                        @include about-item-text-h4(1.5rem, 600, 1.2);
+
+                    }
+
+                    p {
+
+                        @include about-item-text-p(italic, 21px 0, 2);
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+#traditional_cooking {
+    height: 250vh;
+    padding-top: 40px;
+    position: relative; 
+
+
+    .traditional-circle {
+        overflow: hidden;
+        border-radius: 100%;
+        border: 20px solid $orange_color;
+        position: absolute;
+
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .tCircle1 {
+        width: 320px;
+        height: 320px;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .tCircle2 {
+        width: 500px;
+        height: 500px;
+        top: 400px;
+        left: 15%;
+    }
+
+    .tCircle3 {
+        width: 218px;
+        height: 218px;
+        border: none;
+        background-color: #f57e54;
+        left: 65%;
+        top: 300px;
+    }
+
+    .tCircle4 {
+        width: 134px;
+        height: 134px;
+        border-width: 25px;
+        left: 50%;
+        top: 500px;
+    }
+
+    .tCircle5 {
+        width: 752px;
+        height: 752px;
+        top: 700px;
+        left: 45%;
+    }
+
+
+
+
+    .traditional_content {
+
+        @include traditional_content($orange_color, 39.4%, 40px, 60px, 5px 5px 20px $orange_color, absolute);
+
+        @include text-wrapper(flex, column, $font_family_raleway, 40px, left);
+
+        .traditional_content__h2 {
+
+            @include text-wrapper__h(3rem, 1.1, $font_family_raleway, 400, 0);
+
+        }
+
+        .traditional_content__p {
+
+            @include text-wrapper__p(30px, 2, 1.125rem, 500, 30px);
+
+        }
+
+        .traditional_content__a {
+
+            @include text-wrapper__a($white_color, underline, 6px, $transition);
+
+        }
+
+        .traditional_content__btn {
+
+            @include text-wrapper__btn(45%, $white_color, 15px, none, 50px, $orange_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px $white_color, $white_color, 0);
+
+        }
+    }
 }

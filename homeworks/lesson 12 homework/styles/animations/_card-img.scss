@@ -1,0 +1,16 @@
+.card-img {
+
+    animation-name: comeIn;
+    animation-duration: 1.5s;
+    transform: scale(0);
+
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+
+
+    @keyframes comeIn {
+        to {
+            transform: scale(1);
+        }
+    };
+}

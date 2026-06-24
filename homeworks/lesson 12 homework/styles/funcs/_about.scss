@@ -1,0 +1,80 @@
+@mixin about($position) {
+    position: $position;
+}
+
+@mixin about-img($display, $justify_content, $align_items, $position) {
+    display: $display;
+    justify-content: $justify_content;
+    align-items: $align_items;
+    position: $position;
+    width: 100%;
+    top: -200px;
+}
+
+@mixin about__img($width, $height, $border_radius, $overflow) {
+    width: $width;
+    height: $height;
+    border-radius: $border_radius;
+    overflow: $overflow;
+}
+
+@mixin about__img-big($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin about-container-title($padding_top) {
+    padding-top: $padding_top;
+}
+
+@mixin about-container__h3($color, $font_size, $font_weight, $font_family, $text_align) {
+    color: $color;
+    font-size: $font_size;
+    font-weight: $font_weight;
+    font-family: $font_family;
+    text-align: $text_align;
+}
+
+@mixin about-container($display, $flex_wrap, $flex_direction, $gap, $padding_bottom, $margin, $width) {
+    display: $display;
+    flex-wrap: $flex_wrap;
+    flex-direction: $flex_direction;
+    gap: $gap;
+    padding-bottom: $padding_bottom;
+    margin: $margin;
+    width: $width;
+}
+
+
+@mixin about-container-item($display, $flex_direction, $gap, $flex, $margin_top) {
+    display: $display;
+    flex-direction: $flex_direction;
+    gap: $gap;
+    flex: $flex;
+    margin-top: $margin_top;
+}
+
+
+@mixin about-item-circle($width, $height, $background, $border_radius, $flex_shrink) {
+    width: $width;
+    height: $height;
+    background-color: $background;
+    border-radius: $border_radius;
+    flex-shrink: $flex_shrink;
+}
+
+@mixin about-item-text($flex_grow) {
+    flex-grow: $flex_grow;
+}
+
+@mixin about-item-text-h4($font_size, $font_weight, $line_height) {
+    font-size: $font_size;
+    font-weight: $font_weight;
+    line-height: $line_height;
+}
+
+@mixin about-item-text-p($font_style, $margin, $line_height) {
+    font-style: $font_style;
+    margin: $margin;
+    line-height: $line_height;
+}

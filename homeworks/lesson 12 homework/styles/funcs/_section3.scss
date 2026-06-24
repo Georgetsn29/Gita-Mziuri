@@ -1,33 +1,33 @@
-section3 {
-    background-color: #000000;
+@mixin section($background) {
+    background-color: $background;
 }
 
-    .section3-images {
+@mixin section3-images($padding, $display, $justify_content, $align_item) {
 
-        padding: 40px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+    padding: $padding;
+    display: $display;
+    justify-content: $justify_content;
+    align-items: $align_item;
+}
 
-        img{
-            width: 384px;
-            height: 384px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
+@mixin section3-img($width, $height, $border_radius, $overflow) {
+    width: $width;
+    height: $height;
+    border-radius: $border_radius;
+    overflow: $overflow;
+}
 
-        .section__img-big {
-                width: 524px;
-                height: 524px;
-        }
+@mixin section3__img-big($width, $height) {
+    width: $width;
+    height: $height;
+}
         
     
 
-    .section3-content {
+@mixin section3-content($color, $text_align, $padding_bottom) {
 
-        color: $white_color;
-        text-align: center;
-        padding-bottom: 60px;
+    color: $color;
+    text-align: $text_align;
+    padding-bottom: $padding_bottom;
 
-    }
+}
