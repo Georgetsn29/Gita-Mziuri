@@ -1,9 +1,5 @@
-@mixin hero($background-color, $display, $flex_direction, $just-cont, $gap, $color) {
+@mixin hero($background-color, $color) {
     background-color: $background-color;
-    display: $display;
-    flex-direction: $flex_direction;
-    justify-content: $just-cont;
-    gap: $gap;
     color: $color;
 }
 

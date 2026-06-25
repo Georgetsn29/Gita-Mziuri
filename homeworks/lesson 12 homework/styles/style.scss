@@ -36,7 +36,9 @@ body {
 
 #hero {
 
-    @include hero($hero_background, flex, row, end, 40px, $white_color);
+    @include hero($hero_background, $white_color);
+    
+    @include flex(flex, row, end, baseline, 40px);
     
 
     .hero-left {
