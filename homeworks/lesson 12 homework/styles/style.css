@@ -68,6 +68,11 @@ body {
   font-family: Raleway, sans-serif;
   padding-top: 180px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  gap: unset;
 }
 #hero .hero-left .hero-left__h2 {
   font-size: 3rem;
@@ -130,23 +135,29 @@ body {
 }
 #sectionClass .online-class {
   padding-inline: 200px;
-  position: relative;
   width: 90%;
   z-index: 1;
+  position: relative;
+  top: unset;
+  bottom: unset;
+  left: unset;
+  right: unset;
 }
 #sectionClass .online-class .class-card-wrpper {
+  z-index: 1;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: unset;
   gap: 20px;
   position: absolute;
   top: -50px;
-  z-index: 1;
+  bottom: unset;
+  left: unset;
+  right: unset;
 }
 #sectionClass .online-class .class-card-wrpper .card {
   background-color: #f14a0e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   color: #ffffff;
   font-family: Raleway, sans-serif;
@@ -156,6 +167,13 @@ body {
 }
 #sectionClass .online-class .class-card-wrpper .card:nth-child(even) {
   background-color: #f57e54;
+}
+#sectionClass .online-class .class-card-wrpper .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: unset;
 }
 #sectionClass .online-class .class-card-wrpper .card .card-img {
   background-color: #ffffff;
@@ -185,8 +203,10 @@ body {
   border: 50px solid #f57e54;
   border-radius: 50%;
   position: absolute;
-  right: 80px;
   top: 440px;
+  bottom: unset;
+  left: unset;
+  right: 80px;
 }
 #sectionClass .circle-class .circle-img {
   width: 854px;
@@ -194,12 +214,17 @@ body {
   border-radius: 50%;
   overflow: hidden;
   border: 20px solid #f14a0e;
-  position: absolute;
-  top: 500px;
 }
 #sectionClass .circle-class .circle-img img {
   width: 100%;
   height: 100%;
+}
+#sectionClass .circle-class .circle-img {
+  position: absolute;
+  top: 500px;
+  bottom: unset;
+  left: unset;
+  right: unset;
 }
 #sectionClass .circle-class .circle2 {
   width: 200px;
@@ -208,6 +233,9 @@ body {
   background-color: #f14a0e;
   position: absolute;
   top: 1100px;
+  bottom: unset;
+  left: unset;
+  right: unset;
 }
 #sectionClass .circle-class .circle3 {
   width: 200px;
@@ -215,27 +243,32 @@ body {
   border: 40px solid #f57e54;
   border-radius: 50%;
   position: absolute;
-  left: 350px;
   top: 1400px;
+  bottom: unset;
+  left: 350px;
+  right: unset;
 }
 #sectionClass .circle-class .circle-card {
-  position: relative;
   flex: 1;
   max-width: 100%;
   transition-duration: inherit;
-  left: 400px;
-  top: 1000px;
   border-radius: 50%;
   background-color: #f14a0e;
   padding: 50px;
   width: 750px;
   height: 750px;
   text-align: center;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  gap: unset;
+  position: relative;
+  top: 1000px;
+  bottom: unset;
+  left: 400px;
+  right: unset;
 }
 #sectionClass .circle-class .circle-card .circle-card__h1 {
   font-size: 3.75rem;
@@ -291,8 +324,10 @@ body {
 #section3 .section3-images {
   padding: 40px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  gap: unset;
 }
 #section3 .section3-images img {
   width: 384px;
@@ -311,6 +346,11 @@ body {
   font-family: Raleway, sans-serif;
   padding-top: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  gap: unset;
 }
 #section3 .section3-content .section3-content__h2 {
   font-size: 3rem;
@@ -365,12 +405,17 @@ body {
   background-color: #ea480d;
 }
 #about .about-img {
+  width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  gap: unset;
   position: absolute;
-  width: 100%;
-  top: -200px;
+  top: -150px;
+  bottom: unset;
+  left: unset;
+  right: unset;
 }
 #about .about-img .about__img {
   width: 273px;
@@ -393,20 +438,24 @@ body {
   text-align: center;
 }
 #about .about-content .about-container {
-  display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  gap: 40px;
   padding-bottom: 40px;
   margin: 0 auto;
   width: 70%;
-}
-#about .about-content .about-container .about-container-item {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  justify-content: unset;
+  align-items: unset;
+  gap: 40px;
+}
+#about .about-content .about-container .about-container-item {
   flex: 1 500px;
   margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: unset;
+  gap: 20px;
 }
 #about .about-content .about-container .about-container-item .about-item-circle {
   width: 50px;
@@ -431,17 +480,27 @@ body {
 
 #traditional_cooking {
   height: 250vh;
-  padding-top: 40px;
+  padding-left: 40px;
   position: relative;
+  top: unset;
+  bottom: unset;
+  left: unset;
+  right: unset;
 }
 #traditional_cooking .traditional-circle {
   overflow: hidden;
   border-radius: 100%;
   border: 20px solid #ea480d;
-  position: absolute;
 }
 #traditional_cooking .traditional-circle img {
   width: 100%;
+}
+#traditional_cooking .traditional-circle {
+  position: absolute;
+  top: unset;
+  bottom: unset;
+  left: unset;
+  right: unset;
 }
 #traditional_cooking .tCircle1 {
   width: 320px;
@@ -459,17 +518,17 @@ body {
 #traditional_cooking .tCircle3 {
   width: 218px;
   height: 218px;
+  top: 65%;
+  left: 300px;
   border: none;
   background-color: #f57e54;
-  left: 65%;
-  top: 300px;
 }
 #traditional_cooking .tCircle4 {
+  border-width: 25px;
   width: 134px;
   height: 134px;
-  border-width: 25px;
-  left: 50%;
-  top: 500px;
+  top: 50%;
+  left: 500px;
 }
 #traditional_cooking .tCircle5 {
   width: 752px;
@@ -483,12 +542,19 @@ body {
   padding: 40px;
   border-radius: 60px;
   box-shadow: 5px 5px 20px #ea480d;
-  position: absolute;
-  top: 1200px;
-  left: 25%;
   font-family: Raleway, sans-serif;
   padding-top: 40px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  gap: unset;
+  position: absolute;
+  top: 1200px;
+  bottom: unset;
+  left: 25%;
+  right: unset;
 }
 #traditional_cooking .traditional_content .traditional_content__h2 {
   font-size: 3rem;

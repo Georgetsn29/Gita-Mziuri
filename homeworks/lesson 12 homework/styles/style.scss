@@ -90,17 +90,25 @@ body {
 
     .online-class {
 
-        @include online-class(200px, relative, 90%, $z-normal);
+        @include online-class(200px, 90%, $z-normal);
+
+        @include position(relative, unset, unset, unset, unset);
 
 
         .class-card-wrpper {
 
-            @include class-card-wrpper(flex, space-around, 20px, absolute, -50px, $z-normal);
+            @include class-card-wrpper($z-normal);
+
+            @include flex(flex, row, space-around, unset, 20px);
+
+            @include position(absolute, -50px, unset, unset, unset);
 
 
             .card {
 
-                @include card(#f14a0e, flex, column, center, center, $white_color, $font_family_raleway, 50px 20px, 50px, #f57e54, $z-normal);
+                @include card(#f14a0e, center, $white_color, $font_family_raleway, 50px 20px, 50px, #f57e54, $z-normal);
+
+                @include flex(flex, column, center, center, unset);
 
 
                 .card-img {
@@ -128,31 +136,43 @@ body {
 
         .cirle1 {
 
-            @include cirle1(250px, 250px, 50px solid #f57e54, 50%, absolute, 80px, 440px);
+            @include cirle1(250px, 250px, 50px solid #f57e54, 50%);
+
+            @include position(absolute, 440px, unset, unset, 80px);
 
         }
         
         .circle-img {
 
-            @include circle-img(854px, 854px, 50%, hidden, 20px solid #f14a0e, absolute, 500px);
+            @include circle-img(854px, 854px, 50%, hidden, 20px solid #f14a0e);
+
+            @include position(absolute, 500px, unset, unset, unset);
 
         }
 
         .circle2 {
 
-            @include circle2(200px, 200px, 50%, #f14a0e, absolute, 1100px);
+            @include circle2(200px, 200px, 50%, #f14a0e);
+
+            @include position(absolute, 1100px, unset, unset, unset);
 
         }
 
         .circle3 {
 
-            @include circle3(200px, 200px, 40px solid #f57e54, 50%, absolute, 350px, 1400px);
+            @include circle3(200px, 200px, 40px solid #f57e54, 50%);
+
+            @include position(absolute, 1400px, unset, 350px, unset);
 
         }
 
         .circle-card {
 
-            @include circle-card(relative, 1, 100%, inherit, 400px, 1000px,50%, #f14a0e, 50px, 750px, 750px, center, flex, column, center, center, $white_color);
+            @include circle-card(1, 100%, inherit, 50%, #f14a0e, 50px, 750px, 750px, center, $white_color);
+
+            @include flex(flex, column, center, center, unset);
+
+            @include position(relative, 1000px, unset, 400px, unset);
 
             .circle-card__h1 {
 
@@ -183,7 +203,9 @@ body {
 
     .section3-images {
 
-        @include section3-images(40px, flex, space-around, center);
+        @include section3-images(40px);
+        
+        @include flex(flex, row, space-around, center, unset);
 
         img{
 
@@ -204,7 +226,9 @@ body {
         @include section3-content($white_color, center, 80px);
 
 
-            @include text-wrapper(flex, column, $font_family_raleway, 20px, center);
+            @include text-wrapper($font_family_raleway, 20px, center);
+
+            @include flex(flex, column, unset, unset, unset);
 
             .section3-content__h2 {
 
@@ -234,7 +258,12 @@ body {
     @include section($orange_color);
 
     .about-img {
-        @include about-img(flex, space-around, center, absolute);
+
+        @include about-img(100%);
+
+        @include flex(flex, row, space-around, center, unset);
+
+        @include position(absolute, -150px, unset, unset, unset);
 
         .about__img {
             @include about__img(273px, 273px, 50%, hidden);
@@ -258,12 +287,16 @@ body {
 
         .about-container {
 
-            @include about-container(flex, wrap, row, 40px, 40px, 0 auto, 70%);
+            @include about-container(wrap, 40px, 0 auto, 70%);
+
+            @include flex(flex, row, unset, unset, 40px);
 
 
             .about-container-item {
 
-                @include about-container-item(flex, row, 20px, 1 500px, 60px);
+                @include about-container-item(1 500px, 60px);
+
+                @include flex(flex, row, unset, unset, 20px);
 
 
                 .about-item-circle {
@@ -296,70 +329,67 @@ body {
 
 
 #traditional_cooking {
-    height: 250vh;
-    padding-top: 40px;
-    position: relative; 
+
+    @include traditional_cooking(250vh, 40px);
+
+    @include position(relative, unset, unset, unset, unset);
 
 
     .traditional-circle {
-        overflow: hidden;
-        border-radius: 100%;
-        border: 20px solid $orange_color;
-        position: absolute;
 
+        @include traditional_circle(hidden, 100%, 20px solid $orange_color, 100%);
+        
+        @include position(absolute, unset, unset, unset, unset);
 
-        img {
-            width: 100%;
-        }
     }
 
     .tCircle1 {
-        width: 320px;
-        height: 320px;
-        top: 70px;
-        left: 50%;
-        transform: translateX(-50%);
+
+        @include tCircle(320px, 320px, 70px, 50%);
+
+        @include tCircle1(translateX(-50%));
+
     }
 
     .tCircle2 {
-        width: 500px;
-        height: 500px;
-        top: 400px;
-        left: 15%;
+
+        @include tCircle(500px, 500px, 400px, 15%);
+
     }
 
     .tCircle3 {
-        width: 218px;
-        height: 218px;
-        border: none;
-        background-color: #f57e54;
-        left: 65%;
-        top: 300px;
+
+        @include tCircle(218px, 218px, 65%, 300px);
+
+        @include tCircle3(none, #f57e54);
+
     }
 
     .tCircle4 {
-        width: 134px;
-        height: 134px;
-        border-width: 25px;
-        left: 50%;
-        top: 500px;
+
+        @include tCircle4(25px);
+
+        @include tCircle(134px, 134px, 50%, 500px);
+
     }
 
     .tCircle5 {
-        width: 752px;
-        height: 752px;
-        top: 700px;
-        left: 45%;
+
+        @include tCircle(752px, 752px, 700px, 45%);
+        
     }
-
-
 
 
     .traditional_content {
 
-        @include traditional_content($orange_color, 39.4%, 40px, 60px, 5px 5px 20px $orange_color, absolute);
+        @include traditional_content($orange_color, 39.4%, 40px, 60px, 5px 5px 20px $orange_color);
 
-        @include text-wrapper(flex, column, $font_family_raleway, 40px, left);
+        @include text-wrapper($font_family_raleway, 40px, left);
+
+        @include flex(flex, column, unset, unset, unset);
+
+        @include position(absolute, 1200px, unset, 25%, unset);
+
 
         .traditional_content__h2 {
 

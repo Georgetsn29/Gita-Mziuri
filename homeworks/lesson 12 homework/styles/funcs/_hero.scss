@@ -3,9 +3,6 @@
     color: $color;
 }
 
-
-
-
 @mixin text-wrapper($font_family, $padding_top, $text-align) {
     font-family: $font_family;
     padding-top: $padding_top;

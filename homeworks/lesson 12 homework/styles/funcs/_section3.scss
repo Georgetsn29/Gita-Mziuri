@@ -2,12 +2,9 @@
     background-color: $background;
 }
 
-@mixin section3-images($padding, $display, $justify_content, $align_item) {
+@mixin section3-images($padding) {
 
     padding: $padding;
-    display: $display;
-    justify-content: $justify_content;
-    align-items: $align_item;
 }
 
 @mixin section3-img($width, $height, $border_radius, $overflow) {
@@ -21,8 +18,6 @@
     width: $width;
     height: $height;
 }
-        
-    
 
 @mixin section3-content($color, $text_align, $padding_bottom) {
 

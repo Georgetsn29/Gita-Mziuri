@@ -2,13 +2,8 @@
     position: $position;
 }
 
-@mixin about-img($display, $justify_content, $align_items, $position) {
-    display: $display;
-    justify-content: $justify_content;
-    align-items: $align_items;
-    position: $position;
-    width: 100%;
-    top: -200px;
+@mixin about-img($width) {
+    width: $width;
 }
 
 @mixin about__img($width, $height, $border_radius, $overflow) {
@@ -35,21 +30,15 @@
     text-align: $text_align;
 }
 
-@mixin about-container($display, $flex_wrap, $flex_direction, $gap, $padding_bottom, $margin, $width) {
-    display: $display;
+@mixin about-container($flex_wrap, $padding_bottom, $margin, $width) {
     flex-wrap: $flex_wrap;
-    flex-direction: $flex_direction;
-    gap: $gap;
     padding-bottom: $padding_bottom;
     margin: $margin;
     width: $width;
 }
 
 
-@mixin about-container-item($display, $flex_direction, $gap, $flex, $margin_top) {
-    display: $display;
-    flex-direction: $flex_direction;
-    gap: $gap;
+@mixin about-container-item($flex, $margin_top) {
     flex: $flex;
     margin-top: $margin_top;
 }
