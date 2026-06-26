@@ -1,11 +1,6 @@
-@mixin nav-header($background, $display, $flex_direction, $justify_content, $padding, $position, $top, $width, $z-index) {
+@mixin nav-header($background, $padding, $width, $z-index) {
     background-color: $background;
-    display: $display;
-    flex-direction: $flex_direction;
-    justify-content: $justify_content;
     padding: $padding;
-    position: $position;
-    top: $top;
     width: $width;
     z-index: $z-index;
 }

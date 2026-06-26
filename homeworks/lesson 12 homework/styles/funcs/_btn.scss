@@ -1,0 +1,22 @@
+@mixin btn($width, $background_color, $padding, $border, $border_radius, $color, $font_size, $font_weight, $text_transform, $letter_spacing, $margin_top, $transition, $box_shadow, $btn_color, $margin) {
+
+    width: $width;
+    background-color: $background_color;
+    padding: $padding;
+    border: $border;
+    border-radius: $border_radius;
+    color: $color;
+    font-size: $font_size;
+    font-weight: $font_weight;
+    text-transform: $text_transform;
+    letter-spacing: $letter_spacing;
+    margin-top: $margin_top;
+    transition: $transition;
+    margin: $margin;
+
+    &:hover {
+        background-color: transparent;
+        box-shadow: $box_shadow;
+        color: $btn_color;
+    }
+}

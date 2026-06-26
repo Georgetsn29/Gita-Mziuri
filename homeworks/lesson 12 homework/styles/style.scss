@@ -17,7 +17,11 @@ body {
 .nav-header {
 
 
-    @include nav-header($nav_background, flex, row, space-between, 10px 200px, sticky, 0, 100%, $z-header);
+    @include nav-header($nav_background, 10px 200px, 100%, $z-header);
+
+    @include position(sticky, 0, unset, unset, unset);
+
+    @include flex(flex, row, space-between, baseline, unset);
 
     
 
@@ -38,12 +42,14 @@ body {
 
     @include hero($hero_background, $white_color);
     
-    @include flex(flex, row, end, baseline, 40px);
+    @include flex(flex, row, end, flex-start, 40px);
     
 
     .hero-left {
 
-        @include text-wrapper(flex, column, $font_family_raleway, 180px, left);
+        @include text-wrapper($font_family_raleway, 180px, left);
+
+        @include flex(flex, column, unset, unset, unset);
 
         .hero-left__h2 {
 
@@ -65,7 +71,7 @@ body {
 
         .hero-left__btn {
 
-            @include text-wrapper__btn(45%, $orange_color, 15px, none, 50px, $white_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px #ea480d, $white_color, 0);
+            @include btn(45%, $orange_color, 15px, none, 50px, $white_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px #ea480d, $white_color, 0);
 
         }
     }
@@ -162,7 +168,7 @@ body {
             }
 
             .circle-card__btn {
-                @include text-wrapper__btn(45%, $white_color, 15px, none, 50px, $orange_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px $white_color, $white_color, 0);
+                @include btn(45%, $white_color, 15px, none, 50px, $orange_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px $white_color, $white_color, 0);
             }
 
 
@@ -214,7 +220,7 @@ body {
             }
 
             .section3-content__btn {
-                @include text-wrapper__btn(15%, $orange_color, 15px, none, 50px, $white_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px #ea480d, $white_color, 0 auto);
+                @include btn(15%, $orange_color, 15px, none, 50px, $white_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px #ea480d, $white_color, 0 auto);
             }
         }
 
@@ -375,7 +381,7 @@ body {
 
         .traditional_content__btn {
 
-            @include text-wrapper__btn(45%, $white_color, 15px, none, 50px, $orange_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px $white_color, $white_color, 0);
+            @include btn(45%, $white_color, 15px, none, 50px, $orange_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px $white_color, $white_color, 0);
 
         }
     }

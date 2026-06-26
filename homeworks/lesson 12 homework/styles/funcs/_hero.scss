@@ -6,10 +6,8 @@
 
 
 
-@mixin text-wrapper($display, $flex_direction, $hero_font_family, $padding_top, $text-align) {
-    display: $display;
-    flex-direction: $flex_direction;
-    font-family: $hero_font_family;
+@mixin text-wrapper($font_family, $padding_top, $text-align) {
+    font-family: $font_family;
     padding-top: $padding_top;
     text-align: $text-align;
 }
@@ -46,32 +44,6 @@
         text-decoration: none;
     }
 }
-
-@mixin text-wrapper__btn($width, $background_color, $padding, $border, $border_radius, $color, $font_size, $font_weight, $text_transform, $letter_spacing, $margin_top, $transition, $box_shadow, $btn_color, $margin) {
-
-    width: $width;
-    background-color: $background_color;
-    padding: $padding;
-    border: $border;
-    border-radius: $border_radius;
-    color: $color;
-    font-size: $font_size;
-    font-weight: $font_weight;
-    text-transform: $text_transform;
-    letter-spacing: $letter_spacing;
-    margin-top: $margin_top;
-    transition: $transition;
-    margin: $margin;
-
-    &:hover {
-        background-color: transparent;
-        box-shadow: $box_shadow;
-        color: $btn_color;
-    }
-}
-
-
-
 
 
 @mixin hero-right($width, $img_width) {
