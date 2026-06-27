@@ -1,0 +1,9 @@
+for git 
+
+git --version
+git config --global user.name
+git config --global --unset -ექაუნთის წაშლა ტერმინალიდან
+git config --global --unset user.name
+git config --global --unset user.email
+git config --global user.email
+git config --global user.name
