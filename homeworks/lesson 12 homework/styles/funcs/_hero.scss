@@ -17,7 +17,7 @@
     margin-bottom: $margin_bottom;
 }
 
-@mixin text-wrapper__p($margin_block, $line_height, $font_size, $font_weight, $margin_top){
+@mixin text-wrapper__p($margin_block, $line_height, $font_size, $font_weight, $margin_top) {
     margin-block: $margin_block;
     line-height: $line_height;
     letter-spacing: 1px;
@@ -29,19 +29,19 @@
     }
 }
 
-@mixin text-wrapper__a($color, $text_dec, $text_underline_offset, $transition) {
+@mixin a_underline($color, $text_dec, $text_underline_offset, $text_decoration_color, $transition, $hover_decoration) {
     color: $color;
     text-decoration: $text_dec;
     text-underline-offset: $text_underline_offset;
     text-decoration-thickness: 1px;
+    text-decoration-color: $text_decoration_color;
     transition: $transition;
-    
 
     &:hover {
-        text-decoration: none;
+        text-decoration: $hover_decoration;
+        text-decoration-thickness: 1px;
     }
 }
-
 
 @mixin hero-right($width, $img_width) {
     width: $width;

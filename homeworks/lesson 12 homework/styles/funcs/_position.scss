@@ -1,4 +1,4 @@
-@mixin position($position, $top, $bottom, $left, $right) {
+@mixin position($position, $top: null, $bottom: null, $left: null, $right: null) {
     position: $position;
     top: $top;
     bottom: $bottom;

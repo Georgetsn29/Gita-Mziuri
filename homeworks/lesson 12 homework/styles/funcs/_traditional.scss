@@ -12,20 +12,18 @@
 }
 
 @mixin traditional_circle($overflow, $border_radius, $border, $img_width) {
-        overflow: $overflow;
-        border-radius: $border_radius;
-        border: $border;
+    overflow: $overflow;
+    border-radius: $border_radius;
+    border: $border;
 
-        img {
-            width: $img_width;
-        }
+    img {
+        width: $img_width;
+    }
 }
 
 @mixin tCircle1($transform) {
-
     transform: $transform;
-
-} 
+}
 
 @mixin tCircle($width, $height, $top, $left) {
     width: $width;
@@ -35,10 +33,8 @@
 }
 
 @mixin tCircle3($border, $background) {
-
     border: $border;
     background-color: $background;
-
 }
 
 @mixin tCircle4($border_width) {

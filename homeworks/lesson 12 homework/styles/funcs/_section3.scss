@@ -3,7 +3,6 @@
 }
 
 @mixin section3-images($padding) {
-
     padding: $padding;
 }
 
@@ -20,9 +19,7 @@
 }
 
 @mixin section3-content($color, $text_align, $padding_bottom) {
-
     color: $color;
     text-align: $text_align;
     padding-bottom: $padding_bottom;
-
 }

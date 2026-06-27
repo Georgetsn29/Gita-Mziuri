@@ -1,4 +1,4 @@
-@import './globals';
+@import './global';
 
 * {
     margin: 0;
@@ -11,172 +11,111 @@
 body {
     font-family: $font_family_raleway;
     color: $white_color;
-
 }
 
 .nav-header {
-
-
     @include nav-header($nav_background, 10px 200px, 100%, $z-header);
+    @include position(sticky, 0);
+    @include flex(row, nowrap, space-between, baseline);
 
-    @include position(sticky, 0, unset, unset, unset);
-
-    @include flex(flex, row, space-between, baseline, unset);
-
-    
-
-    .header-logo a{
-
+    .header-logo a {
         @include nav-logo($nav_color, cursive, 600, 30px);
-
     }
 
     .nav__burger {
-
         @include nav__burger(40px, $nav_color, $transition, $orange_color);
-
     }
 }
 
 #hero {
-
     @include hero($hero_background, $white_color);
-    
-    @include flex(flex, row, end, flex-start, 40px);
-    
+    @include flex(row, nowrap, end, flex-start, 40px);
 
     .hero-left {
-
         @include text-wrapper($font_family_raleway, 180px, left);
-
-        @include flex(flex, column, unset, unset, unset);
+        @include flex(column);
 
         .hero-left__h2 {
-
             @include text-wrapper__h(3rem, 1, $font_family_raleway, 500, 0);
-
         }
 
         .hero-left__p {
-
             @include text-wrapper__p(30px, 2, 1rem, 500, 30px);
-
         }
 
         .hero-left__a {
-
-            @include text-wrapper__a($white_color, underline, 6px, $transition);
-
+            @include a_underline($white_color, underline, 6px, $white_color, $transition, none);
         }
 
         .hero-left__btn {
-
             @include btn(45%, $orange_color, 15px, none, 50px, $white_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px #ea480d, $white_color, 0);
-
         }
     }
 
     .hero-right {
-
         @include hero-right(50.3%, 100%);
-        
     }
 }
 
 #sectionClass {
-
-
     @include sectionClass(relative, 250vh, $z-normal);
 
     .online-class {
-
         @include online-class(200px, 90%, $z-normal);
-
-        @include position(relative, unset, unset, unset, unset);
-
+        @include position(relative);
 
         .class-card-wrpper {
-
             @include class-card-wrpper($z-normal);
-
-            @include flex(flex, row, space-around, unset, 20px);
-
-            @include position(absolute, -50px, unset, unset, unset);
-
+            @include flex(row, nowrap, space-around, null, 20px);
+            @include position(absolute, -50px);
 
             .card {
-
                 @include card(#f14a0e, center, $white_color, $font_family_raleway, 50px 20px, 50px, #f57e54, $z-normal);
-
-                @include flex(flex, column, center, center, unset);
-
+                @include flex(column, nowrap, center, center);
 
                 .card-img {
-
                     @include card-img($white_color, 50%, 100px, 100px, 20px);
-
                 }
 
                 .card__h4 {
-
                     @include card__h4(1.5rem, 30px, capitalize, 500);
-
                 }
 
                 .card__p {
-                    
                     @include card__p(0.888889rem, 20px, 20px, 0.2px);
-
                 }
             }
         }
     }
 
     .circle-class {
-
         .cirle1 {
-
             @include cirle1(250px, 250px, 50px solid #f57e54, 50%);
-
-            @include position(absolute, 440px, unset, unset, 80px);
-
+            @include position(absolute, 440px, null, 1000px);
         }
         
         .circle-img {
-
             @include circle-img(854px, 854px, 50%, hidden, 20px solid #f14a0e);
-
-            @include position(absolute, 500px, unset, unset, unset);
-
+            @include position(absolute, 500px);
         }
 
         .circle2 {
-
             @include circle2(200px, 200px, 50%, #f14a0e);
-
-            @include position(absolute, 1100px, unset, unset, unset);
-
+            @include position(absolute, 1100px);
         }
 
         .circle3 {
-
             @include circle3(200px, 200px, 40px solid #f57e54, 50%);
-
-            @include position(absolute, 1400px, unset, 350px, unset);
-
+            @include position(absolute, 1400px, null, 350px);
         }
 
         .circle-card {
-
             @include circle-card(1, 100%, inherit, 50%, #f14a0e, 50px, 750px, 750px, center, $white_color);
-
-            @include flex(flex, column, center, center, unset);
-
-            @include position(relative, 1000px, unset, 400px, unset);
+            @include flex(column, nowrap, center, center);
+            @include position(relative, 1000px, null, 400px);
 
             .circle-card__h1 {
-
-                    @include text-wrapper__h(3.75rem, 1, $font_family_raleway, 400, 32px);
+                @include text-wrapper__h(3.75rem, 1, $font_family_raleway, 400, 32px);
             }
 
             .circle-card__p {
@@ -184,86 +123,63 @@ body {
             }
 
             .circle-card__a {
-                @include text-wrapper__a($white_color, underline, 6px, $transition);
+                @include a_underline($white_color, underline, 6px, $white_color, $transition, none);
             }
 
             .circle-card__btn {
                 @include btn(45%, $white_color, 15px, none, 50px, $orange_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px $white_color, $white_color, 0);
             }
-
-
-
         }
     }
 }
 
 #section3 {
-
     @include section($black_color);
 
     .section3-images {
-
         @include section3-images(40px);
-        
-        @include flex(flex, row, space-around, center, unset);
+        @include flex(row, nowrap, space-around, center);
 
-        img{
-
+        img {
             @include section3-img(384px, 384px, 50%, hidden);
-
         }
 
         .section__img-big {
-
-                @include section3__img-big(524px, 524px);
-
+            @include section3__img-big(524px, 524px);
         }
-        
     }
 
     .section3-content {
-
         @include section3-content($white_color, center, 80px);
+        @include text-wrapper($font_family_raleway, 20px, center);
+        @include flex(column, $justify: center, $align: center);
 
-
-            @include text-wrapper($font_family_raleway, 20px, center);
-
-            @include flex(flex, column, unset, unset, unset);
-
-            .section3-content__h2 {
-
-                    @include text-wrapper__h(3rem, 1.1, $font_family_raleway, 400, 3px);
-            }
-
-            .section3-content__p {
-                @include text-wrapper__p(30px, 2, 1.125rem, 700, 30px);
-            }
-
-            .section3-content__a {
-                @include text-wrapper__a($white_color, underline, 6px, $transition);
-            }
-
-            .section3-content__btn {
-                @include btn(15%, $orange_color, 15px, none, 50px, $white_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px #ea480d, $white_color, 0 auto);
-            }
+        .section3-content__h2 {
+            @include text-wrapper__h(3rem, 1.1, $font_family_raleway, 400, 3px);
         }
 
+        .section3-content__p {
+            @include text-wrapper__p(30px, 2, 1.125rem, 700, 30px);
+        }
+
+        .section3-content__a {
+            @include a_underline($white_color, underline, 6px, $white_color, $transition, none);
+        }
+
+        .section3-content__btn {
+            @include btn(15%, $orange_color, 15px, none, 50px, $white_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px #ea480d, $white_color, 0 auto);
+        }
+    }
 }
 
-
-
 #about {
-
     @include about(relative);
     @include section($orange_color);
 
     .about-img {
-
         @include about-img(100%);
-
-        @include flex(flex, row, space-around, center, unset);
-
-        @include position(absolute, -150px, unset, unset, unset);
+        @include flex(row, nowrap, space-around, center);
+        @include position(absolute, -150px);
 
         .about__img {
             @include about__img(273px, 273px, 50%, hidden);
@@ -275,144 +191,336 @@ body {
     }
 
     .about-content {
-
         .about-container-title {
-
             @include about-container-title(400px);
 
-            h3{
+            h3 {
                 @include about-container__h3($white_color, 2.25rem, 700, $font_family_montserrat, center);
             }
         }
 
         .about-container {
-
-            @include about-container(wrap, 40px, 0 auto, 70%);
-
-            @include flex(flex, row, unset, unset, 40px);
-
+            @include about-container(40px, 0 auto, 70%);
+            @include flex(row, wrap, null, null, 40px);
 
             .about-container-item {
-
                 @include about-container-item(1 500px, 60px);
-
-                @include flex(flex, row, unset, unset, 20px);
-
+                @include flex(row, nowrap, null, null, 20px);
 
                 .about-item-circle {
-
                     @include about-item-circle(50px, 50px, $white_color, 50%, 0);
-
                 }
 
                 .about-item-text {
-
                     @include about-item-text(1);
 
                     h4 {
-
                         @include about-item-text-h4(1.5rem, 600, 1.2);
-
                     }
 
                     p {
-
                         @include about-item-text-p(italic, 21px 0, 2);
-
                     }
                 }
             }
         }
     }
-
 }
 
-
 #traditional_cooking {
-
     @include traditional_cooking(250vh, 40px);
-
-    @include position(relative, unset, unset, unset, unset);
-
+    @include position(relative);
 
     .traditional-circle {
-
         @include traditional_circle(hidden, 100%, 20px solid $orange_color, 100%);
-        
-        @include position(absolute, unset, unset, unset, unset);
-
+        @include position(absolute);
     }
 
     .tCircle1 {
-
         @include tCircle(320px, 320px, 70px, 50%);
-
         @include tCircle1(translateX(-50%));
-
     }
 
     .tCircle2 {
-
         @include tCircle(500px, 500px, 400px, 15%);
-
     }
 
     .tCircle3 {
-
-        @include tCircle(218px, 218px, 65%, 300px);
-
+        @include tCircle(218px, 218px, 20%, 1000px);
         @include tCircle3(none, #f57e54);
-
     }
 
     .tCircle4 {
-
         @include tCircle4(25px);
-
-        @include tCircle(134px, 134px, 50%, 500px);
-
+        @include tCircle(134px, 134px, 29%, 780px);
     }
 
     .tCircle5 {
-
         @include tCircle(752px, 752px, 700px, 45%);
-        
     }
 
-
     .traditional_content {
-
         @include traditional_content($orange_color, 39.4%, 40px, 60px, 5px 5px 20px $orange_color);
-
         @include text-wrapper($font_family_raleway, 40px, left);
-
-        @include flex(flex, column, unset, unset, unset);
-
-        @include position(absolute, 1200px, unset, 25%, unset);
-
+        @include flex(column);
+        @include position(absolute, 1200px, null, 25%);
 
         .traditional_content__h2 {
-
             @include text-wrapper__h(3rem, 1.1, $font_family_raleway, 400, 0);
-
         }
 
         .traditional_content__p {
-
             @include text-wrapper__p(30px, 2, 1.125rem, 500, 30px);
-
         }
 
         .traditional_content__a {
-
-            @include text-wrapper__a($white_color, underline, 6px, $transition);
-
+            @include a_underline($white_color, underline, 6px, $white_color, $transition, none);
         }
 
         .traditional_content__btn {
-
             @include btn(45%, $white_color, 15px, none, 50px, $orange_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px $white_color, $white_color, 0);
-
         }
+    }
+}
+
+#why_us {
+    background-color: $black_color;
+    height: 360vh;
+    @include position(relative);
+
+    .why-us__img {
+        width: 100%;
+        height: 100vh;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .why-us-container {
+        @include flex(row, wrap, space-around, null, 15px);
+        padding: 220px;
+        @include position(absolute, 250px);
+
+        .why-us-card {
+            background-color: #555c663b;
+            padding: 50px 30px;
+            border-radius: 40px;
+            @include flex(column, nowrap, space-around, null, 20px);
+
+            .why-us-card__number {
+                width: 100px;
+                height: 100px;
+                background-color: $orange_color;
+                border-radius: 50%;
+                @include flex(row, nowrap, center, center);
+
+                h4 {
+                    font-size: 3.437rem;
+                    font-weight: 400;
+                    font-family: $font_family_oswald;
+                }
+            }
+
+            .why-us-card__h4 {
+                @include text-wrapper__h(1.37rem, 1.2, $font_family_raleway, 500, -20px);
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            .why-us-card__p {
+                font-style: italic;
+                margin: 39px auto 0 0;
+                color: #848484;
+            }
+
+            .why-us-card__a {
+                @include a_underline($white_color, underline, 5px, $orange_color, $transition, underline $white_color);
+            }
+        }
+
+        .why-us__freepik {
+            @include text-wrapper__p(30px, 2, 1rem, 500, 30px);
+
+            .Freepik__a {
+                @include a_underline($white_color, underline, 5px, $white_color, $transition, none);
+            }
+        }
+    }
+
+    .why-us-wrapper {
+        @include flex(row, nowrap, space-around, null, 20px);
+
+        .why-us-left {
+            @include position(relative, 700px);
+            width: 32%;
+
+            h5 {
+                @include text-wrapper__h(1.5rem, 1.8, $font_family_montserrat, 700, 0);
+            }
+
+            .why-us-left__img {
+                @include traditional_circle(hidden, 50%, 10px solid $orange_color, 100%);
+                width: 334px;
+                height: 334px;
+                position: absolute;
+                right: 0px;
+                bottom: 250px;
+            }
+        }
+
+        .why-us-right {
+            width: 26%;
+            @include position(relative, 600px);
+            @include text-wrapper($font_family_raleway, 180px, left);
+            @include flex(column);
+
+            .why-us-right__h2 {
+                @include text-wrapper__h(3rem, 1, $font_family_raleway, 500, 20px);
+            }
+
+            .why-us-right__p {
+                @include text-wrapper__p(15px, 2, 1rem, 500, 20px);
+            }
+
+            .why-us-right__a {
+                @include a_underline($white_color, underline, 6px, $white_color, $transition, none);
+            }
+
+            .why-us-right__btn {
+                @include btn(70%, $orange_color, 15px, none, 50px, $white_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px #ea480d, $white_color, 0);
+            }
+        }
+    }
+}
+
+
+#form {
+
+    @include position(relative);
+    @include flex(row, $justify: center,);
+    margin-top: -300px;
+
+    .form_contact {
+        width: 25%;
+        background-color: $orange_color;
+        @include flex(column, $gap: 20px);
+        padding: 40px;
+
+            .contact {
+
+                .contact-title {
+                    @include flex(row, $gap: 20px);
+                    margin-bottom: 20px;
+
+                    i {
+                        font-size: 1.25rem;
+                    }
+
+                    h5 {
+                        @include text-wrapper__h(1.37rem, 1, $font_family_raleway, 700, 20px);
+                        text-transform: uppercase;
+                    }
+                }
+
+                p {
+                    @include text-wrapper__p(20px, 2, 0.9rem, 700, 20px);
+                }
+            }
+
+            .form-contact__p {
+                @include text-wrapper__p(15px, 2, 1rem, 500, 20px);
+            }
+
+            .form-contact__a {
+                @include a_underline($white_color, underline, 6px, $white_color, $transition, none);
+            }
+    }
+
+    .form-main {
+        width: 25%;
+        @include flex(column, $gap: 10px);
+        padding: 40px;
+        color: $black_color;
+        background-color: $white_color;
+
+        h3 {
+            @include text-wrapper__h(1.87rem, 1.2, $font_family_raleway, 700, 0);
+        }
+
+        p {
+            @include text-wrapper__p(30px, 2, 1.1rem, 500, 30px);
+        }
+        
+
+        form {
+            @include flex(column, $gap: 10px);
+            width: 100%;
+             
+            input {
+                width: 100%;
+                border: none;
+                border-bottom: 2px solid $black_color;
+                outline: none;
+                padding: 8px 0;
+                transition: border-color 0.2s ease;
+                padding: 10px;
+                background-color: transparent;
+
+                &:focus {
+                    border-bottom: 2px solid $black_color;
+                }
+            }
+
+            textarea {
+                width: 100%;
+                outline: none;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid $black_color;
+                padding: 10px;
+                resize: none;
+                height: 150px;
+            }
+
+            .form_btn {
+                @include btn(100%, $orange_color, 15px, none, 50px, $white_color, 16px, 600, uppercase, 3px, 20px, $transition, 0px 0px 20px $orange_color, $orange_color, 0);
+            }
+        }
+    }
+
+    .from__img {
+        width: 26%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+#footer {
+
+    padding-block: 60px 40px;
+    margin-top: 60px;
+    background-color: $black_color;
+
+    @include flex(column, $align: center, $gap: 20px);
+
+    .footer-logo a {
+        @include nav-logo($nav_color, cursive, 600, 40px);
+    }
+
+    .footer-socials {
+        width: 10%;
+        @include flex(row, $justify: space-between);
+
+    }
+
+    .footer-line {
+        width: 80%;
+        height: 1px;
+        background-color: #848484;
     }
 }
