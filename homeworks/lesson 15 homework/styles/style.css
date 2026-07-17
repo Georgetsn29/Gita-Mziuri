@@ -1,5 +1,10 @@
 .main-nav {
-    background-color: #062a4d;
+    background-color: #062a4da8;
+    height: 12vh;
+    margin-top: 20px;
+    position: fixed;
+    width: 97%;
+    backdrop-filter: blur(5px);
 }
 
 .main-nav__link {
@@ -9,19 +14,27 @@
     font-family: 'Oswald', sans-serif;
     position: relative;
     transition: all 0.2s;
+    z-index: 1;
+}
+
+.main-nav__link:focus {
+    color: #a3b4dc;
 }
 
 .main-nav__link::after {
   content: '';
   position: absolute;
   width: 100%;
-  height: 2px;              
-  bottom: 2px;             
+  height: 10px;              
+  bottom: 15px;             
   left: 0;
-  background-color: #ffffff;
+  background-color: #4163b5;
   transform: scaleX(0);
   transform-origin: bottom left;
   transition: transform 0.3s ease-in-out;
+  z-index: -999;
+  rotate: -4deg;
+  border-radius: 10px;
 }
 
 .main-nav__link:hover::after {
@@ -29,7 +42,8 @@
 }
 
 .main-nav__link:hover {
-    color: #a3b4dc;
+    /* color: #a3b4dc; */
+    color: #dee4f1;
 }
 
 .main-nav__link--active {
@@ -37,7 +51,7 @@
 }
 
 .main-nav__link--active:hover {
-    color: #ffffff;
+    color: #dee4f1;
 }
 
 .main-nav__socials--link {
