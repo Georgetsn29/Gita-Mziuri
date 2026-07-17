@@ -1,5 +1,11 @@
+body {
+    background-image: url('https://doorwin.onlywebcoding.com.ua/images/bg-header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .main-nav {
-    background-color: #062a4da8;
+    background-color: #062a4d6b;
     height: 12vh;
     margin-top: 20px;
     position: fixed;
@@ -12,6 +18,7 @@
     color: #ffffff;
     letter-spacing: -1px;
     font-size: 18px;
+    font-weight: bold;
     font-family: 'Oswald', sans-serif;
     position: relative;
     transition: all 0.2s;
