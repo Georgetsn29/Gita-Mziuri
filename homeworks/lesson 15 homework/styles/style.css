@@ -5,6 +5,7 @@
     position: fixed;
     width: 97%;
     backdrop-filter: blur(5px);
+    z-index: 999;
 }
 
 .main-nav__link {
