@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Lesson 16 Homework</title>
+</head>
+<body>
+
+    <div class="back-img-wrapper" style="position: relative;">
+
+        <!-- Carousel Background -->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+            <div class="carousel-indicators" style="z-index: 10;">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner" style="height: 100vh;">
+                <div class="carousel-item active" style="height: 100vh;">
+                    <img src="https://images.pexels.com/photos/2387819/pexels-photo-2387819.jpeg" class="d-block w-100 h-100" alt="Slide 1" style="object-fit: cover;">
+                </div>
+                <div class="carousel-item" style="height: 100vh;">
+                    <img src="https://images.pexels.com/photos/4337898/pexels-photo-4337898.jpeg" class="d-block w-100 h-100" alt="Slide 2" style="object-fit: cover;">
+                </div>
+                <div class="carousel-item" style="height: 100vh;">
+                    <img src="https://images.pexels.com/photos/6395415/pexels-photo-6395415.jpeg" class="d-block w-100 h-100" alt="Slide 3" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="nav-header">
+            <div class="nav-logo">
+                <a href="#"><img src="https://amincode.com/tm-html/flex-it/assets/images/logo/logo-light.png" alt="Logo" class="nav-logo__img"></a>    
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="action animate__animated animate__bounceInDown"><a href="#" class="action">Home</a></li>
+                    <li class="animate__animated animate__bounceInDown animate__delay-1s"><a href="#aboutUs">About Us</a></li>
+                    <li class="animate__animated animate__bounceInDown animate__delay-2s"><a href="#services">Services</a></li>
+                    <li class="animate__animated animate__bounceInDown animate__delay-4s"><a href="#">Portfolio</a></li>
+                    <li class="animate__animated animate__bounceInDown animate__delay-5s"><a href="#process">Process</a></li>
+                    <li class="animate__animated animate__bounceInDown animate__delay-3s"><a href="#testimonials">Testimonials</a></li>
+                    <li class="animate__animated animate__bounceInDown"><a href="#blog">Blog</a></li>
+                    <li class="animate__animated animate__bounceInDown animate__delay-5s my-element"><a href="#contactUs">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <main>
+            <section id="hero" style="min-height: 100vh; position: relative; z-index: 2;">
+                <div class="hero-socials">
+                    <a class="hero-socials__a" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="hero-socials__a" href="#"><i class="bi bi-youtube"></i></a>
+                    <a class="hero-socials__a" href="#"><i class="bi bi-instagram"></i></a>
+                    <a class="hero-socials__a" href="#"><i class="bi bi-twitter-x"></i></a>
+                </div>
+
+                <div class="hero-main-div">
+                    <p class="hero-main-div__first-p">&#8226; IT SOLUTIONS &#8226;</p>
+                    <h1 class="hero-main-div__h1 animate__animated animate__jackInTheBox">Providing Best Services & IT <span>Solutions</span></h1>
+                    <p class="hero-main-div__second-p animate__animated animate__bounceInUp animate__delay-2s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sint explicabo necessitatibus voluptates labore, dolorum dolorem laboriosam debitis ea delectus.</p>
+                </div>
+
+                <div class="hero-btn-wrap">
+                    <div class="hero__btn hero__btn-on animate__animated animate__lightSpeedInLeft">Start Now</div>
+                    <div class="hero__btn animate__animated animate__lightSpeedInRight">Contact Us</div>
+                </div>
+
+                <div class="hero-scroll-indicator">
+                    <a href="#aboutUs" class="scroll-arrow animate__animated animate__swing animate__slow animate__infinite">
+                        <i class="bi bi-arrow-down-short"></i>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="aboutUs">
+        <div class="about-wrapper">
+            <div class="about-left">
+                <img src="https://images.pexels.com/photos/14753432/pexels-photo-14753432.jpeg" alt="About Image" class="about-left__img" data-aos="fade-right">
+            </div>
+            <div class="about-right-wrapper">
+                <p class="about-right__sub-title sub-title sub-animation">About Us</p>
+                <h2 class="about-right__h2 h2-title">Visionary Design <br> Exceptional Craftsmanship</h2>
+                <p class="about-right__lid-p">With over two decades of experience, Luxe Studio has redefined the boundaries between architecture and interior design.</p>
+                <p class="about-right__sec-p">Our team of award-winning architects and designers collaborate closely with clients to transform spaces into extraordinary environments that reflect their unique vision and lifestyle.</p>
+
+                <div class="about-right__stats-row">
+                    <div class="stat-item" data-aos="fade-up">
+                        <h3 class="stat-item__h3 jello-animation">200+</h3>
+                        <p class="stat-item__p">Projects Completed</p>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="stat-item__h3 jello-animation">15+</h3>
+                        <p class="stat-item__p">Awards Won</p>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="stat-item__h3 jello-animation">98%</h3>
+                        <p class="stat-item__p">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="services-text">
+            <p class="long__sub-title sub-title sub-animation">Services</p>
+            <h2 class="services-text__title h2-title">Comprehensive Design Solutions</h2>
+            <p class="title-desc">From concept to completion, we offer a full spectrum of architectural and interior design services tailored to your unique vision.</p>
+        </div>
+
+        <div class="services-wrap">
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://images.pexels.com/photos/5803749/pexels-photo-5803749.jpeg" alt="Architecture Design">
+                </div>
+                <h3>Architecture Design</h3>
+                <p>Complete architectural solutions from initial concept through construction documentation and project management.</p>
+                <a href="#">View More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://images.pexels.com/photos/18294114/pexels-photo-18294114.jpeg" alt="Interior Design">
+                </div>
+                <h3>Interior Design</h3>
+                <p>Thoughtful interior spaces that seamlessly blend functionality with aesthetic excellence and personal style.</p>
+                <a href="#">View More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://images.pexels.com/photos/28665519/pexels-photo-28665519.jpeg" alt="Space Planning">
+                </div>
+                <h3>Space Planning</h3>
+                <p>Strategic space optimization that maximizes functionality while maintaining elegant design principles.</p>
+                <a href="#">View More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://images.pexels.com/photos/6787176/pexels-photo-6787176.jpeg" alt="Project Management">
+                </div>
+                <h3>Project Management</h3>
+                <p>Comprehensive project oversight ensuring timely delivery, quality control, and seamless execution.</p>
+                <a href="#">View More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://images.pexels.com/photos/30710432/pexels-photo-30710432.jpeg" alt="Design Consultation">
+                </div>
+                <h3>Design Consultation</h3>
+                <p>Expert guidance and creative direction to help bring your architectural and design vision to life.</p>
+                <a href="#">View More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://images.pexels.com/photos/24568362/pexels-photo-24568362.jpeg" alt="3D Visualization">
+                </div>
+                <h3>3D Visualization</h3>
+                <p>Photorealistic renderings and virtual walkthroughs that bring your project to life before construction begins.</p>
+                <a href="#">View More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process">
+        <div class="section-title-wrapper">
+            <p class="long__sub-title sub-title sub-animation">Process</p>
+            <h2 class="process-text__title h2-title">Our Design Journey</h2>
+            <p class="title-desc title-desc__light">A collaborative approach that transforms your vision into reality through careful planning and meticulous execution.</p>
+        </div>
+
+        <div class="process-main">
+            <div class="process-main-item">
+                <p class="process-main-number jello-animation">01</p>
+                <h4 class="process-main__h4">Discovery</h4>
+                <p class="process-main-desc">Understanding your vision, lifestyle, and project requirements through detailed consultation and site analysis.</p>
+            </div>
+            <div class="process-main-item">
+                <p class="process-main-number jello-animation">02</p>
+                <h4 class="process-main__h4">Concept</h4>
+                <p class="process-main-desc">Developing initial design concepts, mood boards, and spatial planning to establish the project direction.</p>
+            </div>
+            <div class="process-main-item">
+                <p class="process-main-number jello-animation">03</p>
+                <h4 class="process-main__h4">Design</h4>
+                <p class="process-main-desc">Refining designs through detailed drawings, 3D visualizations, and material selection for approval.</p>
+            </div>
+            <div class="process-main-item">
+                <p class="process-main-number jello-animation">04</p>
+                <h4 class="process-main__h4">Execution</h4>
+                <p class="process-main-desc">Managing construction and installation phases to ensure flawless delivery of your dream space.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="section-title-wrapper">
+            <p class="sub-title long__sub-title sub-animation">Testimonials</p>
+            <h2 class="h2-title">Client Stories</h2>
+        </div>
+
+        <div class="testimonials-card">
+            <div class="owl-carousel owl-theme">
+            <div class="item" style="padding-block: 30px; padding-inline: 10px;">
+                <div class="testimonials-content">
+                    <p class="testimonials-card__p">"Luxe Studio transformed our home into a masterpiece. Their attention to detail and ability to understand our vision was extraordinary."</p>
+                    <div class="testimonials-author">
+
+                        <div class="testimonials-author__img " style="overflow: hidden;">
+                            <img src="https://interior-theme.netlify.app/assets/images/sarah.jpeg" alt="Sarah Johnson">
+                        </div>
+                        
+                        <div>
+                            <h5>Sarah Johnson</h5>
+                            <span>Homeowner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item" style="padding-block: 30px; padding-inline: 10px;">
+                <div class="testimonials-content">
+                    <p class="testimonials-card__p">"The team's professionalism and creative expertise resulted in a space that exceeded all our expectations. Truly remarkable work."</p>
+                    <div class="testimonials-author">
+                        <div class="testimonials-author__img " style="overflow: hidden;">
+                        <img src="https://interior-theme.netlify.app/assets/images/michael.jpeg" alt="Michael Chen">
+                        </div>
+                        <div>
+                            <h5>Michael Chen</h5>
+                            <span>Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" style="padding-block: 30px; padding-inline: 10px;">
+                <div class="testimonials-content">
+                    <p class="testimonials-card__p">"From concept to completion, Luxe Studio delivered an exceptional experience. Our new office space inspires creativity daily."</p>
+                    <div class="testimonials-author">
+                        <div class="testimonials-author__img " style="overflow: hidden;">
+                        <img src="https://interior-theme.netlify.app/assets/images/emma.jpeg" alt="Emma Rodriguez">
+                        </div>
+                        <div>
+                            <h5>Emma Rodriguez</h5>
+                            <span>Creative Director</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="section-title-wrapper">
+            <p class="sub-title sub-animation">Blog</p>
+            <h2 class="blog-second-title h2-title">Design Insights</h2>
+            <p class="title-desc">Stay updated with the latest trends, tips, and inspiration from the world of architecture and interior design.</p>
+        </div>
+
+        <div class="card-parent">
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.pexels.com/photos/35932556/pexels-photo-35932556.jpeg" alt="Top Design Trends" width="100%" height="100%">
+                </div>
+                <div class="container">
+                    <div class="card-meta">
+                        <p class="card-date">March 15, 2025</p>
+                        <p class="card-category">Trends</p>
+                    </div>
+                    <h3 class="card-title">Top Design Trends for <br> 2025</h3>
+                    <p class="card-desc">Discover the emerging trends that are shaping the future of architecture and interior design this year.</p>
+                    <a href="#" class="card-a">Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.pexels.com/photos/8381873/pexels-photo-8381873.jpeg" alt="Sustainable Design" width="100%" height="100%">
+                </div>
+                <div class="container">
+                    <div class="card-meta">
+                        <p class="card-date">March 8, 2025</p>
+                        <p class="card-category">Sustainability</p>
+                    </div>
+                    <h3 class="card-title">Sustainable Design <br> Practices</h3>
+                    <p class="card-desc">How we integrate eco-friendly materials and energy-efficient solutions into our design philosophy.</p>
+                    <a href="#" class="card-a">Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.pexels.com/photos/29599522/pexels-photo-29599522.jpeg" alt="Maximizing Small Spaces" width="100%" height="100%">
+                </div>
+                <div class="container">
+                    <div class="card-meta">
+                        <p class="card-date">February 28, 2025</p>
+                        <p class="card-category">Tips</p>
+                    </div>
+                    <h3 class="card-title">Maximizing Small Spaces</h3>
+                    <p class="card-desc">Creative strategies for making compact spaces feel larger and more functional without sacrificing style.</p>
+                    <a href="#" class="card-a">Read More</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contactUs">
+        <div class="contact-text-wrapper section-title-wrapper">
+            <p class="contact-sub-title long__sub-title sub-title sub-animation">Contact</p>
+            <h2 class="contact-h2 h2-title">Start Your Project</h2>
+            <p class="contact-desc title-desc">Ready to transform your space? Let's discuss your vision and bring it to life together.</p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="row">
+                        <input type="text" name="name" id="name" placeholder="Your Name*" class="form-control" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email*" class="form-control" required>
+                    </div>
+
+                    <div class="row">
+                        <input type="tel" name="tel" id="tel" placeholder="Phone Number" class="form-control" required>
+                        <select name="project_type" id="project_type" class="form-control" required>
+                            <option value="">Project Type</option>
+                            <option value="residential">Residential Architecture</option>
+                            <option value="commercial">Commercial Architecture</option>
+                            <option value="interior">Interior Design</option>
+                            <option value="consultation">Consultation</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <textarea name="message" id="message" rows="5" placeholder="Tell us about your project*" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="form-btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <h5 class="contact-item__h5">Visit Our Studio</h5>
+                    <p class="contact-item__p">123 Design Boulevard <br> Creative Quarter, NY 10001</p>
+                </div>
+
+                <div class="contact-info-item">
+                    <h5 class="contact-item__h5">Get In Touch</h5>
+                    <p class="contact-item__p">Phone: (555) 123-4567 <br> Email: hello@luxestudio.com</p>
+                </div>
+
+                <div class="contact-info-item">
+                    <h5 class="contact-item__h5">Studio Hours</h5>
+                    <p class="contact-item__p">Monday - Friday: 9:00 AM - 6:00 PM <br> Saturday: 10:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190572.0125464161!2d44.64213192534571!3d41.732601198533816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f625b%3A0x61d084ee06576da3!2sTbilisi!5e0!3m2!1sen!2sge!4v1718300000000!5m2!1sen!2sge" 
+                width="100%" 
+                height="450" 
+                style="border:0; border-radius: 8px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init({ 
+            duration: 1000,
+            once: false
+        });
+
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
