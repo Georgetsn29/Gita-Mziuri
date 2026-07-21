@@ -24,7 +24,7 @@ body {
     padding-inline: 60px;
     padding-top: 10px;
     position: absolute;
-    top: 0;
+    top: 10px;
     z-index: 999;
 }
 
@@ -607,6 +607,10 @@ body {
     margin-bottom: 24px;
 }
 
+/* .owl-carousel {
+    width: 80%;
+} */
+
 .card-parent {
     width: 90%;
     display: flex;
@@ -633,8 +637,9 @@ body {
 .card {
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: none;
     transition: all 0.3s;
-    width: 30%;
+    width: 90%;
     background-color: #d5d5d5;
     overflow: hidden;
 }
@@ -796,3 +801,4 @@ textarea.form-control {
     height: 150px;
     margin: 60px auto 0px;
 }
+

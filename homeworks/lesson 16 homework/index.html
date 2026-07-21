@@ -286,9 +286,10 @@
             <p class="title-desc">Stay updated with the latest trends, tips, and inspiration from the world of architecture and interior design.</p>
         </div>
 
-        <div class="card-parent">
 
-            <div class="card">
+        <div class="owl-carousel owl-theme card-parent">
+            <div class="item" style="padding-block: 30px; padding-inline: 10px;">
+                <div class="card">
                 <div class="card-img">
                     <img src="https://images.pexels.com/photos/35932556/pexels-photo-35932556.jpeg" alt="Top Design Trends" width="100%" height="100%">
                 </div>
@@ -302,8 +303,10 @@
                     <a href="#" class="card-a">Read More</a>
                 </div>
             </div>
+            </div>
 
-            <div class="card">
+            <div class="item" style="padding-block: 30px; padding-inline: 10px;">
+                <div class="card">
                 <div class="card-img">
                     <img src="https://images.pexels.com/photos/8381873/pexels-photo-8381873.jpeg" alt="Sustainable Design" width="100%" height="100%">
                 </div>
@@ -317,8 +320,10 @@
                     <a href="#" class="card-a">Read More</a>
                 </div>
             </div>
+            </div>
 
-            <div class="card">
+            <div class="item" style="padding-block: 30px; padding-inline: 10px;">
+                <div class="card">
                 <div class="card-img">
                     <img src="https://images.pexels.com/photos/29599522/pexels-photo-29599522.jpeg" alt="Maximizing Small Spaces" width="100%" height="100%">
                 </div>
@@ -331,6 +336,7 @@
                     <p class="card-desc">Creative strategies for making compact spaces feel larger and more functional without sacrificing style.</p>
                     <a href="#" class="card-a">Read More</a>
                 </div>
+            </div>
             </div>
 
         </div>
@@ -421,6 +427,8 @@
                 loop: true,
                 margin: 20,
                 nav: true,
+                autoplay:true,
+                autoplayTimeout: 2000,
                 responsive: {
                     0: {
                         items: 1
