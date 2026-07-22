@@ -1,0 +1,15 @@
+@import url('config.css');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.first-box {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+}
+

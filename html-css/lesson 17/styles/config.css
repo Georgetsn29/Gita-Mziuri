@@ -1,0 +1,49 @@
+:root {
+
+}
+
+/* ! 
+   * 0 - 480px - sm-size - mobile device
+   * 481px - 760px - md-size - tablet size
+   * 761px - 990px - lg-size - laptop device
+   * 991px - 1200px - xl-size - desktop device
+   * 1201px - 1400px - xxl-size - large desktop device
+
+   ! min-width: - დან (სიგანიდან)
+   ! max-width: - მდე (სიგანამდე)
+   ! min-height: -დან (სიმაღლიდან)
+   ! max-height: -მდე (სიმაღლემდე)
+*/
+
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: lightcoral;
+    }
+
+    .first-box {
+        background-color: aquamarine;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+    body {
+        background-color: coral;
+    }
+
+    .first-box {
+        background-color: cornflowerblue;
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (min-width: 761px) {
+    body {
+        background-color: crimson;
+    }
+
+    .first-box {
+        background-color: cornsilk;
+        transform: translate(30px, 40px);
+    }
+}
