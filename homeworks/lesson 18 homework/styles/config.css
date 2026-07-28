@@ -1,0 +1,133 @@
+:root {
+    --purple-color: #8a8adc;
+    --gold-color: #d4a574;
+    --gray-color: #2c2c2c;
+    --light-color: rgb(248, 249, 250);
+    --white: #ffffff;
+    --light-gray-color: #666666;
+    --black-color: #000000;
+    --purple-shadow: rgba(83, 83, 201, 0.608);
+}
+
+@media screen and (min-width: 761px) and (max-width: 990px) {
+
+    .nav {
+        display: none;
+    }
+
+    /*! hero  */
+
+    .hero-socials {
+        width: 150px;
+    }
+
+    .hero-main-div__first-p {
+        font-size: 16px;
+    }
+
+    .hero-main-div {
+        width: 80%;
+    }
+
+    .hero-main-div__h1 {
+        font-size: 54px;
+    }
+
+    .hero-main-div__second-p {
+        font-size: 18px;
+    }
+
+    .hero-btn-wrap {
+        width: 300px;
+        margin-left: 60px;
+    }
+
+    .hero__btn {
+        font-size: 14px;
+    }
+
+    /*! about !*/
+    #aboutUs {
+        height: 170vh;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .about-right__stats-row {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .stat-item__h3 {
+        font-size: 50px;
+    }
+
+
+    /*! Services !*/
+
+    .services-wrap {
+        padding-inline: 20px;
+    }
+    
+    .services-wrap > * {
+        flex: 0 0 calc(50% - 15px); /* Spans full width on mobile */
+    }
+
+
+    /*! Process !*/
+
+    #process {
+        height: 110vh;
+    }
+
+    .process-main {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .process-main > * {
+        flex: 0 0 calc(50% - 15px); /* Spans full width on mobile */
+    }
+
+
+
+
+    /*! Blog !*/
+
+    .card {
+        height: 700px;
+    }
+
+
+
+
+
+    /*! Contact Us !*/
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item__h5 {
+        font-size: 24px;
+    }
+
+    .form-btn {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .map-container {
+        width: 80%;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.181);
+        height: 150px;
+        margin: 60px auto 0px;
+    }
+    
+}
