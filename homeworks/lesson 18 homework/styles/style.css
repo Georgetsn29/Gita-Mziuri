@@ -83,6 +83,18 @@ body {
     padding-block: 5px;
 }
 
+.nav-burger {
+    color: var(--white);
+}
+
+.nav-burger i {
+    font-size: 36px;
+}
+
+
+.back-img-wrapper {
+    height: 100vh;
+}
 
 
 /*! Home !*/
@@ -91,6 +103,7 @@ body {
     padding-top: 100px;
     position: absolute;
     top: 0;
+    height: 100vh;
     z-index: 999;
 }
 

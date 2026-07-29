@@ -76,6 +76,10 @@
         flex: 0 0 calc(50% - 15px); /* Spans full width on mobile */
     }
 
+    .service-card {
+        height: 380px;
+    }
+
 
     /*! Process !*/
 
@@ -130,4 +134,237 @@
         margin: 60px auto 0px;
     }
     
+}
+
+@media screen and (max-width: 480px) {
+
+    .nav-header {
+        width: 90%;
+        padding-inline: 20px;
+    }
+    
+    .nav {
+        display: none;
+    }
+
+    /* .back-img-wrapper {
+        height: 10vh;
+    } */
+
+
+    /*! hero  */
+
+    .hero-socials {
+        margin-left: 40px;
+    }
+
+    .hero-main-div {
+        width: 80%;
+        margin-inline: 40px;
+    }
+
+    .hero-main-div__h1 {
+        font-size: 40px;
+    }
+
+    .hero-main-div__second-p {
+        font-size: 18px;
+    }
+
+    .hero-btn-wrap {
+        width: 80%;
+        margin-inline: 40px;
+        flex-direction: column;
+    }
+
+    .hero__btn {
+        font-size: 16px;
+        max-width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    /*! about !*/
+    #aboutUs {
+        height: 170vh;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .about-right__stats-row {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .stat-item__h3 {
+        font-size: 50px;
+    }
+
+
+    /*! Services !*/
+
+    .services-wrap {
+        padding-inline: 20px;
+    }
+    
+    .services-wrap > * {
+        flex: 0 0 100%; 
+    }
+
+    .service-card {
+        height: 100%;
+        width: 20%;
+    }
+
+
+    /*! process !*/
+
+    #process {
+        height: 160vh;
+    }
+
+    .process-main {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .process-main > * {
+        flex: 0 0 100%;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*! Testimonials !*/
+
+    .long__sub-title {
+        width: 100%;
+        margin: 16px auto;
+    }
+
+    #testimonials {
+        height: 120vh;
+    }
+
+    .testimonials-content {
+        padding: 20px 12px;
+        height: 430px;
+    }
+
+    .testimonials-content:hover {
+        transform: translatey(-10px);
+        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.256);
+        border-radius: 30px;
+    }
+
+    .testimonials-card__p {
+        font-style: italic;
+        font-size: 1.1rem;
+        color: var(--gray-color);
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+    }
+
+    .testimonials-author {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 20px;
+    }
+
+    .testimonials-author__img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .testimonials-author h5 {
+        font-size: 1.1rem;
+        color: var(--gray-color);
+    }
+
+    .testimonials-author span {
+        color: var(--light-gray-color);
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+    .nav {
+        display: none;
+    }
+
+
+    /*! hero  */
+
+    .hero-main-div {
+        width: 80%;
+    }
+
+    .hero-main-div__h1 {
+        font-size: 46px;
+    }
+
+    .hero-btn-wrap {
+        width: 80%;
+        margin-left: 60px;
+        flex-direction: column;
+    }
+
+    .hero__btn {
+        font-size: 16px;
+        max-width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    /*! about !*/
+    #aboutUs {
+        height: 170vh;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .about-right__stats-row {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .stat-item__h3 {
+        font-size: 50px;
+    }
+
+
+    /*! Services !*/
+
+    .services-wrap {
+        padding-inline: 20px;
+    }
+    
+    .services-wrap > * {
+        flex: 0 0 calc(50% - 15px); /* Spans full width on mobile */
+    }
+
+    .service-card {
+        height: 500px;
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .nav-burger {
+        display: none;
+    }
 }
