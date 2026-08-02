@@ -1,3 +1,6 @@
+@use './flex' as *;
+@use '../variables' as *;
+
 .navbar {
     background: linear-gradient(3deg, #246fba77, #763a9875);
     width: 95%;
@@ -8,7 +11,7 @@
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    font-family: kode mono;
+    font-family: $fontkode;
 }
 
 .navbar-collapse {

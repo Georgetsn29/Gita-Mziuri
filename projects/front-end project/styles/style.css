@@ -67,4 +67,74 @@
   width: 10px;
   height: 10px;
   border-radius: 100%;
+}
+
+@media (max-width: 1200px) {
+  .navbar-toggler {
+    border: none;
+    box-shadow: 4px 4px 10px 1px rgba(110, 111, 111, 0.9058823529);
+  }
+}
+.hero {
+  height: 100vh;
+  position: relative;
+}
+
+.hero-main {
+  position: absolute;
+  top: 65%;
+  left: 27%;
+}
+.hero-main .hero-card {
+  background-color: transparent;
+  border: none;
+  width: 500px;
+}
+.hero-main .hero-card h5 {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: kode mono;
+  font-weight: 700;
+}
+.hero-main .hero-card p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.6);
+}
+.hero-main .hero-card .hero__btn {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 28px rgba(36, 111, 186, 0.45);
+  background: linear-gradient(135deg, #246fba, #753a98);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero-main .hero-card .hero__btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(135deg, #753a98, #246fba);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.hero-main .hero-card .hero__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 32px rgba(36, 111, 186, 0.65);
+}
+.hero-main .hero-card .hero__btn:hover::before {
+  opacity: 1;
+}
+
+.hero-card {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
 }/*# sourceMappingURL=style.css.map */
