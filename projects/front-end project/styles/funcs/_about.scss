@@ -1,0 +1,116 @@
+@use '../variables' as *;
+@use './mixin' as *;
+
+#about {
+    height: 80vh;
+    background-color: #103c3b;
+    padding-top: 100px;
+
+    .about-container {
+
+        width: 85%;
+
+    .about-left {
+
+        .about-left-img {
+            height: 500px;
+            width: 500px;
+            position: relative;
+
+            .about-left__img1 {
+
+                transition: transform 0.5s;
+
+                @include about-img(absolute, 28px, unset, -12px, unset, $aboutImgBorder, 10px, 2);
+
+                &:hover {
+                    transform: scale(1.05)
+                }
+            }
+
+            .about-left__img2 {
+
+                @include about-img(absolute, unset, 35px, unset, -100px, $aboutImgBorder, 15px, 2);
+
+                transition: transform 0.5s, box-shadow 0.5s; 
+
+                &:hover {
+                    transform: rotate3d(-1, 1, 0.5, 35deg) translateZ(40px);
+                    box-shadow: 15px 20px 20px 10px #03302e;
+                }
+            }
+
+            &::before {
+                content: url(https://aterna.joomlatema.net/templates/aterna/images/about-1-shape1.png);
+                position: absolute;
+                left: -45px;
+                top: 0;
+            }
+
+            &::after {
+                content: url(https://aterna.joomlatema.net/templates/aterna/images/about-1-shape2.png);
+                position: absolute;
+                right: -140px;
+                bottom: -10px;
+                z-index: 0;
+            }
+        }
+    }
+
+    .about-right {
+        padding-top: 30px;
+        padding-left: 0;
+
+        .about-sub-title {
+            background-color: #1c4645;
+            color: $white;
+            font-size: 16px;
+            width: 120px;
+            text-align: center;
+            padding-block: 5px;
+            border-radius: 8px;
+
+                &:hover {
+                    @include sub-title-animation(flip, 1.5s)
+                }
+        }
+
+        .about-title {
+            font-size: 44px;
+            font-weight: 700;
+            color: $white;
+            font-family: $fontrubik;
+
+            span {
+                color: $secondary-color;
+            }
+        }
+
+        .about-desc {
+            font-size: 20px;
+            color: $white;
+        }
+
+        .about-li {
+            margin-left: -35px;
+            color: $white;
+            font-size: 20px;
+            font-weight: 700;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            &::before {
+                content: '\F633';
+                font-family: "bootstrap-icons";
+                color: $secondary-color;
+                font-size: 30px;
+                font-weight: 900;
+                
+            }
+        }
+    }
+
+}
+}

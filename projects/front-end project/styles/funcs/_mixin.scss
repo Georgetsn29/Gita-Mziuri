@@ -1,0 +1,31 @@
+// ! about img
+@mixin about-img($position, $top, $bottom, $left, $right, $border, $radius, $z_index) {
+    position: $position;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+    border: $border;
+    border-radius: $radius;
+    z-index: $z_index;
+}
+
+
+// ! btn
+@mixin btn($color, $background, $border, $radius, $padding, $font_size, $font_weight, $letter_spacing) {
+    color: $color;
+    background-color: $background;
+    border: $border;
+    border-radius: $radius;
+    padding: $padding;
+    font-size: $font_size;
+    font-weight: $font_weight;
+    letter-spacing: $letter_spacing;
+}
+
+
+// ! animation
+@mixin sub-title-animation($animation, $animation_duration) {
+    animation: $animation;
+    animation-duration: $animation_duration;
+}

@@ -1,9 +1,9 @@
 @use './flex' as *;
 @use '../variables' as *;
-@use '../funcs/btn' as *;
+@use './mixin' as *;
 
 .navbar {
-    background: $primary-color;
+    background: #1c4645;
     width: 85%;
     height: 80px;
     padding-inline: 20px;
@@ -14,6 +14,7 @@
     left: 50%;
     transform: translateX(-50%);
     font-family: $fontkode;
+    box-shadow: 6px 6px 10px #050505b5;
 }
 
 .navbar-collapse {
@@ -22,7 +23,7 @@
 
 .navbar-nav {
     @include flex(row, space-between, baseline);
-    width: 50%;
+    width: 70%;
     font-weight: bold;
 }
 
