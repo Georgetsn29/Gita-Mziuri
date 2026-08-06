@@ -1,10 +1,12 @@
 @use './flex' as *;
 @use '../variables' as *;
+@use '../funcs/btn' as *;
 
 .navbar {
-    background: linear-gradient(3deg, #246fba77, #763a9875);
-    width: 95%;
-    padding-inline: 60px;
+    background: $primary-color;
+    width: 85%;
+    height: 80px;
+    padding-inline: 20px;
     position: fixed;
     backdrop-filter: blur(5px);
     border-radius: 20px;
@@ -15,16 +17,22 @@
 }
 
 .navbar-collapse {
-    // display: flex;
-    // justify-content: space-evenly;
-    // align-items: center;
-    @include flex(row, space-evenly, center);
+    @include flex(row, space-between, center);
 }
 
 .navbar-nav {
     @include flex(row, space-between, baseline);
     width: 50%;
     font-weight: bold;
+}
+
+.nav-link {
+    color: $white !important;
+    font-size: 18px;
+
+    &:hover {
+        color: $secondary-color !important;
+    }
 }
 
 .nav-item.dropdown .dropdown-menu {
@@ -41,31 +49,58 @@
     transform: translateY(0);
   }
 
-.dropdown-toggle::after {
-    color: $primary-color;
-    font-size: 14px;
-    transition: all 0.4s;
-}
+  .dropdown-toggle {
 
-.dropdown-toggle:hover::after {
-    transform: rotate(180deg);
-}
+    &::after {
+        content: "<";
+        border: none;
+        position: absolute;
+        transform: rotate(-90deg);
+        transition: all 0.4s;
+        margin-left: 6px;
+        color: $secondary-color;
+    }
+
+    &:hover::after {
+        transform: rotate(90deg);
+        color: $white;
+    }
+
+  }
 
 .active {
     position: relative;
-    color: rgba(0,0,0, 0.65) !important;
+    color: $secondary-color !important;
 }
 
-.active::before {
-    content: "";
+.nav-item {
+  position: relative;
+
+  &::before {
+    content: "\f06c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 18px;
+    color: $secondary-color;
     position: absolute;
-    left: -7px;
-    top: 50%;
-    transform: translatey(-50%);
-    background: linear-gradient(135deg, $primary-color, $secondary-color);
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.nav-btn {
+
+    @include btn($white, $secondary-color, none, 6px, 10px 24px, 16px, bold, 1.5px);
+
 }
 
 @media (max-width: 1200px) {

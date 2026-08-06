@@ -1,4 +1,5 @@
 @use '../variables' as *;
+@use '../funcs/btn' as *;
 
 .hero {
   height: 100vh;
@@ -7,7 +8,7 @@
 
 .hero-main {
   position: absolute;
-  top: 65%;
+  top: 30%;
   left: 27%;
 
   .hero-card {
@@ -29,44 +30,36 @@
     }
 
     .hero__btn {
-      position: relative;
-      z-index: 1;
-      display: inline-block;
-      overflow: hidden;
-      padding: 20px 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 28px rgba($primary-color, 0.45);
-      background: linear-gradient(135deg, $primary-color, $secondary-color);
-      color: $white;
-      font-size: 13px;
-      font-weight: 700;
+      
+      @include btn($white, $secondary-color, none, 6px, 10px 24px, 14px, 500, 2px);
+
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-      &::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-        background: linear-gradient(135deg, $secondary-color, $primary-color);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
+      // &::before {
+      //   content: '';
+      //   position: absolute;
+      //   inset: 0;
+      //   z-index: -1;
+      //   background: linear-gradient(135deg, $secondary-color, $primary-color);
+      //   opacity: 0;
+      //   transition: opacity 0.3s ease;
+      // }
 
-      &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 32px rgba($primary-color, 0.65);
+      // &:hover {
+      //   transform: translateY(-2px);
+      //   box-shadow: 0 5px 32px rgba($primary-color, 0.65);
 
-        &::before {
-          opacity: 1;
-        }
-      }
+      //   &::before {
+      //     opacity: 1;
+      //   }
+      // }
     }
   }
 }
 
-.hero-card {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translatex(-50%);
-    }
+// .hero-card {
+//     position: absolute;
+//     bottom: 0;
+//     left: 50%;
+//     transform: translatex(-50%);
+//     }
