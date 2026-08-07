@@ -2,7 +2,7 @@
 @use './mixin' as *;
 
 #about {
-    height: 80vh;
+    height: 90vh;
     background-color: #103c3b;
     padding-top: 100px;
 
@@ -12,9 +12,7 @@
 
     .about-left {
 
-        .about-left-img {
             height: 500px;
-            width: 500px;
             position: relative;
 
             .about-left__img1 {
@@ -26,17 +24,25 @@
                 &:hover {
                     transform: scale(1.05)
                 }
+
+                img {
+                    width: 100%;
+                }
             }
 
             .about-left__img2 {
 
-                @include about-img(absolute, unset, 35px, unset, -100px, $aboutImgBorder, 15px, 2);
+                @include about-img(absolute, unset, 25px, unset, 50px, $aboutImgBorder, 15px, 2);
 
                 transition: transform 0.5s, box-shadow 0.5s; 
 
                 &:hover {
                     transform: rotate3d(-1, 1, 0.5, 35deg) translateZ(40px);
                     box-shadow: 15px 20px 20px 10px #03302e;
+                }
+
+                img {
+                    width: 100%;
                 }
             }
 
@@ -50,11 +56,11 @@
             &::after {
                 content: url(https://aterna.joomlatema.net/templates/aterna/images/about-1-shape2.png);
                 position: absolute;
-                right: -140px;
-                bottom: -10px;
+                right: 15px;
+                bottom: -15px;
                 z-index: 0;
             }
-        }
+        
     }
 
     .about-right {
@@ -94,7 +100,7 @@
         .about-li {
             margin-left: -35px;
             color: $white;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
             list-style-type: none;
             display: flex;

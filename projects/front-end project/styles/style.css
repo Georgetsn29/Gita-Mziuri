@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Kode+Mono:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Kode+Mono:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 .navbar {
-  background: #1c4645;
+  background: rgba(28, 70, 69, 0.662745098);
   width: 85%;
   height: 80px;
   padding-inline: 20px;
@@ -167,19 +167,18 @@
 }
 
 #about {
-  height: 80vh;
+  height: 90vh;
   background-color: #103c3b;
   padding-top: 100px;
 }
 #about .about-container {
   width: 85%;
 }
-#about .about-container .about-left .about-left-img {
+#about .about-container .about-left {
   height: 500px;
-  width: 500px;
   position: relative;
 }
-#about .about-container .about-left .about-left-img .about-left__img1 {
+#about .about-container .about-left .about-left__img1 {
   transition: transform 0.5s;
   position: absolute;
   top: 28px;
@@ -190,35 +189,41 @@
   border-radius: 10px;
   z-index: 2;
 }
-#about .about-container .about-left .about-left-img .about-left__img1:hover {
+#about .about-container .about-left .about-left__img1:hover {
   transform: scale(1.05);
 }
-#about .about-container .about-left .about-left-img .about-left__img2 {
+#about .about-container .about-left .about-left__img1 img {
+  width: 100%;
+}
+#about .about-container .about-left .about-left__img2 {
   position: absolute;
   top: unset;
-  bottom: 35px;
+  bottom: 25px;
   left: unset;
-  right: -100px;
+  right: 50px;
   border: 10px solid #1c4645;
   border-radius: 15px;
   z-index: 2;
   transition: transform 0.5s, box-shadow 0.5s;
 }
-#about .about-container .about-left .about-left-img .about-left__img2:hover {
+#about .about-container .about-left .about-left__img2:hover {
   transform: rotate3d(-1, 1, 0.5, 35deg) translateZ(40px);
   box-shadow: 15px 20px 20px 10px #03302e;
 }
-#about .about-container .about-left .about-left-img::before {
+#about .about-container .about-left .about-left__img2 img {
+  width: 100%;
+}
+#about .about-container .about-left::before {
   content: url(https://aterna.joomlatema.net/templates/aterna/images/about-1-shape1.png);
   position: absolute;
   left: -45px;
   top: 0;
 }
-#about .about-container .about-left .about-left-img::after {
+#about .about-container .about-left::after {
   content: url(https://aterna.joomlatema.net/templates/aterna/images/about-1-shape2.png);
   position: absolute;
-  right: -140px;
-  bottom: -10px;
+  right: 15px;
+  bottom: -15px;
   z-index: 0;
 }
 #about .about-container .about-right {
@@ -254,7 +259,7 @@
 #about .about-container .about-right .about-li {
   margin-left: -35px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   list-style-type: none;
   display: flex;

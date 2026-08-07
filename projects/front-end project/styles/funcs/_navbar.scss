@@ -3,7 +3,7 @@
 @use './mixin' as *;
 
 .navbar {
-    background: #1c4645;
+    background: $navbackground;
     width: 85%;
     height: 80px;
     padding-inline: 20px;
