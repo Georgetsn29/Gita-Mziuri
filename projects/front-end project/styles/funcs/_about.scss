@@ -10,12 +10,12 @@
 
         width: 85%;
 
-    .about-left {
+    .about__media {
 
             height: 500px;
             position: relative;
 
-            .about-left__img1 {
+            .about__image-wrapper--primary {
 
                 transition: transform 0.5s;
 
@@ -30,7 +30,7 @@
                 }
             }
 
-            .about-left__img2 {
+            .about__image-wrapper--secondary {
 
                 @include about-img(absolute, unset, 25px, unset, 50px, $aboutImgBorder, 15px, 2);
 
@@ -63,22 +63,13 @@
         
     }
 
-    .about-right {
+    .about__content {
         padding-top: 30px;
         padding-left: 0;
 
-        .about-sub-title {
-            background-color: #1c4645;
-            color: $white;
-            font-size: 16px;
-            width: 120px;
-            text-align: center;
-            padding-block: 5px;
-            border-radius: 8px;
+        .about-subtitle {
 
-                &:hover {
-                    @include sub-title-animation(flip, 1.5s)
-                }
+            @include subtitle(120px);
         }
 
         .about-title {
@@ -97,7 +88,7 @@
             color: $white;
         }
 
-        .about-li {
+        .about__list {
             margin-left: -35px;
             color: $white;
             font-size: 18px;

@@ -37,30 +37,16 @@
 
     .hero__btn {
       
-      @include btn($white, $secondary-color, none, 6px, 10px 24px, 14px, 500, 2px);
+      @include btn($white, $secondary-color, 10px 24px, 14px, 500);
 
       margin-top: 20px;
 
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-      // &::before {
-      //   content: '';
-      //   position: absolute;
-      //   inset: 0;
-      //   z-index: -1;
-      //   background: linear-gradient(135deg, $secondary-color, $primary-color);
-      //   opacity: 0;
-      //   transition: opacity 0.3s ease;
-      // }
+    .hero__btn-secondary {
+      @include btn($white, $primary-color, 10px 24px, 14px, 500);
 
-      // &:hover {
-      //   transform: translateY(-2px);
-      //   box-shadow: 0 5px 32px rgba($primary-color, 0.65);
-
-      //   &::before {
-      //     opacity: 1;
-      //   }
-      // }
+      margin-top: 20px;
     }
   }
 }

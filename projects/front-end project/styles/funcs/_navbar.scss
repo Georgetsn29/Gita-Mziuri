@@ -14,7 +14,7 @@
     left: 50%;
     transform: translateX(-50%);
     font-family: $fontkode;
-    box-shadow: 6px 6px 10px #050505b5;
+    box-shadow: 6px 6px 10px #0000005c;
 }
 
 .navbar-collapse {
@@ -42,6 +42,44 @@
     visibility: hidden;
     transform: translateY(10px);
     transition: all 0.2s ease-in-out;
+    background: $navbackground;
+    backdrop-filter: blur(5px);
+    color: $white;
+    border: none;
+    padding-top: 20px;
+
+    .dropdown-item {
+        color: $white;
+        position: relative;
+        transition: transform 0.3s ;
+
+        &:hover {
+            color: $secondary-color;
+            background-color: transparent;
+            transform: translateX(12px);
+        }
+
+        &:hover::before {
+                position: absolute;
+                content: "";
+                width: 10px;
+                height: 1.5px;
+                background-color: $secondary-color;
+                left: 0;
+                top: 50%;
+                animation: fillUp 0.3s ease-in-out forwards;
+            }
+
+            @keyframes fillUp {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 10px;
+            }
+            }
+    }
+    
   }
 
   .nav-item.dropdown:hover .dropdown-menu {
@@ -100,9 +138,13 @@
 
 .nav-btn {
 
-    @include btn($white, $secondary-color, none, 6px, 10px 24px, 16px, bold, 1.5px);
+    @include btn($white, $secondary-color, 10px 24px, 16px, bold);
 
 }
+
+
+
+
 
 @media (max-width: 1200px) {
     .navbar-toggler {

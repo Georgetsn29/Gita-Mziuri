@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 // ! about img
 @mixin about-img($position, $top, $bottom, $left, $right, $border, $radius, $z_index) {
     position: $position;
@@ -12,20 +14,50 @@
 
 
 // ! btn
-@mixin btn($color, $background, $border, $radius, $padding, $font_size, $font_weight, $letter_spacing) {
+@mixin btn($color, $background, $padding, $font_size, $font_weight) {
     color: $color;
     background-color: $background;
-    border: $border;
-    border-radius: $radius;
+    border: none;
+    border-radius: 6px;
     padding: $padding;
     font-size: $font_size;
     font-weight: $font_weight;
-    letter-spacing: $letter_spacing;
+    letter-spacing: 2px;
+    background-image: linear-gradient(
+        to bottom,
+        #ffb40a 50%,
+        transparent 50%,
+    );
+    background-size: 100% 200%;
+    background-position: bottom;
+    transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.3s ease-in-out;
+
+                &:hover {
+                    background-position: top;
+                }
 }
 
 
 // ! animation
-@mixin sub-title-animation($animation, $animation_duration) {
+@mixin subtitle-animation($animation, $animation_duration) {
     animation: $animation;
     animation-duration: $animation_duration;
 }
+
+
+// ! subtitle 
+@mixin subtitle($width) {
+            background-color: $subtitle-background;
+            color: $white;
+            font-size: 16px;
+            width: $width;
+            text-align: center;
+            padding-block: 5px;
+            border-radius: 8px;
+
+                &:hover {
+                    @include subtitle-animation(flip, 1.5s)
+                }
+        }

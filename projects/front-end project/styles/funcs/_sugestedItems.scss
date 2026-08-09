@@ -1,0 +1,14 @@
+@use '../variables' as *;
+@use './mixin' as *;
+
+#sugestedItems {
+    height: 100vh;
+    background-color: #28504f;
+    padding-top: 40px;
+
+    .sugested-subtitle {
+            @include subtitle(120px);
+            margin: 0 auto;
+    }
+}
+
