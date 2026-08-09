@@ -16,6 +16,12 @@
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3607843137);
 }
 
+.navbar-brand {
+  margin: 0 40px 0 0;
+  width: 13%;
+  padding: 0;
+}
+
 .navbar-collapse {
   display: flex;
   flex-direction: row;
@@ -35,8 +41,14 @@
 .nav-link {
   color: #ffffff !important;
   font-size: 18px;
+  transition: letter-spacing 0.3s;
 }
 .nav-link:hover {
+  color: #b07e50 !important;
+  letter-spacing: 1px;
+}
+
+.dropdown:hover .nav-link {
   color: #b07e50 !important;
 }
 
@@ -55,7 +67,7 @@
 .nav-item.dropdown .dropdown-menu .dropdown-item {
   color: #ffffff;
   position: relative;
-  transition: transform 0.3s;
+  transition: transform 0.3s, color 0.3s;
 }
 .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
   color: #b07e50;
@@ -101,6 +113,11 @@
   color: #ffffff;
 }
 
+.dropdown:hover .dropdown-toggle::after {
+  transform: rotate(90deg);
+  color: #ffffff;
+}
+
 .active {
   position: relative;
   color: #b07e50 !important;
@@ -140,10 +157,11 @@
   background-image: linear-gradient(to bottom, #ffb40a 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: bottom;
-  transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease-in-out;
+  transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease-in-out, transform 0.3s;
 }
 .nav-btn:hover {
   background-position: top;
+  transform: translate(-5px, -5px);
 }
 
 @media (max-width: 1200px) {
@@ -195,10 +213,11 @@
   background-image: linear-gradient(to bottom, #ffb40a 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: bottom;
-  transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease-in-out;
+  transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease-in-out, transform 0.3s;
 }
 .hero-main .hero-card .hero__btn:hover {
   background-position: top;
+  transform: translate(-5px, -5px);
 }
 .hero-main .hero-card .hero__btn {
   margin-top: 20px;
@@ -215,10 +234,11 @@
   background-image: linear-gradient(to bottom, #ffb40a 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: bottom;
-  transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease-in-out;
+  transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease-in-out, transform 0.3s;
 }
 .hero-main .hero-card .hero__btn-secondary:hover {
   background-position: top;
+  transform: translate(-5px, -5px);
 }
 .hero-main .hero-card .hero__btn-secondary {
   margin-top: 20px;
@@ -342,28 +362,138 @@
   font-weight: 900;
 }
 
-#sugestedItems {
-  height: 100vh;
+#suggestedItems {
+  height: 135vh;
   background-color: #28504f;
   padding-top: 40px;
 }
-#sugestedItems .sugested-subtitle {
+#suggestedItems .suggested-subtitle {
   background-color: #1c4645;
   color: #ffffff;
   font-size: 16px;
-  width: 120px;
+  width: 140px;
   text-align: center;
   padding-block: 5px;
   border-radius: 8px;
 }
-#sugestedItems .sugested-subtitle:hover {
+#suggestedItems .suggested-subtitle:hover {
   animation: flip;
   animation-duration: 1.5s;
 }
-#sugestedItems .sugested-subtitle {
+#suggestedItems .suggested-subtitle {
   margin: 0 auto;
+}
+#suggestedItems .suggested-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: Rubik;
+}
+#suggestedItems .suggested-title span {
+  color: #b07e50;
+}
+#suggestedItems .suggested-title {
+  text-align: center;
+  margin-top: 40px;
+}
+#suggestedItems .suggested-container {
+  margin-top: 40px;
+}
+#suggestedItems .suggested-container .suggested__btn {
+  padding: 15px 30px;
+  min-width: 200px;
+  border: none;
+  background-color: #1c4645;
+  color: #ffffff;
+  font-family: Rubik;
+  transition: background-color 0.3s;
+}
+#suggestedItems .suggested-container .suggested__btn:hover {
+  background-color: #b07e50;
+}
+#suggestedItems .suggested-container .suggested__btn-first {
+  border-radius: 30px 0 0 30px;
+}
+#suggestedItems .suggested-container .suggested__btn-last {
+  border-radius: 0 30px 30px 0;
+}
+#suggestedItems .suggested-container .suggested__active {
+  background-color: #b07e50;
+}
+#suggestedItems .suggested__tab-container {
+  padding-top: 40px;
+  width: 83%;
+  margin: 0 auto;
+}
+#suggestedItems .suggested__tab-container .suggested__tab-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: Rubik;
+}
+#suggestedItems .suggested__tab-container .suggested__tab-title span {
+  color: #b07e50;
+}
+#suggestedItems .suggested__tab-container .suggested__tab-p {
+  color: #ffffff;
+  font-family: Rubik;
+  text-align: justify;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+#suggestedItems .suggested__tab-container .tab__btn {
+  color: #ffffff;
+  background-color: #b07e50;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to bottom, #ffb40a 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: bottom;
+  transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease-in-out, transform 0.3s;
+}
+#suggestedItems .suggested__tab-container .tab__btn:hover {
+  background-position: top;
+  transform: translate(-5px, -5px);
+}
+#suggestedItems .suggested__tab-container .suggested__tab-media {
+  overflow: hidden;
+  margin-top: 70px;
+  filter: grayscale(1);
+  transition: transform 0.3s, filter 0.3s;
+}
+#suggestedItems .suggested__tab-container .suggested__tab-media img {
+  border-radius: 10px;
+  transition: border-radius 0.3s;
+}
+#suggestedItems .suggested__tab-container .suggested__tab-media img:hover {
+  border-radius: 50px;
+}
+#suggestedItems .suggested__tab-container .suggested__tab-media:hover {
+  transform: translateX(30px) translateY(-30px);
+  filter: grayscale(0);
+}
+
+.suggested__filter {
+  height: 100vh;
+  background-color: #1c4645;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 body {
   font-family: Jost;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */

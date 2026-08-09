@@ -73,14 +73,7 @@
         }
 
         .about-title {
-            font-size: 44px;
-            font-weight: 700;
-            color: $white;
-            font-family: $fontrubik;
-
-            span {
-                color: $secondary-color;
-            }
+            @include title;
         }
 
         .about-desc {

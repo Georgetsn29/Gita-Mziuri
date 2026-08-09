@@ -17,6 +17,12 @@
     box-shadow: 6px 6px 10px #0000005c;
 }
 
+.navbar-brand {
+    margin: 0 40px 0 0;
+    width: 13%;
+    padding: 0;
+}
+
 .navbar-collapse {
     @include flex(row, space-between, center);
 }
@@ -30,10 +36,16 @@
 .nav-link {
     color: $white !important;
     font-size: 18px;
+    transition: letter-spacing 0.3s;
 
     &:hover {
         color: $secondary-color !important;
+        letter-spacing: 1px;
     }
+}
+
+.dropdown:hover .nav-link {
+    color: $secondary-color !important;
 }
 
 .nav-item.dropdown .dropdown-menu {
@@ -51,7 +63,7 @@
     .dropdown-item {
         color: $white;
         position: relative;
-        transition: transform 0.3s ;
+        transition: transform 0.3s, color 0.3s ;
 
         &:hover {
             color: $secondary-color;
@@ -104,7 +116,11 @@
         transform: rotate(90deg);
         color: $white;
     }
+  }
 
+  .dropdown:hover .dropdown-toggle::after {
+    transform: rotate(90deg);
+    color: $white;
   }
 
 .active {

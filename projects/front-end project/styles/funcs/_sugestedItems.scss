@@ -1,14 +1,95 @@
 @use '../variables' as *;
 @use './mixin' as *;
 
-#sugestedItems {
-    height: 100vh;
+#suggestedItems {
+    height: 135vh;
     background-color: #28504f;
     padding-top: 40px;
 
-    .sugested-subtitle {
-            @include subtitle(120px);
+    .suggested-subtitle {
+            @include subtitle(140px);
             margin: 0 auto;
+    }
+
+    .suggested-title {
+        @include title;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .suggested-container {
+        margin-top: 40px;
+        
+        .suggested__btn {
+            padding: 15px 30px;
+            min-width: 200px;
+            border: none;
+            background-color: $subtitle-background;
+            color: $white;
+            font-family: $fontrubik;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $secondary-color;
+            }
+        }
+
+            .suggested__btn-first{
+                border-radius: 30px 0 0 30px ;
+            }
+
+            .suggested__btn-last{
+                border-radius: 0 30px 30px 0 ;
+            }
+
+            .suggested__active {
+                background-color: $secondary-color;
+            }
+    }
+
+    .suggested__tab-container {
+        padding-top: 40px;
+        width: 83%;
+        margin: 0 auto;
+
+        .suggested__tab-title{
+
+            @include title;
+
+        }
+
+        .suggested__tab-p {
+            color: $white;
+            font-family: $fontrubik;
+            text-align: justify;
+            line-height: 1.8;
+            margin-top: 20px;
+        }
+
+        .tab__btn {
+            @include btn($white, $secondary-color, 10px 24px, 16px, 500);
+        }
+
+        .suggested__tab-media {
+            overflow: hidden;
+            margin-top: 70px;
+            filter: grayscale(1);
+            transition: transform 0.3s, filter 0.3s;
+
+            img {
+                border-radius: 10px;
+                transition: border-radius 0.3s;
+
+                &:hover {
+                    border-radius: 50px;
+                }
+            }
+
+            &:hover {
+                transform: translateX(30px) translateY(-30px);
+                filter: grayscale(0);
+            }
+        }
     }
 }
 
