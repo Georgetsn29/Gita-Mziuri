@@ -73,7 +73,7 @@
         }
 
         .about-title {
-            @include title;
+            @include title(44px);
         }
 
         .about-desc {
