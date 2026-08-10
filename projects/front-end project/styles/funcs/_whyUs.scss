@@ -1,0 +1,8 @@
+@use './mixin' as *;
+@use '../variables' as *;
+
+#whyUs {
+    height: 100vh;
+    background-image: url(https://aterna.joomlatema.net/templates/aterna/images/coloredmodule-bg.png);
+    background-color: $primary-color;
+}

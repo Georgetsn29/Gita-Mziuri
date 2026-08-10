@@ -20,6 +20,10 @@
   margin: 0 40px 0 0;
   width: 13%;
   padding: 0;
+  transition: transform 0.3s;
+}
+.navbar-brand:hover {
+  transform: translate(4px, -4px);
 }
 
 .navbar-collapse {
@@ -480,7 +484,7 @@
 
 .suggested__filter {
   background-color: #1c4645;
-  padding-block: 100px;
+  padding-block: 100px 120px;
 }
 .suggested__filter .filter-container {
   width: 59%;
@@ -613,6 +617,12 @@
 .suggested__filter .filter-content .filter-item:hover .filter-item__hover .titile-on-image {
   opacity: 1;
   transform: translateY(0);
+}
+
+#whyUs {
+  height: 100vh;
+  background-image: url(https://aterna.joomlatema.net/templates/aterna/images/coloredmodule-bg.png);
+  background-color: #103c3b;
 }
 
 html, body {
