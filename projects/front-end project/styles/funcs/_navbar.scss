@@ -21,6 +21,11 @@
     margin: 0 40px 0 0;
     width: 13%;
     padding: 0;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translate(4px, -4px)
+    }
 }
 
 .navbar-collapse {
