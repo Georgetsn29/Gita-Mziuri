@@ -2,7 +2,82 @@
 @use '../variables' as *;
 
 #whyUs {
-    height: 100vh;
     background-image: url(https://aterna.joomlatema.net/templates/aterna/images/coloredmodule-bg.png);
     background-color: $primary-color;
+    padding-block: 40px 120px;
+
+    .whyUs-media {
+
+
+        &__img {
+            border-radius: 10px;
+            transition: border-radius 0.4s, transform 0.4s;
+
+            &:hover {
+                border-radius: 50px;
+                transform: scale(1.03);
+            }
+        }
+
+    }
+
+    .whyUs-content {
+            
+        padding-right: 30px;
+
+        &__subtitle {
+
+                @include subtitle(140px);
+                display: inline-block;
+                
+            
+        }
+
+        &__title {
+            @include title(44px);
+            transition: font-weight 0.3s, letter-spacing 0.3s;
+
+            span {
+                color: $whyUs-title-color;
+            }
+
+            &:hover {
+                font-weight: 600;
+                letter-spacing: 0.5px;
+            }
+        }
+
+        &__desc {
+            @include paragraph(16px, 400, unset, 1.8);
+        }
+    }
+
+    .whyUs__list-wrapper {
+
+        .whyUs__list-idea {
+
+            @include paragraph(18px, 500, 0.5, unset);
+        }
+
+        .whyUs__list {
+
+            @include list(-30px, 16px, 400, 10px, $whyUs-title-color, 22px, 500);
+            line-height: 40px;
+
+        }
+
+        .whyUs__list-btn {
+            .list__btn {
+                margin-top: 10px;
+                @include btn($white, $secondary-color, 10px 24px, 16px, 500);
+
+            }
+
+            .bi-leaf-fill {
+                display: inline-block;
+                transform: rotatey(180deg);
+            }
+        }
+    }
+
 }
