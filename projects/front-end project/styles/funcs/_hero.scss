@@ -31,8 +31,9 @@
     }
 
     p {
-      font-size: 21px;
-      color: $white;
+      
+      @include paragraph(21px, 700, unset, unset);
+      
     }
 
     .hero__btn {

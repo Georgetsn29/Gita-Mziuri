@@ -1,14 +1,12 @@
 @use '../variables' as *;
 
 // ! about img
-@mixin about-img($position, $top, $bottom, $left, $right, $border, $radius, $z_index) {
+@mixin about-img($position, $top, $bottom, $left, $right, $z_index) {
     position: $position;
     top: $top;
     bottom: $bottom;
     left: $left;
     right: $right;
-    border: $border;
-    border-radius: $radius;
     z-index: $z_index;
 }
 
@@ -34,10 +32,10 @@
                 color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
                 box-shadow 0.3s ease-in-out, transform 0.3s;
 
-                &:hover {
-                    background-position: top;
-                    transform: translate(-5px, -5px);
-                }
+    &:hover {
+        background-position: top;
+        transform: translate(-5px, -5px);
+    }
 }
 
 
@@ -50,31 +48,48 @@
 
 // ! subtitle 
 @mixin subtitle($width) {
-            background-color: $subtitle-background;
-            color: $white;
-            font-size: 16px;
-            width: $width;
-            text-align: center;
-            padding-block: 5px;
-            border-radius: 8px;
+    background-color: $subtitle-background;
+    color: $white;
+    font-size: 16px;
+    width: $width;
+    text-align: center;
+    padding-block: 5px;
+    border-radius: 8px;
 
-                &:hover {
-                    @include subtitle-animation(flip, 1.5s)
-                }
+        &:hover {
+            @include subtitle-animation(flip, 1.5s)
         }
+}
 
 
 // ! title
-@mixin title($font-size) {
-    font-size: $font-size;
+@mixin title($font_size) {
+    font-size: $font_size;
     font-weight: 700;
     color: $white;
     font-family: $fontrubik;
+    transition: font-weight 0.3s, letter-spacing 0.3s;
+
 
     span {
         color: $secondary-color;
     }
-}        
+
+    &:hover {
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+}   
+
+// ! paragraph
+@mixin paragraph($font_size, $font_weight, $letter_spacing, $line_height) {
+    font-size: $font_size;
+    color: $white;
+    font-weight: $font_weight;
+    font-family: $fontrubik;
+    letter-spacing: $letter_spacing;
+    line-height: $line_height;
+}
 
 
 // ! filter item icon 
@@ -89,4 +104,26 @@
     align-items: center;
     justify-content: center;
     -webkit-text-stroke: $wevkit_stroke $secondary-color;
+}
+
+
+// ! list
+@mixin list($margin-left, $font_size, $font_weight, $gap, $before_color, $before_font_size, $before_font_weight) {
+    margin-left: $margin-left;
+    color: $white;
+    font-size: $font_size;
+    font-weight: $font_weight;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: $gap;
+
+    &::before {
+        content: '\F633';
+        font-family: "bootstrap-icons";
+        color: $before_color;
+        font-size: $before_font_size;
+        font-weight: $before_font_weight;
+        
+    }
 }

@@ -59,10 +59,11 @@
         }
 
         .suggested__tab-p {
-            color: $white;
-            font-family: $fontrubik;
+
             text-align: justify;
-            line-height: 1.8;
+
+            @include paragraph(16px, 400, unset, 1.8);
+
             margin-top: 20px;
         }
 
@@ -71,25 +72,25 @@
         }
 
         .suggested__tab-media {
-            overflow: hidden;
+            // overflow: hidden;
             margin-top: 70px;
-            filter: grayscale(1);
-            transform: translateX(30px) translateY(-30px);
-            transition: transform 0.3s, filter 0.3s;
+            
 
-            img {
+            &__img {
                 border-radius: 50px;
-                transition: border-radius 0.3s;
+                filter: grayscale(1);
+                transform: translateX(30px) translateY(-30px);
+                transition: transform 0.3s, filter 0.3s, border-radius 0.3s;
 
                 &:hover {
                     border-radius: 10px;
+                    transform: translateX(0px) translateY(0px);
+                    filter: grayscale(0);
+            
                 }
             }
 
-            &:hover {
-                transform: translateX(0px) translateY(0px);
-                filter: grayscale(0);
-            }
+            
         }
     }
 }
