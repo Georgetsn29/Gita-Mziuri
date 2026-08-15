@@ -1,14 +1,22 @@
 @use '../variables' as *;
 
-// // ! about img
-// @mixin about-img($position, $top, $bottom, $left, $right, $z_index) {
-//     position: $position;
-//     top: $top;
-//     bottom: $bottom;
-//     left: $left;
-//     right: $right;
-//     z-index: $z_index;
-// }
+// ! flex
+@mixin flex($flex-dir, $justify-content, $align-items){
+    display: flex;
+    flex-direction: $flex-dir;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+
+// ! position
+@mixin position($top, $bottom, $left, $right) {
+    position: absolute;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+}
 
 
 // ! btn

@@ -606,7 +606,7 @@
                 </div>
 
                 <div class="col-6 feedback-media" data-aos="fade-left">
-                    <div class="owl-carousel owl-theme">
+                    <div class="owl-carousel owl-carousel__feedback owl-theme">
                         <div class="item feedback-media__item">
                             <div class="card feedback-media__card">
                                 <div class="feedback-media-img-wrapper">
@@ -679,9 +679,81 @@
     </section>
 
 
-    <!--! general tips !-->
-    <section id="generalTips">
+    <!--! gardening tips !-->
+    <section id="gardeningTips">
+        <div class="container gardeningTips__container">
+            <p class="gardeningTips__subtitle" data-aos="zoom-in-down" data-aos-delay="200"> 
+                <span data-aos="fade-left" data-aos-delay="300">G</span><span data-aos="fade-left" data-aos-delay="400">a</span><span data-aos="fade-left" data-aos-delay="500">r</span><span data-aos="fade-left" data-aos-delay="600">d</span><span data-aos="fade-left" data-aos-delay="700">e</span><span data-aos="fade-left" data-aos-delay="800">n</span><span data-aos="fade-left" data-aos-delay="900">i</span><span data-aos="fade-left" data-aos-delay="1000">n</span><span data-aos="fade-left" data-aos-delay="1100">g</span> <span data-aos="fade-left" data-aos-delay="1200">T</span><span data-aos="fade-left" data-aos-delay="1300">i</span><span data-aos="fade-left" data-aos-delay="1400">p</span><span data-aos="fade-left" data-aos-delay="1400">s</span><span data-aos="fade-left" data-aos-delay="1400">!</span>
+            </p>
 
+            <div class="gardeningTips__title-wrapper" data-aos="fade-right" data-aos-delay="200">
+                <h1 class="gardeningTips__title"><span>Blog</span> Articles on Gardening Tips Seasonal Care and Design Trends</h1>
+            </div>
+
+            <div class="owl-carousel owl-carousel__gardening owl-theme">
+
+                <div class="item gardening__item-container">
+                    <div class="card gardening__item-card" style="width: 25rem;">
+
+                        <div class="gardening__item">
+
+                                <img src="https://aterna.joomlatema.net//cache/mod_jt_contentfilter/a9aa3efb1d15e1a62db473a25f2a11d2_14.png" alt="" class="gardening__item-img">
+
+                            <div class="gardening__item__hover">
+
+                                <div class="hover-icon">
+                                    <i class="bi bi-link-45deg"></i>
+                                    <i class="bi bi-search"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card-body gardening__item-body">
+                            <a href="" class="gardening__item-title"><span>Grow</span> Smarter Expert Tips for Beautiful Gardens</a> 
+                            <p class="gardening__item-desc">Lorem ipsum dolor sit amet, consectetur et adipisicing elit sed do eiuse smodete tempor incididunt u...</p>
+                        </div>
+
+                        <div class="gardening__item-details">
+                            <div class="row"></div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="item">
+                    
+                </div>
+
+                <div class="item">
+                    
+                </div>
+
+                <div class="item">
+
+                </div>
+
+                <div class="item">
+
+                </div>
+
+                <div class="item">
+
+                </div>
+
+                <div class="item">
+
+                </div>
+
+                <div class="item">
+
+                </div>
+
+                <div class="item">
+
+                </div>
+
+            </div>
+        </div>
     </section>
 
 
@@ -718,7 +790,7 @@
             });
         }
 
-        $('.owl-carousel').owlCarousel({
+        const baseCarouselOptions = {
             autoplay: true,
             autoplaySpeed: 700,
             autoplayTimeout: 5000,
@@ -726,28 +798,37 @@
             dots: false,
             loop: false,
             rewind: true,
-            margin:120,
-            nav:false,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
+            margin: 10,
+            nav: false,
+            responsive: {
+                0: { items: 1 },
+                600: { items: 1 },
+                1000: { items: 1 }
             },
-
             onTranslate: function(event) {
-                $('.owl-item').find('[data-aos]').removeClass('aos-animate');
+                $(event.target).find('.owl-item [data-aos]').removeClass('aos-animate');
             },
-            
             onTranslated: function(event) {
-                $('.owl-item.active').find('[data-aos]').addClass('aos-animate');
+                $(event.target).find('.owl-item.active [data-aos]').addClass('aos-animate');
             }
-        })
+        };
+
+        $('.owl-carousel__feedback').owlCarousel({
+            ...baseCarouselOptions,
+            autoplayTimeout: 6000
+        });
+
+        $('.owl-carousel__gardening').owlCarousel({
+            ...baseCarouselOptions,
+            margin: 20,
+            dots: true,
+            loop: true,
+            responsive: {
+                0: { items: 1 },
+                768: { items: 2 },
+                1024: { items: 3 }
+            }
+        });
     </script>
 
 </body>

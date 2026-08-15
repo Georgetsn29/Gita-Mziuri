@@ -1,7 +1,5 @@
-@use './flex' as *;
 @use '../variables' as *;
 @use './mixin' as *;
-@use './position' as *;
 
 .navbar {
     background: $navbackground;

@@ -1,7 +1,5 @@
 @use './mixin' as *;
 @use '../variables' as *;
-@use './flex' as *;
-@use './position' as *;
 
 #feedback {
     height: 70vh;
@@ -38,7 +36,7 @@
 
         .owl-carousel {
             max-width: 600px;
-            // margin: 0 auto;
+            margin: 0 auto;
         }
 
         .feedback-media__item {
