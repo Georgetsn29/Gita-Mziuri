@@ -12,9 +12,9 @@
 //     ! slice()- აბრუნებს მასივის ნაწილს ახალ მასივში, რომელიც იწყება მითითებული ინდექსიდან და მთავრდება მითითებულ ინდექსამდე (მთავარი ინდექსი არ შედის)
 
 //     ! splice()- ამოჭრის მასივის ნაწილს და აბრუნებს ამ ნაწილს ახალ მასივში, ასევე შეუძლია დაამატოს ახალი ელემენტები მითითებულ ინდექსზე
-//*            1. წაშალოს
-//*            2. წაშალოს და დაამატოს
-//*            3. დაამატოს
+// *            1. წაშალოს
+// *            2. წაშალოს და დაამატოს
+// *            3. დაამატოს
     
 //     -->
 
@@ -24,7 +24,7 @@
 // console.log(fruits);
 
 // const animals = ['🐕', '🐐', '🐆', '🦍', '🐉']
-// console.log(fruits);
+// console.log(animals);
 
 // fruits.shift()
 // console.log(fruits);
@@ -46,7 +46,7 @@
   
 
 
-// const str = fruits.join('! -')
+// const str = fruits. (' - ')
 // console.log(str);
 
 
@@ -64,8 +64,8 @@
 
 
 
-const nums = [1, 2, 3, 40, 20, 122, 7, 100, 10]
-console.log(nums);
+// const nums = [1, 2, 3, 40, 20, 122, 7, 100, 10]
+// console.log(nums);
 
 
 // const sliced_nums = nums.slice(1, 4)
@@ -73,13 +73,15 @@ console.log(nums);
 // const sliced_nums = nums.slice(1, 2)
 // const sliced_nums = nums.slice(-3, -1)
 // console.log(sliced_nums);
+// console.log(nums);
+
 
 //! splice()
 //! delete
 
-// const del_el = nums.splice(0, 3)
+// const del_el = nums.splice(6, 8)
 // console.log(del_el);
-// console.log(nums);
+// console.log(nums); 
 
 
 //! 2 delete el and add new el
@@ -90,6 +92,10 @@ console.log(nums);
 
 
 //! 3 add new el
- const add_el = nums.splice(0, 0, 'hello', 3123213, true, 'world')
- console.log(nums);
+//  const add_el = nums.splice(0, 0, 'hello', 3123213, true, 'world')
+//  console.log(nums);
  
+
+
+
+
