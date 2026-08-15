@@ -1,0 +1,112 @@
+@use './mixin' as *;
+@use '../variables' as *;
+@use './flex' as *;
+
+#feedback {
+    height: 70vh;
+    background-color: $subtitle-background;
+
+    .feedback-content {
+        
+
+        &__subtitle {
+            @include subtitle(150px);
+            background-color: #275b59;
+            color: $secondary-color;
+        }
+
+        &__title {
+            @include title(44px);
+        }
+
+        &__desc {
+            @include paragraph(16px, 400, 0.5px, 1.8);
+        }
+
+        .feedback__btn {
+            @include btn($white, $secondary-color, 10px 24px, 16px, 500);
+        }
+    }
+
+    .feedback-media {
+        height: 70vh;
+        background-image: url(https://aterna.joomlatema.net/templates/aterna/images/middlespot-1-img.jpg);
+        background-position: center;
+        background-size: cover;
+        @include flex(row, center, center);
+
+        .owl-carousel {
+            max-width: 600px;
+            // margin: 0 auto;
+        }
+
+        .feedback-media__item {
+                
+            .feedback-media__card {
+                
+                &::after {
+                        color: #ddd;
+                        content: "\f10e";
+                        font-family: FontAwesome;
+                        font-size: 32px;
+                        position: absolute;
+                        right: 10px;
+                        bottom: 0;
+                }
+
+                padding: 10px 20px;
+                width: 600px;
+                background-color: $subtitle-background;
+                border: none;
+                border-radius: 10px;
+                @include flex(row, space-between, start);
+
+                .feedback-media__body{
+
+                    .feedback-media__title {
+                        @include title(24px);
+                    }
+
+                    .feedback-media__position {
+                        @include paragraph(16px, 500, 0.5px, 1.8);
+                    }
+
+                    .feedback-media__star {
+                        color: $white;
+                        font-size: 30px;
+                        letter-spacing: 2px;
+                        transition: color 0.3s;
+                        width: 35%;
+
+                        &:hover {
+                            color: $whyUs-title-color
+                        }
+                        
+                    }
+
+                    .feedback-media__desc {
+
+                        @include paragraph(16px, 400, 0.5px, 1.8);
+
+                    }
+                }
+
+                .feedback-media-img-wrapper {
+                    max-width: 100%;
+                    min-width: 137px;
+                    width: 137px;
+                    height: auto;
+                    border-radius: 100%;
+                    border: 4px solid #d5d5d5;
+                    overflow: hidden;
+                    margin-top: 15px;
+
+                    .feedback-media__img {
+                        display: block;
+
+                    }
+                }
+            }
+        }
+    }
+}
