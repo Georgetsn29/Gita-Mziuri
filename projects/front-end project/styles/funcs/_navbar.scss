@@ -1,6 +1,7 @@
 @use './flex' as *;
 @use '../variables' as *;
 @use './mixin' as *;
+@use './position' as *;
 
 .navbar {
     background: $navbackground;
@@ -63,12 +64,13 @@
     color: $white;
     border: none;
     padding-top: 20px;
+    backdrop-filter: blur(5px);
+
 
     .dropdown-item {
         color: $white;
         position: relative;
         transition: transform 0.3s, color 0.3s ;
-        backdrop-filter: blur(5px);
 
 
         &:hover {
@@ -78,13 +80,11 @@
         }
 
         &:hover::before {
-                position: absolute;
+                @include position(50%, unset, 0, unset);
                 content: "";
                 width: 10px;
                 height: 1.5px;
                 background-color: $secondary-color;
-                left: 0;
-                top: 50%;
                 animation: fillUp 0.3s ease-in-out forwards;
             }
 
@@ -143,9 +143,7 @@
     font-weight: 900;
     font-size: 18px;
     color: $secondary-color;
-    position: absolute;
-    top: -14px;
-    left: 50%;
+    @include position(-14px, unset, 50%, unset);
     transform: translateX(-50%) translateY(-6px);
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;

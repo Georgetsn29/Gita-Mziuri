@@ -1,5 +1,6 @@
 @use '../variables' as *;
 @use './mixin' as *;
+@use './position' as *;
 
 .hero {
   height: 100vh;
@@ -7,9 +8,8 @@
 }
 
 .hero-main {
-  position: absolute;
-  top: 44%;
-  left: 10%;
+  
+  @include position(44%, unset, 10%, unset);
 
   .hero-card {
     background-color: transparent;

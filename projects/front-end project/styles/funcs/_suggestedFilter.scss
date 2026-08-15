@@ -1,6 +1,7 @@
 @use '../variables' as *;
 @use './mixin' as *;
 @use './flex' as *;
+@use './position' as *;
 
 .suggested__filter {
     // height: 100vh;
@@ -64,9 +65,7 @@
             }
 
             .filter-item__hover {
-                position: absolute;
-                top: 50%;
-                left: 50%;
+                @include position(50%, unset, 50%, unset);
                 transform: translate(-50%, -20%);
                 width: 100%;
                 z-index: 999;

@@ -1,5 +1,6 @@
 @use '../variables' as *;
 @use './mixin' as *;
+@use './position' as *;
 
 #about {
     height: 90vh;
@@ -17,7 +18,8 @@
 
             .about__image-wrapper--primary {
 
-                @include about-img(absolute, 28px, unset, -12px, unset, 2);
+                @include position(28px, unset, -12px, unset);
+                z-index: 2;
 
                 
 
@@ -35,7 +37,8 @@
 
             .about__image-wrapper--secondary {
 
-                @include about-img(absolute, unset, 25px, unset, 50px, 2);
+                @include position(unset, 25px, unset, 50px);
+                z-index: 2;
 
                 &__img {
                     width: 100%;
@@ -52,17 +55,12 @@
 
             &::before {
                 content: url(https://aterna.joomlatema.net/templates/aterna/images/about-1-shape1.png);
-                position: absolute;
-                left: -45px;
-                top: 0;
+                @include position(0, unset, -45px, unset);
             }
 
             &::after {
                 content: url(https://aterna.joomlatema.net/templates/aterna/images/about-1-shape2.png);
-                position: absolute;
-                right: 15px;
-                bottom: -15px;
-                z-index: 0;
+                @include position(unset, -15px, unset, 15px);
             }
         
     }

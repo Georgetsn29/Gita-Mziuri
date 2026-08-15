@@ -1,14 +1,14 @@
 @use '../variables' as *;
 
-// ! about img
-@mixin about-img($position, $top, $bottom, $left, $right, $z_index) {
-    position: $position;
-    top: $top;
-    bottom: $bottom;
-    left: $left;
-    right: $right;
-    z-index: $z_index;
-}
+// // ! about img
+// @mixin about-img($position, $top, $bottom, $left, $right, $z_index) {
+//     position: $position;
+//     top: $top;
+//     bottom: $bottom;
+//     left: $left;
+//     right: $right;
+//     z-index: $z_index;
+// }
 
 
 // ! btn
