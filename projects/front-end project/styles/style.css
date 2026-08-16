@@ -161,7 +161,7 @@
   padding: 10px 24px;
   font-size: 16px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   background-image: linear-gradient(to bottom, #ffb40a 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: bottom;
@@ -223,7 +223,7 @@
   padding: 10px 24px;
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   background-image: linear-gradient(to bottom, #ffb40a 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: bottom;
@@ -244,7 +244,7 @@
   padding: 10px 24px;
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   background-image: linear-gradient(to bottom, #ffb40a 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: bottom;
@@ -353,14 +353,13 @@
   font-weight: 700;
   color: #ffffff;
   font-family: Rubik;
-  transition: font-weight 0.3s, letter-spacing 0.3s;
+  transition: font-weight 0.3s;
 }
 #about .about-container .about__content .about-title span {
   color: #b07e50;
 }
 #about .about-container .about__content .about-title:hover {
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 #about .about-container .about__content .about-desc {
   font-size: 16px;
@@ -414,14 +413,13 @@
   font-weight: 700;
   color: #ffffff;
   font-family: Rubik;
-  transition: font-weight 0.3s, letter-spacing 0.3s;
+  transition: font-weight 0.3s;
 }
 #suggestedItems .suggested-title span {
   color: #b07e50;
 }
 #suggestedItems .suggested-title:hover {
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 #suggestedItems .suggested-title {
   text-align: center;
@@ -461,14 +459,13 @@
   font-weight: 700;
   color: #ffffff;
   font-family: Rubik;
-  transition: font-weight 0.3s, letter-spacing 0.3s;
+  transition: font-weight 0.3s;
 }
 #suggestedItems .suggested__tab-container .suggested__tab-title span {
   color: #b07e50;
 }
 #suggestedItems .suggested__tab-container .suggested__tab-title:hover {
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 #suggestedItems .suggested__tab-container .suggested__tab-p {
   text-align: justify;
@@ -488,7 +485,7 @@
   padding: 10px 24px;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   background-image: linear-gradient(to bottom, #ffb40a 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: bottom;
@@ -639,14 +636,13 @@
   font-weight: 700;
   color: #ffffff;
   font-family: Rubik;
-  transition: font-weight 0.3s, letter-spacing 0.3s;
+  transition: font-weight 0.3s;
 }
 .suggested__filter .filter-content .filter-item .filter-item__hover .titile-on-image .title-on-image-h4 span {
   color: #b07e50;
 }
 .suggested__filter .filter-content .filter-item .filter-item__hover .titile-on-image .title-on-image-h4:hover {
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 .suggested__filter .filter-content .filter-item .filter-item__hover .titile-on-image .title-on-image-h4 {
   letter-spacing: 0.5px;
@@ -694,14 +690,13 @@
   font-weight: 700;
   color: #ffffff;
   font-family: Rubik;
-  transition: font-weight 0.3s, letter-spacing 0.3s;
+  transition: font-weight 0.3s;
 }
 #whyUs .whyUs-content__title span {
   color: #b07e50;
 }
 #whyUs .whyUs-content__title:hover {
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 #whyUs .whyUs-content__title {
   transition: font-weight 0.3s, letter-spacing 0.3s;
@@ -758,7 +753,7 @@
   padding: 10px 24px;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   background-image: linear-gradient(to bottom, #ffb40a 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: bottom;
@@ -799,14 +794,13 @@
   font-weight: 700;
   color: #ffffff;
   font-family: Rubik;
-  transition: font-weight 0.3s, letter-spacing 0.3s;
+  transition: font-weight 0.3s;
 }
 #feedback .feedback-content__title span {
   color: #b07e50;
 }
 #feedback .feedback-content__title:hover {
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 #feedback .feedback-content__desc {
   font-size: 16px;
@@ -824,7 +818,7 @@
   padding: 10px 24px;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   background-image: linear-gradient(to bottom, #ffb40a 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: bottom;
@@ -875,14 +869,13 @@
   font-weight: 700;
   color: #ffffff;
   font-family: Rubik;
-  transition: font-weight 0.3s, letter-spacing 0.3s;
+  transition: font-weight 0.3s;
 }
 #feedback .feedback-media .feedback-media__item .feedback-media__card .feedback-media__body .feedback-media__title span {
   color: #b07e50;
 }
 #feedback .feedback-media .feedback-media__item .feedback-media__card .feedback-media__body .feedback-media__title:hover {
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 #feedback .feedback-media .feedback-media__item .feedback-media__card .feedback-media__body .feedback-media__position {
   font-size: 16px;
@@ -943,8 +936,24 @@
   background-color: #274e4d;
 }
 #gardeningTips .owl-carousel__gardening {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
+}
+#gardeningTips .owl-theme .owl-dots .owl-dot span {
+  background: rgba(32, 32, 56, 0.5);
+  height: 9px;
+  width: 50px;
+  border: none;
+  margin: 0 3px;
+  margin-top: 30px;
+  transition: background-color ease 0.4s;
+}
+#gardeningTips .owl-theme .owl-dots .owl-dot span:hover {
+  background-color: rgba(176, 126, 80, 0.7);
+}
+#gardeningTips .owl-theme .owl-dots .active span {
+  background-color: rgba(176, 126, 80, 0.5);
+  border-radius: 3px;
 }
 #gardeningTips .gardeningTips__container .gardeningTips__subtitle {
   background-color: #1c4645;
@@ -968,14 +977,13 @@
   font-weight: 700;
   color: #ffffff;
   font-family: Rubik;
-  transition: font-weight 0.3s, letter-spacing 0.3s;
+  transition: font-weight 0.3s;
 }
 #gardeningTips .gardeningTips__container .gardeningTips__title span {
   color: #b07e50;
 }
 #gardeningTips .gardeningTips__container .gardeningTips__title:hover {
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 #gardeningTips .gardeningTips__container .gardeningTips__title {
   margin-top: 20px;
@@ -993,16 +1001,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s;
 }
 #gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item {
   border-radius: 20px 0 20px 0;
   overflow: hidden;
-  width: 90%;
+  width: 92%;
   position: relative;
   z-index: 0;
 }
 #gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item .gardening__item-img {
   width: 100%;
+  height: 228px;
   display: block;
   transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), filter 0.5s ease;
   will-change: transform, filter;
@@ -1010,6 +1020,19 @@
 #gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item:hover .gardening__item-img {
   transform: scale(1.12);
   filter: brightness(0.4);
+}
+#gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item .gardening__item-blog {
+  background-color: #ffb40a;
+  color: #ffffff;
+  text-decoration: none;
+  position: absolute;
+  top: 15px;
+  bottom: unset;
+  left: 15px;
+  right: unset;
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
 }
 #gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item .gardening__item__hover {
   position: absolute;
@@ -1078,19 +1101,21 @@
   opacity: 1;
   transform: translateY(0);
 }
+#gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-body {
+  padding-bottom: 10px;
+}
 #gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-body .gardening__item-title {
   font-size: 20px;
   font-weight: 700;
   color: #ffffff;
   font-family: Rubik;
-  transition: font-weight 0.3s, letter-spacing 0.3s;
+  transition: font-weight 0.3s;
 }
 #gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-body .gardening__item-title span {
   color: #b07e50;
 }
 #gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-body .gardening__item-title:hover {
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 #gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-body .gardening__item-title {
   text-decoration: none;
@@ -1103,14 +1128,68 @@
   font-family: Rubik;
   letter-spacing: 0.5px;
   line-height: 1.8;
+  padding-top: 20px;
+  margin-bottom: 0;
 }
 #gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-details {
   background-color: #275b59;
   border-radius: 10px 0 10px 0;
-  padding: 20px;
+  width: 92%;
+  padding: 15px 5px;
+}
+#gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-details .gardening__item-details-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-details .gardening__item-details-content .gardening-details-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-details .gardening__item-details-content .gardening-details-item .bi-calendar2-week-fill,
+#gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-details .gardening__item-details-content .gardening-details-item .bi-person-fill,
+#gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-details .gardening__item-details-content .gardening-details-item .bi-chat-dots {
+  color: #b07e50;
+}
+#gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-details .gardening__item-details-content .gardening-details-item .gardening-details-item-p {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: Rubik;
+  letter-spacing: 0.1px;
+  line-height: 1.8;
+  margin: 0;
+}
+#gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-details .gardening__item-details-content .gardening-details-item i {
+  display: inline-flex;
+  align-items: center;
+}
+#gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-details .garden__item-btn {
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+#gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item-details .garden__item-btn:hover {
+  color: #b07e50;
+  transform: translate(-2px, -2px);
+}
+#gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card:hover {
+  transform: translatey(-20px);
 }
 #gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card:hover .gardening__item-title {
   color: #ce9560;
+}
+#gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card:hover .gardening__item-blog {
+  background-color: #103c3b;
 }
 
 html, body {

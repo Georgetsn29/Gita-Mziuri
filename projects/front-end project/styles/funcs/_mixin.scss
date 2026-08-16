@@ -28,7 +28,7 @@
     padding: $padding;
     font-size: $font_size;
     font-weight: $font_weight;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     background-image: linear-gradient(
         to bottom,
         #ffb40a 50%,
@@ -76,7 +76,7 @@
     font-weight: 700;
     color: $white;
     font-family: $fontrubik;
-    transition: font-weight 0.3s, letter-spacing 0.3s;
+    transition: font-weight 0.3s;
 
 
     span {
@@ -85,7 +85,6 @@
 
     &:hover {
         font-weight: 600;
-        letter-spacing: 0.5px;
     }
 }   
 
