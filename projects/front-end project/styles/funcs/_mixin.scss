@@ -134,3 +134,14 @@
         
     }
 }
+
+
+// ! form input icon
+@mixin input_icon($content) {
+    content: $content;
+    font-family: "bootstrap-icons";
+    font-size: 18px;
+    font-weight: normal;
+    color: $white;
+    @include position(10px, unset, unset, 15px);
+}

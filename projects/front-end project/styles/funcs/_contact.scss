@@ -38,7 +38,7 @@
 
         .contact-form__title {
             @include title(44px);
-            font-weight: 600;
+            width: 45%;
             margin-top: -10px;
         }
 
@@ -50,27 +50,66 @@
             .contact__input-container {
                 gap: 10px;
                 @include flex(row, unset, unset);
-                
-                .contact__input {
-                    border: none;
-                    background-color: #275b59;
-                    border-radius: 5px;
-                    padding: 12px 16px;
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 1.5;
-                    color: $secondary-color;
-                    transition: 0.3s;
-                    width: 50%;
 
-                    &:active,
-                    &:focus,
-                    &:focus-visible {
-                        outline: 2px solid #2e5951;
-                        border-color: transparent;
-                    }
+                .contact__input-icon-wrapper {
+                    width: 50%;
+                    position: relative;
                 }
+
+                    .contact__input-name-wrapper {
+
+                        &::after {
+                            @include input_icon("\F4DA");
+                        }
+
+                    }
+
+                    .contact__input-email-wrapper {
+
+                        &::after {
+                            @include input_icon("\F32C");
+                        }
+
+                    }
+
+                    .contact__input-date-wrapper {
+
+                        &::after {
+                            @include input_icon("\F1E9");
+                        }
+
+                    }
+
+                    .contact__input-phone-wrapper {
+
+                        &::after {
+                            @include input_icon("\F5B4");
+                        }
+
+                    }
+
+                    .contact__input {
+                        border: none;
+                        background-color: #275b59;
+                        border-radius: 5px;
+                        padding: 12px 16px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        color: $secondary-color;
+                        transition: 0.3s;
+                        width: 100%;
+                        z-index: 1;
+
+                        &:active,
+                        &:focus,
+                        &:focus-visible {
+                            outline: 2px solid #2e5951;
+                            border-color: transparent;
+                        }
+                    }
                 
+                                
             }
 
             .contact__textarea {

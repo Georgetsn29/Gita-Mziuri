@@ -1252,7 +1252,7 @@
   font-weight: 600;
 }
 #contact .contact-form .contact-form__title {
-  font-weight: 600;
+  width: 45%;
   margin-top: -10px;
 }
 #contact .contact-form .contact__form {
@@ -1270,6 +1270,58 @@
   justify-content: unset;
   align-items: unset;
 }
+#contact .contact-form .contact__form .contact__input-container .contact__input-icon-wrapper {
+  width: 50%;
+  position: relative;
+}
+#contact .contact-form .contact__form .contact__input-container .contact__input-name-wrapper::after {
+  content: "\f4da";
+  font-family: "bootstrap-icons";
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  bottom: unset;
+  left: unset;
+  right: 15px;
+}
+#contact .contact-form .contact__form .contact__input-container .contact__input-email-wrapper::after {
+  content: "\f32c";
+  font-family: "bootstrap-icons";
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  bottom: unset;
+  left: unset;
+  right: 15px;
+}
+#contact .contact-form .contact__form .contact__input-container .contact__input-date-wrapper::after {
+  content: "\f1e9";
+  font-family: "bootstrap-icons";
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  bottom: unset;
+  left: unset;
+  right: 15px;
+}
+#contact .contact-form .contact__form .contact__input-container .contact__input-phone-wrapper::after {
+  content: "\f5b4";
+  font-family: "bootstrap-icons";
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  bottom: unset;
+  left: unset;
+  right: 15px;
+}
 #contact .contact-form .contact__form .contact__input-container .contact__input {
   border: none;
   background-color: #275b59;
@@ -1280,7 +1332,8 @@
   line-height: 1.5;
   color: #b07e50;
   transition: 0.3s;
-  width: 50%;
+  width: 100%;
+  z-index: 1;
 }
 #contact .contact-form .contact__form .contact__input-container .contact__input:active, #contact .contact-form .contact__form .contact__input-container .contact__input:focus, #contact .contact-form .contact__form .contact__input-container .contact__input:focus-visible {
   outline: 2px solid #2e5951;
