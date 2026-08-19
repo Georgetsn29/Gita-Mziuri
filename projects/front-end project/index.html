@@ -106,7 +106,7 @@
 
 
     <!--! hero !-->
-    <section class="hero">
+    <section id="hero">
     <div id="carouselExampleControls" class="carousel slide h-100" data-bs-ride="carousel" style="z-index: 0;">
         <div class="carousel-inner h-100">
             
@@ -1208,8 +1208,42 @@
     </section>
 
 
+    <!--! footer !-->
+    <footer>
+
+    </footer>
+
+    <section id="footer__nav">
+        <div class="footer__nav-container container">
+
+            <p class="footer__nav-p">Copyright ©  All Rights Reserved. Powered by <span><a href="https://github.com/Georgetsn29" target="_blank">Giorgi Tsnobiladze</a></span></p>
+
+            <ul class="footer__nav-item-wrapper justify-content-end">
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Home</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Features</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Pages</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Blog</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Contact</a>
+                </li>
+                </ul>
+        </div>
+    </section>
 
 
+    <!--! go to top !-->
+    <a class="go-top" href="#hero"><i class="bi bi-caret-up-fill"></i></a>
 
 
 
@@ -1291,8 +1325,8 @@
         });
 
         flatpickr("#date_calendar", {
-        dateFormat: "d/m/Y", // Formats output as DD/MM/YYYY
-    });
+            dateFormat: "d/m/Y",
+        });
     </script>
 
 </body>
