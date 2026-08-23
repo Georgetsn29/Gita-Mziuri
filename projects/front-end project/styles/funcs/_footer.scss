@@ -4,6 +4,38 @@
 footer {
     height: 70vh;
     background: $footer-background url(https://aterna.joomlatema.net/templates/aterna/images/footer-bg.png);
+
+    .footer-container {
+        padding-top: 100px;
+        .footer-container__item {
+            // background-color: red;
+            padding: 0;
+            padding-left: 10px;
+            .footer-brend {
+                width: 1;
+            }
+
+            .footer-container__item-p {
+                @include paragraph(16px, 400, 0.5px, 1.6);
+                margin-top: 20px;
+            }
+
+            .footer-container__content {
+                .footer-container__item__content-p {
+                    @include paragraph(16px, 400, 0.5px, 1.6);
+
+
+                    .bi-telephone-fill,
+                    .bi-geo-alt-fill,
+                    .bi-envelope-fill {
+                        color: $secondary-color;
+                        font-size: 18px;
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 #footer__nav {
@@ -21,11 +53,13 @@ footer {
                 @include paragraph(14px, 400, 0.5px, 1.8);
                 color: $secondary-color;
                 text-decoration: none;
-                transition: text-decoration 0.4s ease-in-out, text-underline-offset 0.4s ease-in-out;
+                transition: text-decoration 0.4s, text-underline-offset 0.4s,
+                letter-spacing 0.4s ;
 
                 &:hover {
                     text-decoration: underline wavy $whyUs-title-color 1.5px;
-                    text-underline-offset: 2px; 
+                    text-underline-offset: 2px;
+                    letter-spacing: 1px; 
                 }
             }
         }

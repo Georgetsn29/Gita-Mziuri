@@ -45,11 +45,10 @@
 .nav-link {
   color: #ffffff !important;
   font-size: 18px;
-  transition: letter-spacing 0.3s;
+  transition: color 0.4s;
 }
 .nav-link:hover {
   color: #b07e50 !important;
-  letter-spacing: 1px;
 }
 
 .dropdown:hover .nav-link {
@@ -1401,6 +1400,40 @@ footer {
   height: 70vh;
   background: #091f1e url(https://aterna.joomlatema.net/templates/aterna/images/footer-bg.png);
 }
+footer .footer-container {
+  padding-top: 100px;
+}
+footer .footer-container .footer-container__item {
+  padding: 0;
+  padding-left: 10px;
+}
+footer .footer-container .footer-container__item .footer-brend {
+  width: 1;
+}
+footer .footer-container .footer-container__item .footer-container__item-p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: Rubik;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+footer .footer-container .footer-container__item .footer-container__content .footer-container__item__content-p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: Rubik;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+footer .footer-container .footer-container__item .footer-container__content .footer-container__item__content-p .bi-telephone-fill,
+footer .footer-container .footer-container__item .footer-container__content .footer-container__item__content-p .bi-geo-alt-fill,
+footer .footer-container .footer-container__item .footer-container__content .footer-container__item__content-p .bi-envelope-fill {
+  color: #b07e50;
+  font-size: 18px;
+  padding-right: 15px;
+}
 
 #footer__nav {
   background-color: #041111;
@@ -1430,14 +1463,15 @@ footer {
   line-height: 1.8;
   color: #b07e50;
   text-decoration: none;
-  transition: text-underline-offset 0.4s ease-in-out, -webkit-text-decoration 0.4s ease-in-out;
-  transition: text-decoration 0.4s ease-in-out, text-underline-offset 0.4s ease-in-out;
-  transition: text-decoration 0.4s ease-in-out, text-underline-offset 0.4s ease-in-out, -webkit-text-decoration 0.4s ease-in-out;
+  transition: text-underline-offset 0.4s, letter-spacing 0.4s, -webkit-text-decoration 0.4s;
+  transition: text-decoration 0.4s, text-underline-offset 0.4s, letter-spacing 0.4s;
+  transition: text-decoration 0.4s, text-underline-offset 0.4s, letter-spacing 0.4s, -webkit-text-decoration 0.4s;
 }
 #footer__nav .footer__nav-container .footer__nav-p a:hover {
   -webkit-text-decoration: underline wavy #ffb40a 1.5px;
           text-decoration: underline wavy #ffb40a 1.5px;
   text-underline-offset: 2px;
+  letter-spacing: 1px;
 }
 #footer__nav .footer__nav-container .footer__nav-item-wrapper {
   display: flex;
@@ -1469,7 +1503,7 @@ footer {
   color: #ffffff;
   font-size: 20px;
   background-color: #b07e50;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 5px 10px;
   animation: show-button linear both;
   animation-timeline: scroll();

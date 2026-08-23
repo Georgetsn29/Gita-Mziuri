@@ -40,11 +40,10 @@
 .nav-link {
     color: $white !important;
     font-size: 18px;
-    transition: letter-spacing 0.3s;
+    transition: color 0.4s;
 
     &:hover {
         color: $secondary-color !important;
-        letter-spacing: 1px;
     }
 }
 
