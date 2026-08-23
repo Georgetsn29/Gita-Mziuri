@@ -73,8 +73,8 @@ const cars = [
         year : '2026',
         color : ['Stealth Grey', 'Pearl White Multi-Coat', 'Diamond Black', 'Frost Blue Metallic', 'Ultra Red', 'Quicksilver'],
         engine: 'Dual Motor'
-    }
+    },
 ]
 
-console.log(cars);
+console.log(cars[1].year);
  
