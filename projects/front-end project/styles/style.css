@@ -20,7 +20,7 @@
   margin: 0 40px 0 0;
   width: 13%;
   padding: 0;
-  transition: transform 0.3s;
+  transition: transform 0.4s;
 }
 .navbar-brand:hover {
   transform: translate(4px, -4px);
@@ -38,7 +38,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  width: 70%;
+  width: 60%;
   font-weight: bold;
 }
 

@@ -20,7 +20,7 @@
     margin: 0 40px 0 0;
     width: 13%;
     padding: 0;
-    transition: transform 0.3s;
+    transition: transform 0.4s;
 
     &:hover {
         transform: translate(4px, -4px)
@@ -33,7 +33,7 @@
 
 .navbar-nav {
     @include flex(row, space-between, baseline);
-    width: 70%;
+    width: 60%;
     font-weight: bold;
 }
 
