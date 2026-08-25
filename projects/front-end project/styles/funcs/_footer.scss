@@ -7,22 +7,30 @@ footer {
 
     .footer-container {
         padding-top: 100px;
-        .footer-container__item {
-            // background-color: red;
+
+        .footer__item {
+
             padding: 0;
             padding-left: 10px;
-            .footer-brend {
-                width: 1;
+
+            .footer-brend__img {
+
+                transition: transform 0.4s;
+
+                &:hover {
+                    transform: translate(20px, -8px);
+                }
             }
 
-            .footer-container__item-p {
-                @include paragraph(16px, 400, 0.5px, 1.6);
+            .footer__item-desc {
+                @include paragraph(16px, 400, 0.2px, 1.8);
+                color: #d9d4d4;
                 margin-top: 20px;
             }
 
             .footer-container__content {
-                .footer-container__item__content-p {
-                    @include paragraph(16px, 400, 0.5px, 1.6);
+                .footer__item__content-p {
+                    @include paragraph(16px, 400, 0.5px, 1.8);
 
 
                     .bi-telephone-fill,
@@ -34,6 +42,101 @@ footer {
                     }
                 }
             }
+
+            .footer__item-links__title {
+                @include title(32px);
+                font-weight: 500;
+                letter-spacing: 0.5px;
+            }
+
+            .footer__item-links-wrapper {
+                    padding-left: 0px;
+                    margin-top: 30px;
+
+
+                .footer__item-links {
+                    list-style: none;
+                    color: $white;
+
+                    a {
+
+                        &::before {
+                            content: "\F285";
+                            font-family: $fontbootstrap;
+                            line-height: 1;
+                            font-size: 10px;
+                        }
+
+                        @include flex(row, unset, center);
+                        gap: 8px;
+                        color: $white;
+                        text-decoration: none;
+                        @include paragraph(15px, 500, 0.5px, 2.4);
+                        transition: color 0.3s, letter-spacing 0.3s;
+
+                        &:hover  {
+                            color: $secondary-color;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+
+                    
+                }
+            }
+
+            .footer__item-desc__newsletter {
+                width: 85%;
+                margin-top: 30px;
+            }
+
+            .footer-newsletter-form {
+
+                margin-top: 30px;
+                width: 82%;
+
+                .footer-newsletter-input-group {
+
+                    @include flex(row, unset, center);
+                    gap: 15px;
+                    
+                    .footer-newsletter-form__btn {
+                        @include btn($white, $secondary-color, 8px 10px, 15px, 400);
+                    }
+                }
+            }
+
+            .footer-newsletter-social {
+                width: 60%;
+                @include flex(row, space-between, center);
+                margin-top: 50px;
+
+                .footer-newsletter-social__link {
+
+                    @include btn($white, $footer-socials, unset, 15px, 400);
+
+                    background-image: linear-gradient(
+                        to top,
+                        $secondary-color 50%,
+                        transparent 50%,
+                    );
+                    background-size: 100% 200%;
+                    background-position: top;
+
+                    width: 45px;
+                    height: 45px;
+                    @include flex(row, center, center);
+                    border-radius: 50%;
+                    backdrop-filter: blur(5px);
+                    
+                    &:hover {
+                        transform: none;
+                        background-position: bottom;
+
+                    }
+                }
+            }
+
+            
         }
     }
 }
