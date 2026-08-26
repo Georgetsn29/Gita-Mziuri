@@ -1658,6 +1658,82 @@ footer .footer-container .footer__item .footer-newsletter-social .footer-newslet
     pointer-events: auto;
   }
 }
+.pages__hero {
+  height: 45vh;
+  background: url(https://aterna.joomlatema.net/images/sampledata/slider-images/slider-1.jpg);
+  width: 100%;
+  padding-top: 150px;
+}
+.pages__hero .pages-hero__wrapper {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(9, 31, 30, 0.7);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pages__hero .pages-hero__wrapper .pages-hero__title-wrapper .pages-hero__title {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: Rubik;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  margin: 0;
+}
+.pages__hero .pages-hero__wrapper .pages-hero__nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pages__hero .pages-hero__wrapper .pages-hero__nav-wrapper .pages-hero__nav-p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: Rubik;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  margin: 0;
+}
+.pages__hero .pages-hero__wrapper .pages-hero__nav-wrapper .pages-hero__nav-a {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: Rubik;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  text-decoration: none;
+  color: #b07e50;
+  transition: color 0.4s;
+}
+.pages__hero .pages-hero__wrapper .pages-hero__nav-wrapper .pages-hero__nav-a:hover {
+  color: #ffffff;
+}
+
+.contact-main {
+  height: 120vh;
+  background-color: #103c3b;
+}
+.contact-main .contact-main__title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: Rubik;
+  transition: font-weight 0.3s;
+}
+.contact-main .contact-main__title span {
+  color: #b07e50;
+}
+.contact-main .contact-main__title:hover {
+  font-weight: 600;
+}
+.contact-main .contact-main__title {
+  font-weight: 400;
+  width: 10%;
+}
+
 html, body {
   overflow-x: hidden;
 }

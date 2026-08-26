@@ -1,0 +1,61 @@
+@use '../variables' as *;
+@use '../funcs/mixin' as *;
+
+
+.pages__hero {
+    height: 45vh;
+    background: url(https://aterna.joomlatema.net/images/sampledata/slider-images/slider-1.jpg);
+    width: 100%;
+    padding-top: 150px;
+    
+
+    .pages-hero__wrapper {
+
+        padding: 0;
+        margin: 0;
+        background-color: rgba($footer-background, 0.7);
+        @include flex(row, center, center);
+
+        
+        .pages-hero__title-wrapper {
+
+            .pages-hero__title {
+                @include paragraph(40px, 500, 0.5px, 1.8);
+                margin: 0;
+            }
+        }
+
+        .pages-hero__nav-wrapper {
+            @include flex(row, space-evenly, center);
+
+            .pages-hero__nav-p {
+                @include paragraph(16px, 400, 0.5px, 1.8);
+                margin: 0;
+            }
+
+            .pages-hero__nav-a {
+                @include paragraph(16px, 500, 0.5px, 1.8);
+                text-decoration: none;
+                color: $secondary-color;
+                transition: color 0.4s;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+// ! form
+
+.contact-main {
+    height: 120vh;
+    background-color: $primary-color;
+
+    .contact-main__title {
+        @include title(44px);
+        font-weight: 400;
+        width: 10%;
+    }
+}

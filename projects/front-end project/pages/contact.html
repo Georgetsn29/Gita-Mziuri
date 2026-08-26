@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="../styles/style.css">
 
-    <title>Project</title>
+    <title>Aterna / contact</title>
 </head>
 <body>
 
@@ -92,6 +92,64 @@
 
         </div>
     </nav>
+
+    <!--! pages hero !-->
+    <section class="pages__hero">
+        <div class="container">
+            <div class="row justify-content-between pages-hero__wrapper">
+                <div class="col pages-hero__title-wrapper">
+                    <h3 class="pages-hero__title">Contact</h3>
+                </div>
+                <div class="col-lg-3 pages-hero__nav-wrapper">
+                    <p class="pages-hero__nav-p">You are here:</p>
+                    <p class="pages-hero__nav-p"><a href="../index.html" class="pages-hero__nav-a">Home</a> / Contact</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--! contact main !-->
+    <section class="contact-main">
+        <div class="container pt-5">
+            <h2 class="contact-main__title"><span>Aterna</span></h2>
+
+            <form class="contact__form">
+
+                <div class="mb-3 contact__input-container">
+                    
+                    <div class="contact__input-icon-wrapper contact__input-name-wrapper">
+                        <input type="text" name="name" id="name" class="contact__input" placeholder="Name" required>
+                    </div>
+
+                    <div class="contact__input-icon-wrapper contact__input-email-wrapper">
+                        <input type="email" name="email" id="email" class="contact__input" placeholder="Email" required>
+                    </div>
+
+                </div>
+
+                <div class="mb-3 contact__input-container">
+
+                    <div class="contact__input-icon-wrapper contact__input-date-wrapper">
+                        <input type="date" name="date-calendar" id="date_calendar" class="contact__input custom-date-input" placeholder="Date / Time" required>
+                    </div>
+
+                    <div class="contact__input-icon-wrapper contact__input-phone-wrapper">
+                        <input type="phone" name="phone" id="phone" class="contact__input" placeholder="Phone" required>
+                    </div>
+                    
+                </div>
+
+                <div class="mb-3 contact__input-container">
+                    <textarea name="message" id="" class="contact__textarea" style="height: 104px;" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="contact__form-btn-wrapper" data-aos="fade-up" data-aos-delay="700">
+                    <button class="btn contact-form__btn">Submit Form</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
 
 
     <!--! footer !-->
@@ -217,61 +275,6 @@
         AOS.init({
             duration: 800,
             once: false
-        });
-
-        const heroCarousel = document.querySelector('#carouselExampleControls');
-
-        if (heroCarousel) {
-            heroCarousel.addEventListener('slide.bs.carousel', (e) => {
-                const targetElements = e.relatedTarget.querySelectorAll('[data-aos]');
-                targetElements.forEach(el => el.classList.remove('aos-animate'));
-            });
-
-            heroCarousel.addEventListener('slid.bs.carousel', (e) => {
-                const activeElements = e.relatedTarget.querySelectorAll('[data-aos]');
-                activeElements.forEach(el => el.classList.add('aos-animate'));
-            });
-        }
-
-        const baseCarouselOptions = {
-            autoplay: true,
-            autoplaySpeed: 700,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: true,
-            dots: false,
-            loop: false,
-            rewind: true,
-            margin: 10,
-            nav: false,
-            responsive: {
-                0: { items: 1 },
-                600: { items: 1 },
-                1000: { items: 1 }
-            },
-            onTranslate: function(event) {
-                $(event.target).find('.owl-item [data-aos]').removeClass('aos-animate');
-            },
-            onTranslated: function(event) {
-                $(event.target).find('.owl-item.active [data-aos]').addClass('aos-animate');
-            }
-        };
-
-        $('.owl-carousel__feedback').owlCarousel({
-            ...baseCarouselOptions,
-            autoplayTimeout: 6000
-        });
-
-        $('.owl-carousel__gardening').owlCarousel({
-            ...baseCarouselOptions,
-            autoplay: false,
-            margin: 10,
-            dots: true,
-            loop: true,
-            responsive: {
-                0: { items: 1 },
-                768: { items: 2 },
-                1024: { items: 3 }
-            }
         });
 
         flatpickr("#date_calendar", {
