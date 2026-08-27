@@ -42,7 +42,42 @@
             margin-top: -10px;
         }
 
-        .contact__form {
+        
+
+        // &__btn {
+        //     @include btn($white, $secondary-color, 10px 24px, 16px, 500);
+        // }
+    }
+}
+
+.flatpickr-calendar {
+    background-color: #275b59;
+    border-radius: 12px;
+    border: 1px solid #275b59;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.flatpickr-current-month, .flatpickr-weekday {
+    color: #ffffff !important;
+}
+
+.flatpickr-day {
+    color: #e0e0e0;
+    border-radius: 50%;
+}
+
+.flatpickr-day.selected {
+    background-color: #008080 !important;
+    border-color: #008080 !important;
+    color: #ffffff !important;
+}
+
+.flatpickr-day:hover {
+    background-color: #2e5951 !important;
+}
+
+
+.contact__form {
             width: 100%;
             gap: 10px;
             @include flex(column, unset, unset);
@@ -130,34 +165,6 @@
             }
         }
 
-        &__btn {
+        .contact-form__btn {
             @include btn($white, $secondary-color, 10px 24px, 16px, 500);
         }
-    }
-}
-
-.flatpickr-calendar {
-    background-color: #275b59;
-    border-radius: 12px;
-    border: 1px solid #275b59;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
-.flatpickr-current-month, .flatpickr-weekday {
-    color: #ffffff !important;
-}
-
-.flatpickr-day {
-    color: #e0e0e0;
-    border-radius: 50%;
-}
-
-.flatpickr-day.selected {
-    background-color: #008080 !important;
-    border-color: #008080 !important;
-    color: #ffffff !important;
-}
-
-.flatpickr-day:hover {
-    background-color: #2e5951 !important;
-}
