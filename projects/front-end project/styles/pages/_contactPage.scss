@@ -51,7 +51,9 @@
 
 .contact-main {
     height: 110vh;
+    padding-bottom: 40px;
     background-color: $primary-color;
+    @include flex(column, center, center);
 
     .contact-main__title {
         @include title(44px);
@@ -103,5 +105,24 @@
 
     strong {
         color: $white;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contact-main {
+        height: 80vh;
+
+    }
+}
+
+@media (max-width: 900px) {
+    .contact-main {
+        height: 120vh;
+    }
+}
+
+@media (max-width: 769px) {
+    .contact-main {
+        height: 130vh;
     }
 }

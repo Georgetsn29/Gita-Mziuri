@@ -188,3 +188,18 @@ footer {
         }
     }
 }
+
+
+// @media (max-width: 1199px) {
+//     footer {
+//         height: 70vh;
+//     }
+// }
+
+@media (max-width: 765px) {
+    
+    footer {
+        height: 130vh;
+        padding-inline: 40px;
+    }
+}

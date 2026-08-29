@@ -32,7 +32,7 @@
 }
 
 .navbar-nav {
-    @include flex(row, space-between, baseline);
+    @include flex(row, space-between, unset);
     width: 60%;
     font-weight: bold;
 }
@@ -40,7 +40,8 @@
 .nav-link {
     color: $white !important;
     font-size: 18px;
-    transition: color 0.4s;
+    transition: color 0.4s; 
+    
 
     &:hover {
         color: $secondary-color !important;
@@ -57,7 +58,7 @@
     visibility: hidden;
     transform: translateY(10px);
     transition: all 0.2s ease-in-out;
-    background: $navbackground;
+    background: rgba($navbackground, 0.8);
     color: $white;
     border: none;
     padding-top: 20px;
@@ -68,6 +69,7 @@
         color: $white;
         position: relative;
         transition: transform 0.3s, color 0.3s ;
+
 
 
         &:hover {
@@ -105,13 +107,15 @@
 
   .dropdown-toggle {
 
+    position: relative;
+
     &::after {
         content: "<";
         border: none;
         position: absolute;
         transform: rotate(-90deg);
         transition: all 0.4s;
-        margin-left: 6px;
+        right: -10px;
         color: $secondary-color;
     }
 
@@ -153,6 +157,11 @@
   }
 }
 
+.nav__btn-wrapper {
+    width: 250px;
+    @include flex(row, space-between, center);
+}
+
 .nav-btn {
 
     @include btn($white, $secondary-color, 10px 24px, 16px, bold);
@@ -163,9 +172,47 @@
 
 
 
-@media (max-width: 1200px) {
-    .navbar-toggler {
-        border: none;
-        box-shadow: 4px 4px 10px 1px #6e6f6fe7;
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+.navbar-nav {
+    width: 77%;
+}
+
+}
+
+@media (max-width: 1199.98px) {
+.navbar-toggler {
+    border: none;
+    color: $white;
+    background-color: $secondary-color;
+}
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 1000;
+    background-color: rgba($navbackground, 0.8);
+  }
+
+  .navbar-nav {
+    
+    @include flex(row, space-evenly, unset);
+    width: 100%;
+
+  }
+  
+  .nav-link {
+    @include flex(row, center, unset);
+    
+  }
+
+  .dropdown-toggle {
+
+    &::after {
+        right: 45px;
     }
+  }
 }
