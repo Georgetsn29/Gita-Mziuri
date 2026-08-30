@@ -3,10 +3,14 @@
 
 
 #pages_hero {
-    height: 45vh;
     background: url(https://aterna.joomlatema.net/images/sampledata/slider-images/slider-1.jpg);
     width: 100%;
     padding-top: 150px;
+    padding-bottom: 40px;
+
+    @media (max-width: 768px) {
+        padding-inline: 10px;
+    }
     
 
     .pages-hero__wrapper {
@@ -16,17 +20,24 @@
         background-color: rgba($footer-background, 0.7);
         @include flex(row, center, center);
 
-        
-        .pages-hero__title-wrapper {
+        .pages-hero__title {
+            @include paragraph(40px, 500, 0.5px, 1.8);
+            margin: 0;
+            width: 180px;
 
-            .pages-hero__title {
-                @include paragraph(40px, 500, 0.5px, 1.8);
-                margin: 0;
+            @media (max-width: 768px) {
+                @include paragraph(30px, 500, 0.5px, 1.8);
+            }
+
+            @media (max-width: 500px) {
+                // text-align: center;
+                margin: 0 auto;
             }
         }
 
         .pages-hero__nav-wrapper {
             @include flex(row, space-evenly, center);
+            width: 300px;
 
             .pages-hero__nav-p {
                 @include paragraph(16px, 400, 0.5px, 1.8);
@@ -43,6 +54,11 @@
                     color: $white;
                 }
             }
+
+            @media (max-width: 500px) {
+                // text-align: center;
+                margin: 0 auto;
+            }
         }
     }
 }
@@ -50,10 +66,13 @@
 // ! form
 
 .contact-main {
-    height: 110vh;
-    padding-bottom: 40px;
+    padding-block: 20px 60px;
     background-color: $primary-color;
     @include flex(column, center, center);
+
+    @media (max-width: 768px) {
+        padding-inline: 10px;
+    }
 
     .contact-main__title {
         @include title(44px);
@@ -108,21 +127,4 @@
     }
 }
 
-@media (max-width: 1200px) {
-    .contact-main {
-        height: 80vh;
 
-    }
-}
-
-@media (max-width: 900px) {
-    .contact-main {
-        height: 120vh;
-    }
-}
-
-@media (max-width: 769px) {
-    .contact-main {
-        height: 130vh;
-    }
-}

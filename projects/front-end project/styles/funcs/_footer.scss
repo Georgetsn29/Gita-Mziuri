@@ -2,8 +2,13 @@
 @use '../variables' as *;
 
 footer {
-    height: 70vh;
+    padding-block: 40px;
+    padding-inline: 40px;
     background: $footer-background url(https://aterna.joomlatema.net/templates/aterna/images/footer-bg.png);
+
+    @media (max-width: 768px) {
+        padding-inline: 10px;
+    }
 
     .footer-container {
         padding-top: 100px;
@@ -144,6 +149,10 @@ footer {
 #footer__nav {
     background-color: #041111;
     padding-block: 20px;
+
+    @media (max-width: 768px) {
+        padding-inline: 10px;
+    }
     
     .footer__nav-container {
         @include flex(row, space-between, center);
@@ -172,6 +181,10 @@ footer {
             gap: 15px;
             margin: 0;
 
+            @media (max-width: 500px) {
+                @include flex(column, space-between, center);
+            }
+
             .footer__nav-item {
 
                 .footer__nav-link {
@@ -186,20 +199,5 @@ footer {
                 }
             }
         }
-    }
-}
-
-
-// @media (max-width: 1199px) {
-//     footer {
-//         height: 70vh;
-//     }
-// }
-
-@media (max-width: 765px) {
-    
-    footer {
-        height: 130vh;
-        padding-inline: 40px;
     }
 }

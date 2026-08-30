@@ -4,7 +4,7 @@
 .navbar {
     background: $navbackground;
     width: 85%;
-    height: 80px;
+    min-height: 80px;
     padding-inline: 20px;
     position: fixed;
     backdrop-filter: blur(5px);
@@ -215,4 +215,63 @@
         right: 45px;
     }
   }
+}
+
+@media (max-width: 992px) {
+    
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    height: 120px
+  }
+
+  .dropdown-toggle {
+
+    &::after {
+        display: none;
+    }
+  }
+
+  .nav-item.dropdown .dropdown-menu {
+    position: relative;
+  }
+}
+
+
+@media (min-width: 380px) and (max-width: 500px) {
+.navbar-brand {
+    width: 30%;
+}
+
+.nav__btn-wrapper {
+    width: 185px;
+}
+
+.nav-btn {
+
+    @include btn($white, $secondary-color, 8px 12px, 14px, bold);
+
+}
+
+.navbar-toggler-icon {
+    font-size: 20px;
+}
+
+.navbar-toggler {
+    padding: 4px 6px;
+}
+
 }

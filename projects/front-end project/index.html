@@ -28,20 +28,27 @@
 
     <!--! nav !-->
     <nav class="navbar navbar-expand-xl" style="z-index: 9999;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="https://aterna.joomlatema.net/images/logo-darkstyle.png" alt="" width="100%">
-            </a>
+        <div class="container-fluid align-items-center">
             
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <a class="navbar-brand me-auto me-xl-3" href=#">
+            <img src="https://aterna.joomlatema.net/images/logo-darkstyle.png" alt="" style="width: 100%;">
+            </a>
 
+            <div class="nav__btn-wrapper d-flex align-items-center gap-2 order-xl-3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <button class="nav-btn">Get A QUOTA</button>
+            </div>
+
+            <div class="collapse navbar-collapse order-xl-2" id="navbarNavDropdown">
+            <ul class="navbar-nav">
                 <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button " data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">About Us</a></li>
                     <li><a class="dropdown-item" href="#">Schedule a Visit</a></li>
@@ -49,9 +56,8 @@
                     <li><a class="dropdown-item" href="#">Our Services</a></li>
                 </ul>
                 </li>
-
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button " data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Portfolio With Module</a></li>
                     <li><a class="dropdown-item" href="#">Meet Our Team</a></li>
@@ -60,9 +66,8 @@
                     <li><a class="dropdown-item" href="#">All Services</a></li>
                 </ul>
                 </li>
-
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button " data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
                     <li><a class="dropdown-item" href="#">Brand Identity</a></li>
@@ -70,22 +75,10 @@
                     <li><a class="dropdown-item" href="#">All Services</a></li>
                 </ul>
                 </li>
-                
                 <li class="nav-item">
                 <a class="nav-link" href="./pages/contact.html">Contact</a>
                 </li>
-
             </ul>
-            
-
-            </div>
-
-                <div class="nav__btn-wrapper">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <button class="nav-btn">Get A QUOTA</button>
             </div>
 
         </div>
@@ -1378,6 +1371,24 @@
         flatpickr("#date_calendar", {
             dateFormat: "d/m/Y",
         });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleBtn = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.getElementById('navbarNavDropdown');
+
+            toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+
+            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, { toggle: false });
+            
+            if (navbarCollapse.classList.contains('show')) {
+                bsCollapse.hide();
+            } else {
+                bsCollapse.show();
+            }
+            });
+        });
+
     </script>
 
 </body>
