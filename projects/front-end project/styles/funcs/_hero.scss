@@ -6,6 +6,19 @@
   position: relative;
 }
 
+.carousel-item__img {
+  width: 100%;
+  height: 100%;
+
+  // Target the image tag inside the wrapper
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
 .hero-main {
   
   @include position(44%, unset, 10%, unset);
@@ -130,7 +143,6 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-
   }
 
   .hero-main {

@@ -2,7 +2,8 @@
 @use './mixin' as *;
 
 #about {
-    height: 90vh;
+    // height: 90vh;
+    padding-bottom: 60px;
     background-color: #103c3b;
     padding-top: 100px;
 
@@ -30,6 +31,12 @@
 
                     &:hover {
                         transform: scale(1.05)
+                    }
+                }
+
+                @media (min-width: 360px) and (max-width: 576px) {
+                    &_img {
+                        width: 75%;
                     }
                 }
             }
