@@ -2,9 +2,10 @@
 @use './mixin' as *;
 
 #suggestedItems {
-    height: 135vh;
+    // height: 135vh;
     background-color: #28504f;
-    padding-top: 40px;
+    // padding-top: 40px;
+    padding-block: 40px;
 
     .suggested-subtitle {
             @include subtitle(140px);
@@ -95,3 +96,41 @@
     }
 }
 
+
+@media (max-width: 576px) {
+    #suggestedItems {
+
+    .suggested-container {
+        
+        .suggested__btn {
+            padding: 10px 10px;
+            min-width: 150px;
+            border-radius: 30px 30px 30px 30px;
+        }
+
+        .suggested__btn-first{
+            border-radius: 30px 30px 30px 30px;
+        }
+
+        .suggested__btn-last{
+            border-radius: 30px 30px 30px 30px;
+        }
+    }
+
+    .suggested__tab-container {
+        width: 100%;
+        padding-inline: 20px;
+        .suggested__tab-content {
+            width: 100%;
+        }
+
+        .suggested__tab-media {
+            width: 100%;
+
+            &__img {
+                transform: translateX(10px) translateY(-30px);
+            }  
+        }
+    }
+}
+}
