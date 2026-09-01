@@ -2,7 +2,6 @@
 @use '../variables' as *;
 
 #feedback {
-    height: 70vh;
     background-color: $subtitle-background;
 
     .feedback-content {
@@ -28,7 +27,7 @@
     }
 
     .feedback-media {
-        height: 70vh;
+        padding-block: 100px;
         background-image: url(https://aterna.joomlatema.net/templates/aterna/images/middlespot-1-img.jpg);
         background-position: center;
         background-size: cover;
@@ -107,4 +106,71 @@
             }
         }
     }
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+    #feedback {
+
+    .feedback-content {
+        padding-inline: 60px;
+    }
+
+}
+}
+
+@media (min-width: 400px) and (max-width: 575px) {
+    #feedback {
+    .feedback-content {
+        padding: 40px; 
+    }
+
+    .feedback-media {
+        padding-block: 60px;
+
+        .owl-carousel {
+            max-width: 400px;
+        }
+
+        .feedback-media__item {
+     
+            .feedback-media__card {
+                width: 400px;
+                .feedback-media__body{
+                    .feedback-media__star {
+                        width: 70%;
+                    }
+                }
+
+                .feedback-media-img-wrapper {
+                    min-width: 80px;
+                }
+            }
+        }
+    }
+}
+}
+
+@media (min-width: 360px) and (max-width: 399px) {
+    #feedback {
+
+    .feedback-media {
+        padding-inline: 20px;
+
+        .feedback-media__item {
+     
+            .feedback-media__card {
+                width: 350px;
+                .feedback-media__body{
+                    .feedback-media__star {
+                        width: 70%;
+                    }
+                }
+
+                .feedback-media-img-wrapper {
+                    min-width: 80px;
+                }
+            }
+        }
+    }
+}
 }
