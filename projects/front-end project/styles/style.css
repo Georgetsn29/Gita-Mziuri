@@ -553,6 +553,7 @@
 }
 #about .about-container .about__media {
   height: 500px;
+  width: 700px;
   position: relative;
 }
 #about .about-container .about__media .about__image-wrapper--primary {
@@ -571,11 +572,6 @@
 }
 #about .about-container .about__media .about__image-wrapper--primary__img:hover {
   transform: scale(1.05);
-}
-@media (min-width: 360px) and (max-width: 576px) {
-  #about .about-container .about__media .about__image-wrapper--primary_img {
-    width: 75%;
-  }
 }
 #about .about-container .about__media .about__image-wrapper--secondary {
   position: absolute;
@@ -667,10 +663,53 @@
   font-weight: 900;
 }
 
+@media (max-width: 576px) {
+  #about {
+    padding-bottom: 60px;
+    background-color: #103c3b;
+    padding-top: 100px;
+  }
+  #about .about-container .about__media {
+    height: 330px;
+  }
+  #about .about-container .about__media .about__image-wrapper--primary {
+    position: absolute;
+    top: 28px;
+    bottom: unset;
+    left: 12px;
+    right: unset;
+  }
+  #about .about-container .about__media .about__image-wrapper--primary__img {
+    width: 80% !important;
+  }
+  #about .about-container .about__media .about__image-wrapper--secondary {
+    position: absolute;
+    top: unset;
+    bottom: 30px;
+    left: unset;
+    right: -70px;
+  }
+  #about .about-container .about__media .about__image-wrapper--secondary__img {
+    width: 70% !important;
+  }
+  #about .about-container .about__media::before {
+    position: absolute;
+    top: 0;
+    bottom: unset;
+    left: -20px;
+    right: unset;
+  }
+  #about .about-container .about__media::after {
+    position: absolute;
+    top: unset;
+    bottom: -10px;
+    left: unset;
+    right: -20px;
+  }
+}
 #suggestedItems {
-  height: 135vh;
   background-color: #28504f;
-  padding-top: 40px;
+  padding-block: 40px;
 }
 #suggestedItems .suggested-subtitle {
   background-color: #1c4645;
@@ -790,6 +829,32 @@
   filter: grayscale(0);
 }
 
+@media (max-width: 576px) {
+  #suggestedItems .suggested-container .suggested__btn {
+    padding: 10px 10px;
+    min-width: 150px;
+    border-radius: 30px 30px 30px 30px;
+  }
+  #suggestedItems .suggested-container .suggested__btn-first {
+    border-radius: 30px 30px 30px 30px;
+  }
+  #suggestedItems .suggested-container .suggested__btn-last {
+    border-radius: 30px 30px 30px 30px;
+  }
+  #suggestedItems .suggested__tab-container {
+    width: 100%;
+    padding-inline: 20px;
+  }
+  #suggestedItems .suggested__tab-container .suggested__tab-content {
+    width: 100%;
+  }
+  #suggestedItems .suggested__tab-container .suggested__tab-media {
+    width: 100%;
+  }
+  #suggestedItems .suggested__tab-container .suggested__tab-media__img {
+    transform: translateX(10px) translateY(-30px);
+  }
+}
 .suggested__filter {
   background-color: #1c4645;
   padding-block: 100px 120px;
@@ -933,6 +998,46 @@
   transform: translateY(0);
 }
 
+@media (min-width: 576px) and (max-width: 1200px) {
+  .suggested__filter .filter-container {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .suggested__filter .filter-container .filter__list {
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .suggested__filter .filter-container .filter__list-active {
+    background-color: #b07e50;
+  }
+  .suggested__filter .filter-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 30px;
+  }
+}
+@media (max-width: 575px) {
+  .suggested__filter .filter-container {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .suggested__filter .filter-container .filter__list {
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .suggested__filter .filter-container .filter__list-active {
+    background-color: #b07e50;
+  }
+  .suggested__filter .filter-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px 30px;
+  }
+}
 #whyUs {
   background-image: url(https://aterna.joomlatema.net/templates/aterna/images/coloredmodule-bg.png);
   background-color: #103c3b;
@@ -1048,8 +1153,23 @@
   transform: rotatey(180deg);
 }
 
+@media (min-width: 576px) and (max-width: 1200px) {
+  #whyUs {
+    padding-inline: 40px;
+  }
+  #whyUs .whyUs-media {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 575px) {
+  #whyUs {
+    padding-inline: 20px;
+  }
+  #whyUs .whyUs-media {
+    margin-bottom: 40px;
+  }
+}
 #feedback {
-  height: 70vh;
   background-color: #1c4645;
 }
 #feedback .feedback-content__subtitle {
@@ -1109,7 +1229,7 @@
   transform: translate(-5px, -5px);
 }
 #feedback .feedback-media {
-  height: 70vh;
+  padding-block: 100px;
   background-image: url(https://aterna.joomlatema.net/templates/aterna/images/middlespot-1-img.jpg);
   background-position: center;
   background-size: cover;
@@ -1198,11 +1318,50 @@
   display: block;
 }
 
+@media (min-width: 576px) and (max-width: 1200px) {
+  #feedback .feedback-content {
+    padding-inline: 60px;
+  }
+}
+@media (min-width: 400px) and (max-width: 575px) {
+  #feedback .feedback-content {
+    padding: 40px;
+  }
+  #feedback .feedback-media {
+    padding-block: 60px;
+  }
+  #feedback .feedback-media .owl-carousel {
+    max-width: 400px;
+  }
+  #feedback .feedback-media .feedback-media__item .feedback-media__card {
+    width: 400px;
+  }
+  #feedback .feedback-media .feedback-media__item .feedback-media__card .feedback-media__body .feedback-media__star {
+    width: 70%;
+  }
+  #feedback .feedback-media .feedback-media__item .feedback-media__card .feedback-media-img-wrapper {
+    min-width: 80px;
+  }
+}
+@media (min-width: 360px) and (max-width: 399px) {
+  #feedback .feedback-media {
+    padding-inline: 20px;
+  }
+  #feedback .feedback-media .feedback-media__item .feedback-media__card {
+    width: 350px;
+  }
+  #feedback .feedback-media .feedback-media__item .feedback-media__card .feedback-media__body .feedback-media__star {
+    width: 70%;
+  }
+  #feedback .feedback-media .feedback-media__item .feedback-media__card .feedback-media-img-wrapper {
+    min-width: 80px;
+  }
+}
 #gardeningTips {
-  height: 140vh;
+  padding-block: 60px;
   background-color: #103c3b;
   position: relative;
-  padding-top: 200px;
+  padding-top: 140px;
 }
 #gardeningTips::after {
   position: absolute;
@@ -1266,7 +1425,7 @@
   font-weight: 600;
 }
 #gardeningTips .gardeningTips__container .gardeningTips__title {
-  margin-top: 20px;
+  margin-block: 20px;
   text-align: center;
 }
 #gardeningTips .gardeningTips__container .gardening__item-container {
@@ -1282,6 +1441,7 @@
   justify-content: center;
   align-items: center;
   transition: transform 0.7s;
+  width: 100% !important;
 }
 #gardeningTips .gardeningTips__container .gardening__item-container .gardening__item-card .gardening__item {
   border-radius: 20px 0 20px 0;
@@ -1473,7 +1633,7 @@
 }
 
 #contact {
-  height: 100vh;
+  padding-block: 40px;
   background-color: #103c3b;
   display: flex;
   flex-direction: row;
@@ -1679,6 +1839,18 @@
   transform: translate(-5px, -5px);
 }
 
+@media (min-width: 360px) and (max-width: 1200px) {
+  #contact {
+    padding-inline: 20px;
+  }
+  #contact .contact-form {
+    margin-top: 10px;
+  }
+  #contact .contact-form .contact-form__title {
+    width: 100%;
+    margin-top: -10px;
+  }
+}
 footer {
   padding-block: 40px;
   padding-inline: 40px;
@@ -1687,6 +1859,11 @@ footer {
 @media (max-width: 768px) {
   footer {
     padding-inline: 10px;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  footer {
+    padding-inline: 40px;
   }
 }
 footer .footer-container {
@@ -1879,6 +2056,11 @@ footer .footer-container .footer__item .footer-newsletter-social .footer-newslet
   letter-spacing: 0.5px;
   line-height: 1.8;
 }
+@media (min-width: 360px) and (max-width: 992px) {
+  #footer__nav .footer__nav-container .footer__nav-p {
+    width: 60%;
+  }
+}
 #footer__nav .footer__nav-container .footer__nav-p a {
   font-size: 14px;
   color: #ffffff;
@@ -1906,12 +2088,18 @@ footer .footer-container .footer__item .footer-newsletter-social .footer-newslet
   gap: 15px;
   margin: 0;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) and (max-width: 1200px) {
+  #footer__nav .footer__nav-container .footer__nav-item-wrapper {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 499px) {
   #footer__nav .footer__nav-container .footer__nav-item-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-right: 60px;
   }
 }
 #footer__nav .footer__nav-container .footer__nav-item-wrapper .footer__nav-item .footer__nav-link {
