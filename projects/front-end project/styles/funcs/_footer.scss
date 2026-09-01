@@ -10,6 +10,10 @@ footer {
         padding-inline: 10px;
     }
 
+    @media (min-width: 360px) and (max-width: 767px) {
+        padding-inline: 40px;
+    }
+
     .footer-container {
         padding-top: 100px;
 
@@ -161,6 +165,10 @@ footer {
             margin: 0;
             @include paragraph(14px, 400, 0.5px, 1.8);
 
+            @media (min-width: 360px) and (max-width: 992px) {
+                width: 60%;
+            }
+
             a {
                 @include paragraph(14px, 400, 0.5px, 1.8);
                 color: $secondary-color;
@@ -181,8 +189,13 @@ footer {
             gap: 15px;
             margin: 0;
 
-            @media (max-width: 500px) {
+            @media (min-width: 500px) and (max-width: 1200px) {
+                margin-right: 40px;
+            }
+
+            @media (max-width: 499px) {
                 @include flex(column, space-between, center);
+                margin-right: 60px;
             }
 
             .footer__nav-item {
