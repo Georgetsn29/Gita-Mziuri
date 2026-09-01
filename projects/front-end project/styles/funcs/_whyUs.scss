@@ -81,3 +81,23 @@
     }
 
 }
+
+@media (min-width: 576px) and (max-width: 1200px) {
+    #whyUs {
+    padding-inline: 40px;
+
+    .whyUs-media {
+        margin-bottom: 40px;
+    }
+}
+}
+
+@media (max-width: 575px) {
+    #whyUs {
+    padding-inline: 20px;
+
+    .whyUs-media {
+        margin-bottom: 40px;
+    }
+}
+}
