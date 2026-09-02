@@ -30,6 +30,8 @@
     padding: 10px 25px;
     background-color: rgba(0, 0, 0, 0.414);
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 20px rgba($black, 0.4);
 
     .card-title {
       color: $white;

@@ -32,7 +32,7 @@
     background-image: linear-gradient(
         to bottom,
         #ffb40a 50%,
-        $secondary-color 50%,
+        $background 50%,
     );
     background-size: 100% 200%;
     background-position: bottom;
@@ -73,7 +73,7 @@
 // ! title
 @mixin title($font_size) {
     font-size: $font_size;
-    font-weight: 700;
+    font-weight: 500;
     color: $white;
     font-family: $fontrubik;
     transition: font-weight 0.3s;
