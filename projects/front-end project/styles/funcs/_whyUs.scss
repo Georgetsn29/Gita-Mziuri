@@ -12,6 +12,7 @@
         &__img {
             border-radius: 10px;
             transition: border-radius 0.4s, transform 0.4s;
+            box-shadow: 0px 0px 20px 10px darken($primary-color, 4%);
 
             &:hover {
                 border-radius: 50px;

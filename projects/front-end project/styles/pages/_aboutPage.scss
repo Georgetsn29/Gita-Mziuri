@@ -1,0 +1,182 @@
+@use '../variables' as *;
+@use '../funcs/mixin' as *;
+
+.about-page__main {
+    background-color: $gardening-bottom;
+    padding-block: 80px;
+
+    @media (max-width: 576px) {
+        padding-inline: 20px;
+    }
+
+    .about-page__media {
+        &__img {
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px 15px $primary-color;
+        }
+    }
+
+    .about-page__content {
+
+        &__title {
+            @include title(44px);
+
+            @media (max-width: 576px) {
+                font-size: 30px;
+            }
+        }
+
+        &__desc {
+            @include paragraph(18px, 400, 0.5px, 1.8);
+        }
+
+        &__skills {
+            padding-block: 10px;
+            &__title {
+                @include title(24px);
+                text-decoration: none;
+                color: $secondary-color;
+
+                .bi-tree-fill,
+                .fa-seedling {
+                    color: $primary-color;
+                    font-size: 36px;
+                    margin-right: 5px
+                }
+            }
+
+            &__desc {
+                @include paragraph(18px, 400, 0.5px, 1.8);
+                margin-left: 50px;
+            }
+        }
+
+
+        .about-page__btn-wrapper {
+            .about-page__btn {
+      
+                @include btn($white, $secondary-color, 10px 24px, 14px, 500);
+
+                margin-top: 20px;
+
+            }
+
+            .about-page__btn-secondary {
+            
+                @include btn($white, $primary-color, 10px 24px, 14px, 500);
+
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.about-meetOurTeam {
+    padding-block: 80px;
+    background-color: $primary-color;
+
+    &__subtitle {
+        @include paragraph(24px, 400, 1px, 1.8);
+        text-align: center;
+        color: $secondary-color;
+
+        .fa-hand-holding-heart {
+            color: $gardening-bottom;
+            font-size: 36px;
+            padding-right: 10px
+        }
+    }
+
+    &__title {
+        @include title(44px);
+        text-align: center;
+        padding-inline: 10px;
+        margin-bottom: 40px;
+    }
+
+
+    .owl-carousel__about-meetOurTeam {
+
+        .owl-stage {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    // Ensures individual item slides do not overflow awkwardly
+    .owl-item {
+        display: flex;
+        justify-content: center;
+    }
+        .about-meetOurTeam-item {
+
+            margin: 0 auto;
+
+            &__card {
+                background-color: rgba($gardening-bottom, 0.2);
+                border: none;
+                padding-inline: 40px;
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+
+                &__img-wrapper {
+                    overflow: hidden;
+                    border-radius: 10px;
+                }
+
+                &__img {
+                    transition: all 0.4s;
+
+                }
+
+                &:hover .about-meetOurTeam-item__card__img {
+                    transform: scale(1.1);
+                    filter: grayscale(0.8);
+
+                }
+
+                &__content {
+                    padding: 10px 0;
+                    &__name {
+                        @include title(20px);
+                        margin-bottom: 0;
+                    }
+
+                    &__position {
+                        @include paragraph(16px, 400, 1px, 1.8);
+                        margin-bottom: 0;
+                    }
+
+                    &__star {
+                        color: $secondary-color;
+                        font-size: 30px;
+                        letter-spacing: 2px;
+                        transition: color 0.3s, letter-spacing 0.3s;
+                        letter-spacing: 4px;
+                        margin-bottom: 0;
+
+                        &:hover {
+                            color: $whyUs-title-color;
+                            letter-spacing: 8px;
+                        }
+                    }
+                }
+                    .bi-share-fill {
+                        font-size: 20px;
+                        color: $white;
+                        background-color: $secondary-color;
+                        padding: 8px 14px;
+                        border-radius: 10px;
+                        @include position(unset, 116px, unset, 40px);
+                        transition: all 0.4s;
+
+                        &:hover {
+                            background-color: $orange;
+                            transform: translateY(-4px);
+                        }
+                    }
+            }
+        }
+    }
+}
