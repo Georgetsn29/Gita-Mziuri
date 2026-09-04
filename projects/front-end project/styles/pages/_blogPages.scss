@@ -1,0 +1,74 @@
+@use '../variables' as *;
+@use '../funcs/mixin' as *;
+
+.blog-main {
+    padding-block: 80px;
+    background-color: $subtitle-background;
+
+    &__hero {
+
+        @include flex(row, unset, center);
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-left: 10px;
+
+        &__img-wrapper {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        &__paragraph {
+            margin: 0;
+            @include paragraph(14px, 400, 0.5px, 1.8);
+
+            &__link {
+                text-decoration: none;
+                @include paragraph(14px, 500, 0.5px, 1.8);
+                color: $secondary-color;
+                padding-left: 5px;
+                transition: all 0.4s;
+
+                &:hover {
+                    color: $whyUs-title-color;
+                }
+            }
+
+            .fa-calendar-days,
+            .fa-eye {
+                color: $secondary-color;
+                margin-right: 5px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .blog__line {
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background-color: $gardening-bottom;
+        margin-block: 20px 40px;
+    }
+
+    &__paragraph {
+        @include paragraph(18px, 400, 0.5px, 1.8);
+        text-align: justify;
+        margin: 0;
+    }
+
+    &__qoute {
+        background-color: $primary-color;
+        padding: 20px 40px 20px 100px;
+        border-left: 6px solid $secondary-color;
+
+
+    }
+}
+
+@media (max-width: 576px) {
+    .blog-main__media {
+        width: 100%;
+    }
+}
