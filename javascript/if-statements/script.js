@@ -37,20 +37,37 @@
 // ! 5. შექმენით უსერების 2 ან 3 ობიექტი: შეამოწმეთ ვინ არის მაგ: სრულწლოვანი და მხოლოდ ის წავიდეს კლუბში :)
 
 
-let basket = [
-    {
-        fruits: ['apple', 'banana', 'pineaple'],
-        colors : ['red', 'green', 'yellow']
-    }
-]
+const fruits = ['ვაშლი', 'მსხალი', 'ბანანი', 'ატამი']
+const colors = ['წითელი', 'ყვითელი', 'მწვანე']
 
+const targetFruit = 'ვაშლი'
 
-if (basket[0].fruits[1]) {
-    console.log('კალათაში არის ეს ხილი', basket[0].fruits);
-} else {
-    console.log('კალათაში ეს ხილი არ არის');
+const hasFruit = fruits.includes(targetFruit)
+console.log(hasFruit);
+
+const currentColor = 'წითელი'
+
+if(fruits.includes('ვაშლი') && (currentColor === 'წითელი' || currentColor === 'ყვითელი')) {
+
+    console.log(`კალათაში არის ${currentColor} ვაშლი`);
+
+} else (
+
+    console.log('კალათაში არ არის ვაშლი')
     
-    basket.push('orange'); 
+)
+
+if(hasFruit === true) {
+    const fruitString = targetFruit.toString()
+
+    console.log(fruitString);
     
-    console.log('განახლებული კალათა:', basket); 
 }
+
+
+
+if(fruits.includes('ანანასი') === false) {
+    fruits.push('')
+}
+
+console.log(fruits);
