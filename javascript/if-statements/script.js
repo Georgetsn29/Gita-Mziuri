@@ -64,10 +64,32 @@ if(hasFruit === true) {
     
 }
 
+const newFruit = 'ანანასი'
 
-
-if(fruits.includes('ანანასი') === false) {
-    fruits.push('')
+if(fruits.includes(newFruit) === false) {
+    fruits.push(newFruit)
 }
 
 console.log(fruits);
+
+
+const users = [
+    {
+        name: 'Giorgi',
+        age: 23,
+        adult: true
+    },
+
+    {
+        name: 'saba',
+        age: 17,
+        adult: false
+    }
+]
+
+if(users[1].age >= 18) {
+    console.log(`${users[1].name} შეძლებს კლუბში შესვლას`);  
+} else {
+    console.log(`${users[1].name} ვერ შეძლებს კლუბში შესვლას`);
+    
+}
