@@ -63,6 +63,7 @@
     text-align: center;
     padding-block: 5px;
     border-radius: 8px;
+    box-shadow: 4px 4px 4px 2px darken($subtitle-background, 6);
 
         &:hover {
             @include subtitle-animation(flip, 1.5s)

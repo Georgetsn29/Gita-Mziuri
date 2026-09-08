@@ -656,6 +656,7 @@
   text-align: center;
   padding-block: 5px;
   border-radius: 8px;
+  box-shadow: 4px 4px 4px 2px rgb(19.2571428571, 48.1428571429, 47.4551020408);
 }
 
 #about .about-container .about__content .about-subtitle:hover {
@@ -764,6 +765,7 @@
   text-align: center;
   padding-block: 5px;
   border-radius: 8px;
+  box-shadow: 4px 4px 4px 2px rgb(19.2571428571, 48.1428571429, 47.4551020408);
 }
 
 #suggestedItems .suggested-subtitle:hover {
@@ -1158,6 +1160,7 @@
   text-align: center;
   padding-block: 5px;
   border-radius: 8px;
+  box-shadow: 4px 4px 4px 2px rgb(19.2571428571, 48.1428571429, 47.4551020408);
 }
 
 #whyUs .whyUs-content__subtitle:hover {
@@ -1293,6 +1296,7 @@
   text-align: center;
   padding-block: 5px;
   border-radius: 8px;
+  box-shadow: 4px 4px 4px 2px rgb(19.2571428571, 48.1428571429, 47.4551020408);
 }
 
 #feedback .feedback-content__subtitle:hover {
@@ -1523,6 +1527,7 @@
   text-align: center;
   padding-block: 5px;
   border-radius: 8px;
+  box-shadow: 4px 4px 4px 2px rgb(19.2571428571, 48.1428571429, 47.4551020408);
 }
 
 #gardeningTips .gardeningTips__container .gardeningTips__subtitle:hover {
@@ -1863,6 +1868,7 @@
   text-align: center;
   padding-block: 5px;
   border-radius: 8px;
+  box-shadow: 4px 4px 4px 2px rgb(19.2571428571, 48.1428571429, 47.4551020408);
 }
 
 #contact .contact-form .contact-form__subtitle:hover {
@@ -2937,6 +2943,7 @@ footer .footer-container .footer__item .footer-newsletter-social .footer-newslet
   background-clip: text;
   color: transparent;
   gap: 24px;
+  cursor: pointer;
 }
 
 @media (min-width: 360px) and (max-width: 992px) {
@@ -2970,6 +2977,7 @@ footer .footer-container .footer__item .footer-newsletter-social .footer-newslet
   margin-left: 20px;
   margin-top: 20px;
   width: 80%;
+  text-indent: 10px;
 }
 
 .blog-main {
