@@ -36,7 +36,7 @@
 // ! ვინ შევიდა სისტემაში?
 // * იურისტი, მენეჯერი, კლიენტი
 
-let login = 'კლიენტი'
+// let login = 'კლიენტი'
 
 // switch(login) {
 
@@ -78,6 +78,7 @@ let login = 'კლიენტი'
 
 
 // ! 1.
+
 // * ternary 
 let age = 23
 
@@ -113,6 +114,7 @@ switch(personCanEnter) {
 
 
 // ! 2.
+
 let numbers = [1, 2, 3, 4, 5, 20, 10, 22, 11]
 
 let length = numbers.length
@@ -130,20 +132,60 @@ let person = [
     },
 
     {
-        name: 'Giorgi',
+        name: 'Nini',
         age: 23,
-        studies: 'სტუდენტი',
-        skills: ['html', 'css', 'js', 'bootstap']
+        studies: 'კურს დამთავრებული',
+        skills: ['microsoft Project', 'Word', 'office']
     }
 ]
 
-switch(person[1].studies) {
+switch(person[0].studies) {
     case 'სტუდენტი' :
     console.log('არის სტუდენტი');
     break
 
-    default :
-    console.log('არ არის სტუდენტი');
+    case 'კურს დამთავრებული' :
+    console.log('არის კურს დამთავრებული');
     break
     
+
+    default :
+    console.log('არ არის სტუდენტი');
+    break   
 }
+
+let skillString = person[0].skills.join(', ')
+
+switch (skillString) {
+
+    case 'html, css, js, bootstap':
+    console.log('იცის html, css, js, bootstap და შეუძლია მეორე სემესტრში გადასვლა');
+    break;
+
+    default:
+    console.log('არიცის html, css, js, bootstap და ვერ გადავა მეორე სემესტრში');
+    
+    break;
+}
+
+
+// ! 4.
+
+let item = [
+    {
+        name: 'Phone',
+        price: 4000,
+        discount: true
+    }
+]
+
+let buy = item[0].price >= 500 && item[0].price <= 1000 ? 'შეიძლება ყიდვა, არაა ძვირი' : 
+          item[0].price > 1000 ? 'ძვირია, ვერ იყიდი' :
+          'ფული არაა'
+
+console.log(buy);
+
+let itemDiscount = item[0].discount === true ? `ფასდაკლება 300₾ - საბოლოო ფასია ${item[0].price - 300}₾` :
+                   'ფასდაკლება არააქ'
+
+console.log(itemDiscount);
