@@ -21,7 +21,7 @@
 
 .hero-main {
   
-  @include position(44%, unset, 10%, unset);
+  @include position(absolute, 44%, unset, 10%, unset);
 
   .hero-card {
     background-color: transparent;
@@ -105,7 +105,7 @@
   .hero-main {
 
   
-  @include position(30%, unset, 10%, unset);
+  @include position(absolute, 30%, unset, 10%, unset);
 
   .hero-card {
 
@@ -149,7 +149,7 @@
 
   .hero-main {
   
-  @include position(30%, unset, 10%, unset);
+  @include position(absolute, 30%, unset, 10%, unset);
 
   .hero-card {
 

@@ -19,7 +19,7 @@
 
             .about__image-wrapper--primary {
 
-                @include position(28px, unset, -12px, unset);
+                @include position(absolute, 28px, unset, -12px, unset);
                 z-index: 2;
 
                 
@@ -40,7 +40,7 @@
 
             .about__image-wrapper--secondary {
 
-                @include position(unset, 25px, unset, 50px);
+                @include position(absolute, unset, 25px, unset, 50px);
                 z-index: 2;
 
                 &__img {
@@ -59,12 +59,12 @@
 
             &::before {
                 content: url(https://aterna.joomlatema.net/templates/aterna/images/about-1-shape1.png);
-                @include position(0, unset, -45px, unset);
+                @include position(absolute, 0, unset, -45px, unset);
             }
 
             &::after {
                 content: url(https://aterna.joomlatema.net/templates/aterna/images/about-1-shape2.png);
-                @include position(unset, -15px, unset, 15px);
+                @include position(absolute, unset, -15px, unset, 15px);
             }
         
     }
@@ -111,7 +111,7 @@
         height: 330px;
 
     .about__image-wrapper--primary {
-        @include position(28px, unset, 12px, unset);
+        @include position(absolute, 28px, unset, 12px, unset);
 
         &__img {
             width: 80% !important;
@@ -120,7 +120,7 @@
 
     .about__image-wrapper--secondary {
 
-        @include position(unset, 30px, unset, -70px);
+        @include position(absolute, unset, 30px, unset, -70px);
 
         &__img {
             width: 70% !important;
@@ -128,11 +128,11 @@
     }
 
         &::before {
-            @include position(0, unset, -20px, unset);
+            @include position(absolute, 0, unset, -20px, unset);
         }
 
         &::after {
-            @include position(unset, -10px, unset, -20px);
+            @include position(absolute, unset, -10px, unset, -20px);
         }
         
     }

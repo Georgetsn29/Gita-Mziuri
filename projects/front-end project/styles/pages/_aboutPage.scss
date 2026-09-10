@@ -168,7 +168,7 @@
                         background-color: $secondary-color;
                         padding: 8px 14px;
                         border-radius: 10px;
-                        @include position(unset, 116px, unset, 40px);
+                        @include position(absolute, unset, 116px, unset, 40px);
                         transition: all 0.4s;
 
                         &:hover {

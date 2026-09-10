@@ -9,7 +9,7 @@
     padding-top: 140px;
 
     &::after {
-        @include position(unset, 0, unset, unset);
+        @include position(absolute, unset, 0, unset, unset);
         content: '';
         width: 100%;
         height: 40vh;
@@ -78,7 +78,7 @@
                             background-color: $whyUs-title-color;
                             color: $white;
                             text-decoration: none;
-                            @include position(15px, unset, 15px, unset);
+                            @include position(absolute, 15px, unset, 15px, unset);
                             padding: 5px 15px;
                             border-radius: 20px;
                             transition: background-color 0.3s;
@@ -86,7 +86,7 @@
                     
 
                     .gardening__item__hover {
-                        @include position(50%, unset, 50%, unset);
+                        @include position(absolute, 50%, unset, 50%, unset);
                         transform: translate(-50%, -20%);
                         width: 100%;
                         z-index: 999;

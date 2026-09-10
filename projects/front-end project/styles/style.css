@@ -7,10 +7,12 @@
   min-height: 80px;
   padding-inline: 20px;
   position: fixed;
+  top: 10px;
+  bottom: unset;
+  left: 50%;
+  right: unset;
   backdrop-filter: blur(5px);
   border-radius: 20px;
-  top: 10px;
-  left: 50%;
   transform: translateX(-50%);
   font-family: kode mono;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3607843137);
@@ -2364,7 +2366,9 @@ footer .footer-container .footer__item .footer-newsletter-social .footer-newslet
 
 .go-top {
   position: fixed;
+  top: unset;
   bottom: 15px;
+  left: unset;
   right: 20px;
   color: #ffffff;
   font-size: 20px;
@@ -3056,9 +3060,36 @@ footer .footer-container .footer__item .footer-newsletter-social .footer-newslet
 }
 
 .blog-main__qoute {
-  background-color: #103c3b;
   padding: 20px 40px 20px 100px;
   border-left: 6px solid #b07e50;
+  background-image: linear-gradient(to left, #103c3b 50%, #b07e50 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.8s;
+}
+
+.blog-main__qoute:hover {
+  background-position: left;
+}
+
+.blog-main .blog-main__media {
+  box-shadow: 10px 10px 8px 5px #103c3b;
+}
+
+.blog-main .blog-main__media--left {
+  transition: all 0.4s;
+}
+
+.blog-main .blog-main__media--left:hover {
+  transform: translate(15px, 15px);
+}
+
+.blog-main .blog-main__media--right {
+  transition: all 0.4s;
+}
+
+.blog-main .blog-main__media--right:hover {
+  transform: translate(-15px, -15px);
 }
 
 @media (max-width: 576px) {

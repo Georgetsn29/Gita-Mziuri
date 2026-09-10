@@ -10,8 +10,8 @@
 
 
 // ! position
-@mixin position($top, $bottom, $left, $right) {
-    position: absolute;
+@mixin position($position, $top, $bottom, $left, $right) {
+    position: $position;
     top: $top;
     bottom: $bottom;
     left: $left;
@@ -144,5 +144,5 @@
     font-size: 18px;
     font-weight: normal;
     color: $white;
-    @include position(10px, unset, unset, 15px);
+    @include position(absolute, 10px, unset, unset, 15px);
 }

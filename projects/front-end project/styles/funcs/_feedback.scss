@@ -47,7 +47,7 @@
                         content: "\f10e";
                         font-family: FontAwesome;
                         font-size: 32px;
-                        @include position(unset, 0, unset, 10px);
+                        @include position(absolute, unset, 0, unset, 10px);
                 }
 
                 padding: 10px 20px;
