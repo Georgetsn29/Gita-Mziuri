@@ -59,11 +59,38 @@
     }
 
     &__qoute {
-        background-color: $primary-color;
         padding: 20px 40px 20px 100px;
         border-left: 6px solid $secondary-color;
+        background-image: linear-gradient(
+        to left,
+        $primary-color 50%,
+        $secondary-color 50%,
+        );
+        background-size: 200% 100%;
+        background-position: right;
+        transition: background-position 0.8s; 
 
+        &:hover {
+            background-position: left;
+        }
+    }
 
+    .blog-main__media {
+        box-shadow: 10px 10px 8px 5px $primary-color;
+    }
+
+    .blog-main__media--left {
+        transition: all 0.4s;
+        &:hover {
+            transform: translate(15px, 15px);
+        }
+    }
+
+    .blog-main__media--right {
+        transition: all 0.4s;
+        &:hover {
+            transform: translate(-15px, -15px);
+        }
     }
 }
 
