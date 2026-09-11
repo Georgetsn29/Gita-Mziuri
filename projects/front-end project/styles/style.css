@@ -3065,7 +3065,7 @@ footer .footer-container .footer__item .footer-newsletter-social .footer-newslet
   background-image: linear-gradient(to left, #103c3b 50%, #b07e50 50%);
   background-size: 200% 100%;
   background-position: right;
-  transition: background-position 0.8s;
+  transition: background-position 0.9s ease-in-out;
 }
 
 .blog-main__qoute:hover {
