@@ -395,12 +395,17 @@
 
 .carousel-control-prev, .carousel-control-next {
   margin-inline: 20px;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7843137255);
   width: 60px;
   height: 80px;
   border-radius: 6px;
   top: 50%;
   transform: translatey(50%);
+  transition: all 0.4s;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: #000000;
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
