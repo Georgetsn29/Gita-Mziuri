@@ -39,34 +39,68 @@
 
 // ! მასივში ობიექტები - 18< > კლუბში არ ვუშვებთ
 
-const students = [
-    {
-        name: 'Giorgi',
-        age: 23
-    },
-    {
-        name: 'Nini',
-        age: 23
-    },
-    {
-        name: 'Saba',
-        age: 15
-    }
-]
+// const students = [
+//     {
+//         name: 'გიორგი',
+//         age: 23
+//     },
+//     {
+//         name: 'ნუცა',
+//         age: 18
+//     },
+//     {
+//         name: 'საბა',
+//         age: 15
+//     }
+// ]
 
-for(let i = 0; i < students.length; i++) {
+// for(let i = 0; i < students.length; i++) {
 
-    let age_line = students[i].age >= 18 ? 'შეუძლია შესვლა' : 'ვერ შევა'
-    console.log(`${students[i].name} არის ${students[i].age} წლის: ${age_line}`);
+//     let age_line = students[i].age >= 18 ? 'შეუძლია კლუბში შესვლა' : 'კლუბში ვერ შევა'
+//     console.log(`${students[i].name} არის ${students[i].age} წლის: ${age_line}.`);
     
-}
+// }
 
 
 // ! სტუდენტი ანა - [ 45, 90, 18] -საშუალო - მათემატიკაში
 // ! თუ სტუდენტის საშუალო 51-ზე ნაკლებია, ვერ ჩააბარა გამოცდა ;
 // ! დათვალეთ რამდენმა სტუდენტმა ვერ ჩააბარა ან ჩააბარა გამოცდა;
 // ! იპოვეთ რამდენმა მიიღო 85-ზე მაღალი ქულა. 
-// ! 
+
+let students = [
+    {
+        name: 'ანა',
+        grade: [45, 90, 18]
+    },
+    {
+        name: 'გიორგი',
+        grade: [10, 98, 38]
+    },
+    {
+        name: 'ნინი',
+        grade: [89, 92, 78]
+    }
+]
+
+for(let i = 0; i < students.length; i++) {
+
+    let total = 0
+
+    for(let g = 0; g < students[i].grade.length; g++) {
+        total += students[i].grade[g];
+    }
+
+    let avg = total / students[i].grade.length
+
+    let pass = avg >= 51 ? 'ჩააბარა' :
+                           'ჩაიჭრა'
+    
+    console.log(`${students[i].name} საშვალო ქულაა ${avg}. ${pass}`);
+ 
+}
+
+
+
 
 // ! იპოვეთ 100-დან უმაღლესი რიცხვი  და უმდაბლესი. 
 // ! იპოვეთ ყველა ლუწი რიცხვი მასივში და დააჯამეთ. 
