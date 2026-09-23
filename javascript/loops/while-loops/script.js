@@ -49,14 +49,32 @@
 // ! მასივიდან იპოვეთ ყველაზე გრძელი სიტყვა და დაბეჭდეთ.
 
 
-// let word = 'hello world!!'
+let word = 'hello world!!'
 
 // // * დამარცვლა
 // let result = word.split("")
 // console.log(result);
 
+
+// let result = [];
+
+// for (let i = 0; i < word.length; i++) {
+//   result.push(word[i]);
+// }
+
+// console.log(result);
+
 // // * შეტრიალებული დამარცვლა
 // let reversed = word.split("").reverse()
+// console.log(reversed);
+
+
+// let reversed = "";
+
+// for (let i = word.length - 1; i >= 0; i--) {
+//   reversed += word[i];
+// }
+
 // console.log(reversed);
 
 
