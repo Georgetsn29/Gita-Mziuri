@@ -51,51 +51,51 @@
 
 let word = 'hello world!!'
 
-// // * დამარცვლა
+// * დამარცვლა
 // let result = word.split("")
 // console.log(result);
 
 
-// let result = [];
+let result = [];
 
-// for (let i = 0; i < word.length; i++) {
-//   result.push(word[i]);
-// }
+for (let i = 0; i < word.length; i++) {
+  result.push(word[i]);
+}
 
-// console.log(result);
+console.log(result);
 
-// // * შეტრიალებული დამარცვლა
+// * შეტრიალებული დამარცვლა
 // let reversed = word.split("").reverse()
 // console.log(reversed);
 
 
-// let reversed = "";
+let reversed = "";
 
-// for (let i = word.length - 1; i >= 0; i--) {
-//   reversed += word[i];
-// }
+for (let i = word.length - 1; i >= 0; i--) {
+  reversed += word[i];
+}
 
-// console.log(reversed);
+console.log(reversed);
 
 
 
-// let fruits = ['ვაშლი', 'მსხალი', 'ატამი', 'ბანანი', 'ანანასი', 'ატამი']
+let fruits = ['ვაშლი', 'მსხალი', 'ატამი', 'ბანანი', 'ანანასი', 'ატამი']
 
-// for (let i = 0; i < fruits.length; i++) {
+for (let i = 0; i < fruits.length; i++) {
 
-//     if (fruits[i].length >= 6) {
+    if (fruits[i].length >= 6) {
 
-//         console.log(fruits[i]);
+        console.log(fruits[i]);
         
-//     }
-// }
+    }
+}
 
-// let longest = fruits[0]
+let longest = fruits[0]
 
-// for (let i = 1; i < fruits.length; i++) {
-//     if (fruits[i].length > longest.length) {
-//         longest = fruits[i]
-//     }
-// }
+for (let i = 1; i < fruits.length; i++) {
+    if (fruits[i].length > longest.length) {
+        longest = fruits[i]
+    }
+}
 
-// console.log(`გრძელი სიტყვაა ${longest}`);
+console.log(`გრძელი სიტყვაა - ${longest}`);
