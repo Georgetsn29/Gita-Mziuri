@@ -158,6 +158,40 @@
 // ! იპოვეთ ორი მასივის საერთო ელემენტები;
 // ! თუ ორივე მასივში მეორდება ელემენტები, შემოიტანეთ მხოლოდ რაც არ მეორდება;
 
+const arr1 = [1, 2, 2, 3, 4];
+const arr2 = [2, 2, 4, 4, 5];
+
+const result = [];
+
+for (let i = 0; i < arr1.length; i++) {
+    let foundInArr2 = false;
+
+    // შევამოწმოთ არის თუ არა arr1[i] მეორე მასივში
+    for (let j = 0; j < arr2.length; j++) {
+        if (arr1[i] === arr2[j]) {
+            foundInArr2 = true;
+            break;
+        }
+    }
+
+    if (foundInArr2) {
+        // შევამოწმოთ უკვე დამატებული არაა თუ result-ში
+        let alreadyAdded = false;
+        for (let k = 0; k < result.length; k++) {
+            if (result[k] === arr1[i]) {
+                alreadyAdded = true;
+                break;
+            }
+        }
+
+        if (!alreadyAdded) {
+            result.push(arr1[i]);
+        }
+    }
+}
+
+console.log(result); // [2, 4]
+
 
 
 
