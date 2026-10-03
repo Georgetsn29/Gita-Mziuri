@@ -1,0 +1,17 @@
+.heading {
+    background-color: rgb(156, 107, 107);
+    font-size: 45px;
+}
+
+#parent_box {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+
+.child_box {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-top: 10px;
+}
